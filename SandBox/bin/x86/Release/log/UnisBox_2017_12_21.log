@@ -1,0 +1,158 @@
+2017-12-21 15:19:41,317 [1] INFO  SandBox.Program Main - =============================================================================================
+2017-12-21 15:19:41,426 [1] INFO  SandBox.Program Main - Program.Main() Execution
+2017-12-21 15:19:41,567 [1] INFO  SandBox.Program Main - urlApplication=http://localhost/safeware/telemaque_new/
+2017-12-21 15:19:41,567 [1] INFO  SandBox.Program Main - nomApplication=TELEMAQUE
+2017-12-21 15:20:05,557 [1] INFO  SandBox.Program Main - =============================================================================================
+2017-12-21 15:20:05,661 [1] INFO  SandBox.Program Main - Program.Main() Execution
+2017-12-21 15:20:05,806 [1] INFO  SandBox.Program Main - urlApplication=http://localhost/safeware/telemaque_new/
+2017-12-21 15:20:05,807 [1] INFO  SandBox.Program Main - nomApplication=TELEMAQUE
+2017-12-21 15:20:06,301 [1] INFO  SandBox.Program .ctor - [MAIN] init config log4net
+2017-12-21 15:20:06,310 [1] INFO  SandBox.Program .ctor - [MAIN] recup url application ico
+2017-12-21 15:20:06,319 [1] INFO  SandBox.Program RecupererUrl - [MAIN] RecupererUrl() [DEBUT]
+2017-12-21 15:20:06,323 [1] INFO  SandBox.Program RecupererUrl - [MAIN] RecupererUrl() [FIN] - URL:http://localhost/safeware/telemaque_new/
+2017-12-21 15:20:06,329 [1] INFO  SandBox.Program RecupererNomApplication - [MAIN] RecupererNomApplication() [DEBUT]
+2017-12-21 15:20:06,329 [1] INFO  SandBox.Program RecupererNomApplication - [MAIN] RecupererNomApplication() [FIN] - Nom Application : TELEMAQUE
+2017-12-21 15:20:06,396 [1] INFO  SandBox.Program MiseEnPlaceRaccourcis - [MAIN] MiseEnPlaceRaccourcis() - user.config = C:\Users\Mathias\AppData\Local\Safeware\TELEMAQUE_-_UnisBox.exe_Url_whdkfzl5hqa5cn4u5k4ridulpe2ppkjs\1.0.8.98\user.config
+2017-12-21 15:20:06,616 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=about:blank
+2017-12-21 15:20:06,807 [1] INFO  SandBox.Program RecupererIcone - [MAIN] RecupererIcone() [DEBUT]
+2017-12-21 15:20:06,866 [1] INFO  SandBox.Program RecupererIcone - [MAIN] RecupererIcone() [FIN]
+2017-12-21 15:20:06,867 [1] INFO  SandBox.Program RecupererVersion - [MAIN] RecupererVersion() [DEBUT]
+2017-12-21 15:20:09,088 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new//ChangeLog.txt
+2017-12-21 15:20:09,304 [1] INFO  SandBox.Program RecupererVersion - [MAIN] RecupererVersion() [FIN] - LabelSiteVersion
+2017-12-21 15:20:09,317 [1] INFO  SandBox.Program RecupererPeripheriques - [Main] RecupererPeripheriques() - [DEBUT]
+2017-12-21 15:20:09,331 [1] INFO  SandBox.Program TraiterXML - [PeripheriqueManager] TraiterXML() - [DEBUT] Traitement de la liste des periphériques
+2017-12-21 15:20:09,336 [1] INFO  SandBox.Program DownloadXML - [PeripheriqueManager] DownloadXML() - [DEBUT] Telechargement xml [DIDEROT]
+2017-12-21 15:20:11,376 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/devices/devices.asp?machine=DIDEROT
+2017-12-21 15:20:11,592 [1] ERROR SandBox.Program DownloadXML - System.Xml.XmlException: Données non valides au niveau racine. Ligne 1, position 1.
+   à System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   à System.Xml.XmlTextReaderImpl.Throw(String res, String arg)
+   à System.Xml.XmlTextReaderImpl.ParseRootLevelWhitespace()
+   à System.Xml.XmlTextReaderImpl.ParseDocumentContent()
+   à System.Xml.XmlTextReaderImpl.Read()
+   à System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   à System.Xml.XmlDocument.Load(XmlReader reader)
+   à System.Xml.XmlDocument.LoadXml(String xml)
+   à SandBox.PeripheriqueManager.DownloadXML() dans D:\ZwDev\SandBox\SandBox\GestionPeripheriques\PeripheriqueManager.cs:ligne 96
+2017-12-21 15:20:18,359 [1] INFO  SandBox.Program DownloadXML - [PeripheriqueManager] DownloadXML() - [FIN] Erreur de TelechargementSystem.IO.FileNotFoundException: Impossible de trouver le fichier 'C:\Users\Mathias\AppData\Local\Temp\telemaque_new_devices.xml'.
+Nom du fichier : 'C:\Users\Mathias\AppData\Local\Temp\telemaque_new_devices.xml'
+   à System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   à System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy)
+   à System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   à System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials)
+   à System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   à System.Xml.XmlReader.Create(String inputUri, XmlReaderSettings settings, XmlParserContext inputContext)
+   à System.Xml.XmlReader.Create(String inputUri, XmlReaderSettings settings)
+   à SandBox.PeripheriqueManager.DownloadXML() dans D:\ZwDev\SandBox\SandBox\GestionPeripheriques\PeripheriqueManager.cs:ligne 117
+2017-12-21 15:20:38,703 [1] INFO  SandBox.Program Main - =============================================================================================
+2017-12-21 15:20:38,812 [1] INFO  SandBox.Program Main - Program.Main() Execution
+2017-12-21 15:20:38,963 [1] INFO  SandBox.Program Main - urlApplication=http://localhost/safeware/telemaque_new/
+2017-12-21 15:20:38,964 [1] INFO  SandBox.Program Main - nomApplication=TELEMAQUE
+2017-12-21 15:20:39,488 [1] INFO  SandBox.Program .ctor - [MAIN] init config log4net
+2017-12-21 15:20:39,498 [1] INFO  SandBox.Program .ctor - [MAIN] recup url application ico
+2017-12-21 15:20:39,507 [1] INFO  SandBox.Program RecupererUrl - [MAIN] RecupererUrl() [DEBUT]
+2017-12-21 15:20:39,511 [1] INFO  SandBox.Program RecupererUrl - [MAIN] RecupererUrl() [FIN] - URL:http://localhost/safeware/telemaque_new/
+2017-12-21 15:20:39,517 [1] INFO  SandBox.Program RecupererNomApplication - [MAIN] RecupererNomApplication() [DEBUT]
+2017-12-21 15:20:39,517 [1] INFO  SandBox.Program RecupererNomApplication - [MAIN] RecupererNomApplication() [FIN] - Nom Application : TELEMAQUE
+2017-12-21 15:20:39,553 [1] INFO  SandBox.Program MiseEnPlaceRaccourcis - [MAIN] MiseEnPlaceRaccourcis() - user.config = C:\Users\Mathias\AppData\Local\Safeware\TELEMAQUE_-_UnisBox.exe_Url_whdkfzl5hqa5cn4u5k4ridulpe2ppkjs\1.0.8.98\user.config
+2017-12-21 15:20:39,874 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=about:blank
+2017-12-21 15:20:40,063 [1] INFO  SandBox.Program RecupererIcone - [MAIN] RecupererIcone() [DEBUT]
+2017-12-21 15:20:40,127 [1] INFO  SandBox.Program RecupererIcone - [MAIN] RecupererIcone() [FIN]
+2017-12-21 15:20:40,128 [1] INFO  SandBox.Program RecupererVersion - [MAIN] RecupererVersion() [DEBUT]
+2017-12-21 15:20:44,329 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new//ChangeLog.txt
+2017-12-21 15:20:44,556 [1] INFO  SandBox.Program RecupererVersion - [MAIN] RecupererVersion() [FIN] - LabelSiteVersion
+2017-12-21 15:20:44,569 [1] INFO  SandBox.Program RecupererPeripheriques - [Main] RecupererPeripheriques() - [DEBUT]
+2017-12-21 15:20:44,585 [1] INFO  SandBox.Program TraiterXML - [PeripheriqueManager] TraiterXML() - [DEBUT] Traitement de la liste des periphériques
+2017-12-21 15:20:44,588 [1] INFO  SandBox.Program DownloadXML - [PeripheriqueManager] DownloadXML() - [DEBUT] Telechargement xml [DIDEROT]
+2017-12-21 15:20:48,734 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/devices/devices.asp?machine=DIDEROT
+2017-12-21 15:20:48,970 [1] ERROR SandBox.Program DownloadXML - System.Xml.XmlException: Données non valides au niveau racine. Ligne 1, position 1.
+   à System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   à System.Xml.XmlTextReaderImpl.Throw(String res, String arg)
+   à System.Xml.XmlTextReaderImpl.ParseRootLevelWhitespace()
+   à System.Xml.XmlTextReaderImpl.ParseDocumentContent()
+   à System.Xml.XmlTextReaderImpl.Read()
+   à System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   à System.Xml.XmlDocument.Load(XmlReader reader)
+   à System.Xml.XmlDocument.LoadXml(String xml)
+   à SandBox.PeripheriqueManager.DownloadXML() dans D:\ZwDev\SandBox\SandBox\GestionPeripheriques\PeripheriqueManager.cs:ligne 96
+2017-12-21 15:21:36,133 [1] INFO  SandBox.Program DownloadXML - [PeripheriqueManager] DownloadXML() - [FIN] Erreur de TelechargementSystem.IO.FileNotFoundException: Impossible de trouver le fichier 'C:\Users\Mathias\AppData\Local\Temp\telemaque_new_devices.xml'.
+Nom du fichier : 'C:\Users\Mathias\AppData\Local\Temp\telemaque_new_devices.xml'
+   à System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   à System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy)
+   à System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   à System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials)
+   à System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   à System.Xml.XmlReader.Create(String inputUri, XmlReaderSettings settings, XmlParserContext inputContext)
+   à System.Xml.XmlReader.Create(String inputUri, XmlReaderSettings settings)
+   à SandBox.PeripheriqueManager.DownloadXML() dans D:\ZwDev\SandBox\SandBox\GestionPeripheriques\PeripheriqueManager.cs:ligne 117
+2017-12-21 15:21:51,643 [1] INFO  SandBox.Program Main - =============================================================================================
+2017-12-21 15:21:51,760 [1] INFO  SandBox.Program Main - Program.Main() Execution
+2017-12-21 15:21:51,922 [1] INFO  SandBox.Program Main - urlApplication=http://localhost/safeware/telemaque_new/
+2017-12-21 15:21:51,923 [1] INFO  SandBox.Program Main - nomApplication=TELEMAQUE
+2017-12-21 15:21:52,406 [1] INFO  SandBox.Program .ctor - [MAIN] init config log4net
+2017-12-21 15:21:52,416 [1] INFO  SandBox.Program .ctor - [MAIN] recup url application ico
+2017-12-21 15:21:52,425 [1] INFO  SandBox.Program RecupererUrl - [MAIN] RecupererUrl() [DEBUT]
+2017-12-21 15:21:52,428 [1] INFO  SandBox.Program RecupererUrl - [MAIN] RecupererUrl() [FIN] - URL:http://localhost/safeware/telemaque_new/
+2017-12-21 15:21:52,434 [1] INFO  SandBox.Program RecupererNomApplication - [MAIN] RecupererNomApplication() [DEBUT]
+2017-12-21 15:21:52,434 [1] INFO  SandBox.Program RecupererNomApplication - [MAIN] RecupererNomApplication() [FIN] - Nom Application : TELEMAQUE
+2017-12-21 15:21:52,470 [1] INFO  SandBox.Program MiseEnPlaceRaccourcis - [MAIN] MiseEnPlaceRaccourcis() - user.config = C:\Users\Mathias\AppData\Local\Safeware\TELEMAQUE_-_UnisBox.exe_Url_whdkfzl5hqa5cn4u5k4ridulpe2ppkjs\1.0.8.98\user.config
+2017-12-21 15:21:52,703 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=about:blank
+2017-12-21 15:21:52,897 [1] INFO  SandBox.Program RecupererIcone - [MAIN] RecupererIcone() [DEBUT]
+2017-12-21 15:21:52,973 [1] INFO  SandBox.Program RecupererIcone - [MAIN] RecupererIcone() [FIN]
+2017-12-21 15:21:52,975 [1] INFO  SandBox.Program RecupererVersion - [MAIN] RecupererVersion() [DEBUT]
+2017-12-21 15:21:57,079 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new//ChangeLog.txt
+2017-12-21 15:21:57,238 [1] INFO  SandBox.Program RecupererVersion - [MAIN] RecupererVersion() [FIN] - LabelSiteVersion
+2017-12-21 15:21:57,245 [1] INFO  SandBox.Program RecupererPeripheriques - [Main] RecupererPeripheriques() - [DEBUT]
+2017-12-21 15:21:57,252 [1] INFO  SandBox.Program TraiterXML - [PeripheriqueManager] TraiterXML() - [DEBUT] Traitement de la liste des periphériques
+2017-12-21 15:21:57,255 [1] INFO  SandBox.Program DownloadXML - [PeripheriqueManager] DownloadXML() - [DEBUT] Telechargement xml [DIDEROT]
+2017-12-21 15:22:01,338 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/devices/devices.asp?machine=DIDEROT
+2017-12-21 15:22:01,577 [1] ERROR SandBox.Program DownloadXML - System.Xml.XmlException: Données non valides au niveau racine. Ligne 1, position 1.
+   à System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   à System.Xml.XmlTextReaderImpl.Throw(String res, String arg)
+   à System.Xml.XmlTextReaderImpl.ParseRootLevelWhitespace()
+   à System.Xml.XmlTextReaderImpl.ParseDocumentContent()
+   à System.Xml.XmlTextReaderImpl.Read()
+   à System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   à System.Xml.XmlDocument.Load(XmlReader reader)
+   à System.Xml.XmlDocument.LoadXml(String xml)
+   à SandBox.PeripheriqueManager.DownloadXML() dans D:\ZwDev\SandBox\SandBox\GestionPeripheriques\PeripheriqueManager.cs:ligne 96
+2017-12-21 15:22:23,673 [1] INFO  SandBox.Program Main - =============================================================================================
+2017-12-21 15:22:23,787 [1] INFO  SandBox.Program Main - Program.Main() Execution
+2017-12-21 15:22:23,948 [1] INFO  SandBox.Program Main - urlApplication=http://localhost/safeware/telemaque_new/
+2017-12-21 15:22:23,949 [1] INFO  SandBox.Program Main - nomApplication=TELEMAQUE
+2017-12-21 15:22:24,447 [1] INFO  SandBox.Program .ctor - [MAIN] init config log4net
+2017-12-21 15:22:24,457 [1] INFO  SandBox.Program .ctor - [MAIN] recup url application ico
+2017-12-21 15:22:24,467 [1] INFO  SandBox.Program RecupererUrl - [MAIN] RecupererUrl() [DEBUT]
+2017-12-21 15:22:24,470 [1] INFO  SandBox.Program RecupererUrl - [MAIN] RecupererUrl() [FIN] - URL:http://localhost/safeware/telemaque_new/
+2017-12-21 15:22:24,476 [1] INFO  SandBox.Program RecupererNomApplication - [MAIN] RecupererNomApplication() [DEBUT]
+2017-12-21 15:22:24,476 [1] INFO  SandBox.Program RecupererNomApplication - [MAIN] RecupererNomApplication() [FIN] - Nom Application : TELEMAQUE
+2017-12-21 15:22:24,511 [1] INFO  SandBox.Program MiseEnPlaceRaccourcis - [MAIN] MiseEnPlaceRaccourcis() - user.config = C:\Users\Mathias\AppData\Local\Safeware\TELEMAQUE_-_UnisBox.exe_Url_whdkfzl5hqa5cn4u5k4ridulpe2ppkjs\1.0.8.98\user.config
+2017-12-21 15:22:24,831 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=about:blank
+2017-12-21 15:22:25,016 [1] INFO  SandBox.Program RecupererIcone - [MAIN] RecupererIcone() [DEBUT]
+2017-12-21 15:22:25,058 [1] INFO  SandBox.Program RecupererIcone - [MAIN] RecupererIcone() [FIN]
+2017-12-21 15:22:25,060 [1] INFO  SandBox.Program RecupererVersion - [MAIN] RecupererVersion() [DEBUT]
+2017-12-21 15:22:29,228 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new//ChangeLog.txt
+2017-12-21 15:22:29,413 [1] INFO  SandBox.Program RecupererVersion - [MAIN] RecupererVersion() [FIN] - LabelSiteVersion
+2017-12-21 15:22:29,419 [1] INFO  SandBox.Program RecupererPeripheriques - [Main] RecupererPeripheriques() - [DEBUT]
+2017-12-21 15:22:29,426 [1] INFO  SandBox.Program TraiterXML - [PeripheriqueManager] TraiterXML() - [DEBUT] Traitement de la liste des periphériques
+2017-12-21 15:22:29,428 [1] INFO  SandBox.Program DownloadXML - [PeripheriqueManager] DownloadXML() - [DEBUT] Telechargement xml [DIDEROT]
+2017-12-21 15:22:33,485 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/devices/devices.asp?machine=DIDEROT
+2017-12-21 15:22:33,668 [1] ERROR SandBox.Program DownloadXML - System.Xml.XmlException: Données non valides au niveau racine. Ligne 1, position 1.
+   à System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   à System.Xml.XmlTextReaderImpl.Throw(String res, String arg)
+   à System.Xml.XmlTextReaderImpl.ParseRootLevelWhitespace()
+   à System.Xml.XmlTextReaderImpl.ParseDocumentContent()
+   à System.Xml.XmlTextReaderImpl.Read()
+   à System.Xml.XmlLoader.Load(XmlDocument doc, XmlReader reader, Boolean preserveWhitespace)
+   à System.Xml.XmlDocument.Load(XmlReader reader)
+   à System.Xml.XmlDocument.LoadXml(String xml)
+   à SandBox.PeripheriqueManager.DownloadXML() dans D:\ZwDev\SandBox\SandBox\GestionPeripheriques\PeripheriqueManager.cs:ligne 96
+2017-12-21 15:22:37,456 [1] INFO  SandBox.Program DownloadXML - [PeripheriqueManager] DownloadXML() - [FIN] Erreur de TelechargementSystem.IO.FileNotFoundException: Impossible de trouver le fichier 'C:\Users\Mathias\AppData\Local\Temp\telemaque_new_devices.xml'.
+Nom du fichier : 'C:\Users\Mathias\AppData\Local\Temp\telemaque_new_devices.xml'
+   à System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   à System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy)
+   à System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   à System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials)
+   à System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   à System.Xml.XmlReader.Create(String inputUri, XmlReaderSettings settings, XmlParserContext inputContext)
+   à System.Xml.XmlReader.Create(String inputUri, XmlReaderSettings settings)
+   à SandBox.PeripheriqueManager.DownloadXML() dans D:\ZwDev\SandBox\SandBox\GestionPeripheriques\PeripheriqueManager.cs:ligne 117

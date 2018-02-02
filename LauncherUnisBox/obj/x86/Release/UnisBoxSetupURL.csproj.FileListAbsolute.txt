@@ -1,0 +1,11 @@
+D:\ZwDev\SandBox\UnisBoxSetupURL\bin\Release\UnisBoxSetupURL.exe.manifest
+D:\ZwDev\SandBox\UnisBoxSetupURL\bin\Release\UnisBoxSetupURL.application
+D:\ZwDev\SandBox\UnisBoxSetupURL\bin\Release\UnisBoxSetupURL.exe
+D:\ZwDev\SandBox\UnisBoxSetupURL\bin\Release\UnisBoxSetupURL.pdb
+D:\ZwDev\SandBox\UnisBoxSetupURL\obj\x86\Release\UnisBoxSetupURL.Form1.resources
+D:\ZwDev\SandBox\UnisBoxSetupURL\obj\x86\Release\UnisBoxSetupURL.Properties.Resources.resources
+D:\ZwDev\SandBox\UnisBoxSetupURL\obj\x86\Release\UnisBoxSetupURL.csproj.GenerateResource.Cache
+D:\ZwDev\SandBox\UnisBoxSetupURL\obj\x86\Release\UnisBoxSetupURL.exe.manifest
+D:\ZwDev\SandBox\UnisBoxSetupURL\obj\x86\Release\UnisBoxSetupURL.application
+D:\ZwDev\SandBox\UnisBoxSetupURL\obj\x86\Release\UnisBoxSetupURL.exe
+D:\ZwDev\SandBox\UnisBoxSetupURL\obj\x86\Release\UnisBoxSetupURL.pdb

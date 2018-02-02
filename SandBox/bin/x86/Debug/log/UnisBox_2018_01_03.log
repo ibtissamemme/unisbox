@@ -1,0 +1,110 @@
+2018-01-03 10:24:49,388 [1] INFO  SandBox.Program Main - =============================================================================================
+2018-01-03 10:24:49,485 [1] INFO  SandBox.Program Main - Program.Main() Execution
+2018-01-03 10:24:49,791 [1] INFO  SandBox.Program Main - urlApplication=http://localhost/safeware/telemaque_new/
+2018-01-03 10:24:49,793 [1] INFO  SandBox.Program Main - nomApplication=TELEMAQUE
+2018-01-03 10:24:50,141 [1] INFO  SandBox.Program .ctor - [MAIN] init config log4net
+2018-01-03 10:24:50,164 [1] INFO  SandBox.Program .ctor - [MAIN] recup url application ico
+2018-01-03 10:24:50,183 [1] INFO  SandBox.Program RecupererUrl - [MAIN] RecupererUrl() [DEBUT]
+2018-01-03 10:24:50,186 [1] INFO  SandBox.Program RecupererUrl - [MAIN] RecupererUrl() [FIN] - URL:http://localhost/safeware/telemaque_new/
+2018-01-03 10:24:50,193 [1] INFO  SandBox.Program RecupererNomApplication - [MAIN] RecupererNomApplication() [DEBUT]
+2018-01-03 10:24:50,197 [1] INFO  SandBox.Program RecupererNomApplication - [MAIN] RecupererNomApplication() [FIN] - Nom Application : TELEMAQUE
+2018-01-03 10:24:50,333 [1] INFO  SandBox.Program MiseEnPlaceRaccourcis - [MAIN] MiseEnPlaceRaccourcis() - user.config = C:\Users\Mathias\AppData\Local\Safeware\TELEMAQUE_-_UnisBox.exe_Url_aiaikfhtrmhp0r5azgee1b213yqbr53x\1.0.8.98\user.config
+2018-01-03 10:24:50,904 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=about:blank
+2018-01-03 10:24:51,147 [1] INFO  SandBox.Program RecupererIcone - [MAIN] RecupererIcone() [DEBUT]
+2018-01-03 10:24:51,212 [1] ERROR SandBox.Program RecupererIcone - [MAIN] RecupererIcone() [ERROR] - System.Net.WebException: Impossible de trouver le fichier 'C:\Users\Mathias\AppData\Local\Temp\Telemaque_ico.ico'. ---> System.Net.WebException: Impossible de trouver le fichier 'C:\Users\Mathias\AppData\Local\Temp\Telemaque_ico.ico'. ---> System.IO.FileNotFoundException: Impossible de trouver le fichier 'C:\Users\Mathias\AppData\Local\Temp\Telemaque_ico.ico'.
+Nom du fichier : 'C:\Users\Mathias\AppData\Local\Temp\Telemaque_ico.ico'
+   à System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   à System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy)
+   à System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   à System.Net.FileWebStream..ctor(FileWebRequest request, String path, FileMode mode, FileAccess access, FileShare sharing, Int32 length, Boolean async)
+   à System.Net.FileWebResponse..ctor(FileWebRequest request, Uri uri, FileAccess access, Boolean asyncHint)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.FileWebResponse..ctor(FileWebRequest request, Uri uri, FileAccess access, Boolean asyncHint)
+   à System.Net.FileWebRequest.GetResponseCallback(Object state)
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.Net.FileWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   à System.Net.FileWebRequest.GetResponse()
+   à SandBox.Main.RecupererIcone() dans D:\ZwDev\SandBox\SandBox\Main.cs:ligne 985
+2018-01-03 10:24:51,222 [1] INFO  SandBox.Program RecupererVersion - [MAIN] RecupererVersion() [DEBUT]
+2018-01-03 10:24:51,488 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new//ChangeLog.txt
+2018-01-03 10:24:51,636 [1] INFO  SandBox.Program RecupererVersion - [MAIN] RecupererVersion() [FIN] - Version 1.9.3
+2018-01-03 10:24:51,646 [1] INFO  SandBox.Program RecupererPeripheriques - [Main] RecupererPeripheriques() - [DEBUT]
+2018-01-03 10:24:51,652 [1] INFO  SandBox.Program TraiterXML - [PeripheriqueManager] TraiterXML() - [DEBUT] Traitement de la liste des periphériques
+2018-01-03 10:24:51,658 [1] INFO  SandBox.Program DownloadXML - [PeripheriqueManager] DownloadXML() - [DEBUT] Telechargement xml [DIDEROT]
+2018-01-03 10:24:52,630 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/devices/devices.asp?machine=DIDEROT
+2018-01-03 10:24:52,852 [1] INFO  SandBox.Program DownloadXML - [PeripheriqueManager] DownloadXML() - [FIN] Telechargement xml termine
+2018-01-03 10:24:52,854 [1] INFO  SandBox.Program TraiterXML - [PeripheriqueManager] TraiterXML() - [FIN] Traitement de la liste des periphériques terminé
+2018-01-03 10:24:52,855 [1] INFO  SandBox.Program RecupererPeripheriques - [Main] RecupererPeripheriques() - Liste des peripherique:
+2018-01-03 10:24:52,858 [1] INFO  SandBox.Program RecupererPeripheriques - [Main] RecupererPeripheriques() - [FIN] Récuperation périphériques terminée
+2018-01-03 10:24:54,936 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/gestion/login.asp?machine=Diderot
+2018-01-03 10:24:54,938 [1] INFO  SandBox.Main webBrowser_Navigated - MachineName = DIDEROT
+2018-01-03 10:24:55,199 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/gestion/login.asp?machine=DIDEROT&sandbox=true
+2018-01-03 10:25:31,425 [1] INFO  SandBox.Program RecupererPeripheriques - [Main] RecupererPeripheriques() - [DEBUT]
+2018-01-03 10:25:31,430 [1] INFO  SandBox.Program TraiterXML - [PeripheriqueManager] TraiterXML() - [DEBUT] Traitement de la liste des periphériques
+2018-01-03 10:25:31,431 [1] INFO  SandBox.Program DownloadXML - [PeripheriqueManager] DownloadXML() - [DEBUT] Telechargement xml [DIDEROT]
+2018-01-03 10:25:31,608 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/devices/devices.asp?machine=DIDEROT
+2018-01-03 10:25:31,754 [1] INFO  SandBox.Program DownloadXML - [PeripheriqueManager] DownloadXML() - [FIN] Telechargement xml termine
+2018-01-03 10:25:31,755 [1] INFO  SandBox.Program TraiterXML - [PeripheriqueManager] TraiterXML() - [FIN] Traitement de la liste des periphériques terminé
+2018-01-03 10:25:31,758 [1] INFO  SandBox.Program RecupererPeripheriques - [Main] RecupererPeripheriques() - Liste des peripherique:
+2018-01-03 10:25:31,762 [1] INFO  SandBox.Program RecupererPeripheriques - [Main] RecupererPeripheriques() - [FIN] Récuperation périphériques terminée
+2018-01-03 10:25:33,330 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/gestion/login.asp?machine=DIDEROT&sandbox=true
+2018-01-03 10:25:42,120 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/gestion/liste_preenreg.asp
+2018-01-03 10:25:43,069 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/gestion/liste_preenreg.asp
+2018-01-03 10:25:44,842 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/admin/menu.asp?xml=menu.xml
+2018-01-03 10:25:45,224 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/admin/menu.asp?xml=menu.xml
+2018-01-03 10:25:55,237 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/admin/droit.asp
+2018-01-03 10:25:55,806 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/admin/droit.asp
+2018-01-03 10:25:58,322 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/admin/droit_edit.asp?droit_id=-1
+2018-01-03 10:25:58,698 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/admin/droit_edit.asp?droit_id=-1
+2018-01-03 10:26:36,368 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/gestion/message.asp?message=Edition+d'un+groupe+de+droit+validée.&class=ok&lib=Retour&bouton=../admin/droit.asp&image=retour
+2018-01-03 10:26:36,729 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/gestion/message.asp?message=Edition+d'un+groupe+de+droit+validée.&class=ok&lib=Retour&bouton=../admin/droit.asp&image=retour
+2018-01-03 10:26:39,107 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/gestion/login.asp?machine=Diderot
+2018-01-03 10:26:39,108 [1] INFO  SandBox.Main webBrowser_Navigated - MachineName = DIDEROT
+2018-01-03 10:26:39,354 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/gestion/login.asp?machine=DIDEROT&sandbox=true
+2018-01-03 10:26:44,625 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/badge/local_badge.asp
+2018-01-03 10:26:45,076 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/badge/local_badge.asp
+2018-01-03 10:26:47,202 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/admin/menu.asp?xml=menu.xml
+2018-01-03 10:26:47,517 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/admin/menu.asp?xml=menu.xml
+2018-01-03 10:26:58,247 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/admin/poste.asp
+2018-01-03 10:26:58,536 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/admin/poste.asp
+2018-01-03 10:27:01,611 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/admin/poste_edit.asp?poste=GIDE-PC
+2018-01-03 10:27:01,932 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/admin/poste_edit.asp?poste=GIDE-PC
+2018-01-03 10:27:13,151 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/gestion/message.asp?message=Edition+du+poste+validée.&class=ok&lib=Retour&bouton=../admin/poste.asp&image=retour
+2018-01-03 10:27:13,443 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/gestion/message.asp?message=Edition+du+poste+validée.&class=ok&lib=Retour&bouton=../admin/poste.asp&image=retour
+2018-01-03 10:27:14,773 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/admin/poste.asp
+2018-01-03 10:27:15,066 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/admin/poste.asp
+2018-01-03 10:27:19,805 [1] INFO  SandBox.Program RecupererPeripheriques - [Main] RecupererPeripheriques() - [DEBUT]
+2018-01-03 10:27:19,805 [1] INFO  SandBox.Program TraiterXML - [PeripheriqueManager] TraiterXML() - [DEBUT] Traitement de la liste des periphériques
+2018-01-03 10:27:19,806 [1] INFO  SandBox.Program DownloadXML - [PeripheriqueManager] DownloadXML() - [DEBUT] Telechargement xml [DIDEROT]
+2018-01-03 10:27:19,978 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/devices/devices.asp?machine=DIDEROT
+2018-01-03 10:27:20,111 [1] INFO  SandBox.Program DownloadXML - [PeripheriqueManager] DownloadXML() - [FIN] Telechargement xml termine
+2018-01-03 10:27:20,112 [1] INFO  SandBox.Program TraiterXML - [PeripheriqueManager] TraiterXML() - [FIN] Traitement de la liste des periphériques terminé
+2018-01-03 10:27:20,114 [1] INFO  SandBox.Program RecupererPeripheriques - [Main] RecupererPeripheriques() - Liste des peripherique:
+2018-01-03 10:27:20,117 [1] INFO  SandBox.Program RecupererPeripheriques - [Main] RecupererPeripheriques() - [FIN] Récuperation périphériques terminée
+2018-01-03 10:27:21,718 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/admin/poste.asp
+2018-01-03 10:27:22,102 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/admin/poste.asp
+2018-01-03 10:27:24,348 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/admin/menu.asp?xml=menu.xml
+2018-01-03 10:27:24,672 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/admin/menu.asp?xml=menu.xml
+2018-01-03 10:27:26,308 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/admin/xml.asp?xml=peripherique.xml
+2018-01-03 10:27:26,626 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/admin/xml.asp?xml=peripherique.xml
+2018-01-03 10:27:28,641 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/admin/menu.asp?xml=menu.xml
+2018-01-03 10:27:28,950 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/admin/menu.asp?xml=menu.xml
+2018-01-03 10:27:30,463 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/admin/poste_perif.asp
+2018-01-03 10:27:30,792 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/admin/poste_perif.asp
+2018-01-03 10:27:34,115 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/admin/poste_perif.asp
+2018-01-03 10:27:34,561 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/admin/poste_perif.asp
+2018-01-03 10:27:41,504 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/admin/poste_perif.asp
+2018-01-03 10:27:41,914 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/admin/poste_perif.asp
+2018-01-03 10:27:43,018 [1] INFO  SandBox.Program RecupererPeripheriques - [Main] RecupererPeripheriques() - [DEBUT]
+2018-01-03 10:27:43,019 [1] INFO  SandBox.Program TraiterXML - [PeripheriqueManager] TraiterXML() - [DEBUT] Traitement de la liste des periphériques
+2018-01-03 10:27:43,020 [1] INFO  SandBox.Program DownloadXML - [PeripheriqueManager] DownloadXML() - [DEBUT] Telechargement xml [DIDEROT]
+2018-01-03 10:27:43,208 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/devices/devices.asp?machine=DIDEROT
+2018-01-03 10:27:43,345 [1] INFO  SandBox.Program DownloadXML - [PeripheriqueManager] DownloadXML() - [FIN] Telechargement xml termine
+2018-01-03 10:27:43,347 [1] INFO  SandBox.Program TraiterXML - [PeripheriqueManager] TraiterXML() - [FIN] Traitement de la liste des periphériques terminé
+2018-01-03 10:27:43,348 [1] INFO  SandBox.Program RecupererPeripheriques - [Main] RecupererPeripheriques() - Liste des peripherique:
+2018-01-03 10:27:43,349 [1] INFO  SandBox.Program afficher - [PeripheriqueInfos]  Nom:Lecteur Ecran Clavier | type_port:PS2 | bit_seconde:0 | bit_donnees:0 | parite: | bit_arret: | controle_flux: | port: | webservice:http://localhost/safeware/ws_unis/WSDEVICE.asmx/ | ws_username:safeware | ws_password:B5Pxqukr9unnSk6/i6423Q== | traitement:BADGE | avant: | apres: | debut:0 | longueur:0 | longueur_max:0 | decoupe:0 | conversion:0
+2018-01-03 10:27:43,351 [1] INFO  SandBox.Program afficher - [PeripheriqueInfos]  Nom:SWISS READER | type_port:PS2 | bit_seconde:0 | bit_donnees:0 | parite: | bit_arret: | controle_flux: | port: | webservice:http://localhost/safeware/ws_unis/WSDEVICE.asmx/ | ws_username:safeware | ws_password:B5Pxqukr9unnSk6/i6423Q== | traitement:SWISS_READER | avant: | apres: | debut:0 | longueur:0 | longueur_max:0 | decoupe:0 | conversion:0
+2018-01-03 10:27:43,354 [1] INFO  SandBox.Program RecupererPeripheriques - [Main] RecupererPeripheriques() - [FIN] Récuperation périphériques terminée
+2018-01-03 10:27:44,863 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/admin/poste_perif.asp
+2018-01-03 10:27:45,153 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/admin/poste_perif.asp
+2018-01-03 10:27:46,650 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/index.asp?quit=true

@@ -1,0 +1,21 @@
+2017-12-21 15:22:50,887 [1] INFO  SandBox.Program Main - =============================================================================================
+2017-12-21 15:22:51,001 [1] INFO  SandBox.Program Main - Program.Main() Execution
+2017-12-21 15:22:51,144 [1] INFO  SandBox.Program Main - urlApplication=http://localhost/safeware/telemaque_new/
+2017-12-21 15:22:51,144 [1] INFO  SandBox.Program Main - nomApplication=TELEMAQUE
+2017-12-21 15:22:51,664 [1] INFO  SandBox.Program .ctor - [MAIN] init config log4net
+2017-12-21 15:22:51,681 [1] INFO  SandBox.Program .ctor - [MAIN] recup url application ico
+2017-12-21 15:22:51,724 [1] INFO  SandBox.Program RecupererUrl - [MAIN] RecupererUrl() [DEBUT]
+2017-12-21 15:22:51,737 [1] INFO  SandBox.Program RecupererUrl - [MAIN] RecupererUrl() [FIN] - URL:http://localhost/safeware/telemaque_new/
+2017-12-21 15:22:51,758 [1] INFO  SandBox.Program RecupererNomApplication - [MAIN] RecupererNomApplication() [DEBUT]
+2017-12-21 15:22:51,759 [1] INFO  SandBox.Program RecupererNomApplication - [MAIN] RecupererNomApplication() [FIN] - Nom Application : TELEMAQUE
+2017-12-21 15:22:51,823 [1] INFO  SandBox.Program MiseEnPlaceRaccourcis - [MAIN] MiseEnPlaceRaccourcis() - user.config = C:\Users\Mathias\AppData\Local\Safeware\TELEMAQUE_-_UnisBox.exe_Url_aiaikfhtrmhp0r5azgee1b213yqbr53x\1.0.8.98\user.config
+2017-12-21 15:22:52,099 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=about:blank
+2017-12-21 15:22:52,283 [1] INFO  SandBox.Program RecupererIcone - [MAIN] RecupererIcone() [DEBUT]
+2017-12-21 15:22:52,338 [1] INFO  SandBox.Program RecupererIcone - [MAIN] RecupererIcone() [FIN]
+2017-12-21 15:22:52,340 [1] INFO  SandBox.Program RecupererVersion - [MAIN] RecupererVersion() [DEBUT]
+2017-12-21 15:22:56,475 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new//ChangeLog.txt
+2017-12-21 15:22:56,668 [1] INFO  SandBox.Program RecupererVersion - [MAIN] RecupererVersion() [FIN] - LabelSiteVersion
+2017-12-21 15:22:56,679 [1] INFO  SandBox.Program RecupererPeripheriques - [Main] RecupererPeripheriques() - [DEBUT]
+2017-12-21 15:22:56,689 [1] INFO  SandBox.Program TraiterXML - [PeripheriqueManager] TraiterXML() - [DEBUT] Traitement de la liste des periphériques
+2017-12-21 15:22:56,693 [1] INFO  SandBox.Program DownloadXML - [PeripheriqueManager] DownloadXML() - [DEBUT] Telechargement xml [DIDEROT]
+2017-12-21 15:23:00,758 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/devices/devices.asp?machine=DIDEROT

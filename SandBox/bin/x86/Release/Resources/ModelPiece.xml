@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Pieces>
+	<Piece id ="1">
+		<Description>Carte d'identité FR</Description>
+		<Type_Piece> <DEBUT>0</DEBUT> <FIN>1</FIN> </Type_Piece>
+		<Code_Pays> <DEBUT>2</DEBUT> <FIN>4</FIN> </Code_Pays>
+		<Nom> <DEBUT>5</DEBUT> <FIN>29</FIN> </Nom>
+		<Departement> <DEBUT>30</DEBUT> <FIN>31</FIN> </Departement>
+		<Zone_Option> <DEBUT>32</DEBUT> <FIN>35</FIN> </Zone_Option>
+		<ID_Document> <DEBUT>36</DEBUT> <FIN>47</FIN> </ID_Document>
+		<Clef_1> <DEBUT>48</DEBUT> <FIN>48</FIN> </Clef_1>
+		<Prenom> <DEBUT>49</DEBUT> <FIN>62</FIN> </Prenom>
+		<Date_Naissance> <DEBUT>63</DEBUT> <FIN>68</FIN> </Date_Naissance>
+		<Clef_2> <DEBUT>69</DEBUT> <FIN>69</FIN> </Clef_2>
+		<Sexe> <DEBUT>70</DEBUT> <FIN>70</FIN> </Sexe>
+		<Clef_3> <DEBUT>71</DEBUT> <FIN>71</FIN> </Clef_3>
+	</Piece>
+
+	<Piece id ="2">
+		<Description>PassPort</Description>
+		<Type_Piece> <DEBUT>0</DEBUT> <FIN>1</FIN> </Type_Piece>
+		<Code_Pays>  <DEBUT>2</DEBUT> <FIN>4</FIN> </Code_Pays>
+		<NomPrenom> <DEBUT>5</DEBUT> <FIN>43</FIN> </NomPrenom>
+		<ID_Document> <DEBUT>44</DEBUT> <FIN>52</FIN> </ID_Document>
+		<Clef_1> <DEBUT>53</DEBUT> <FIN>53</FIN> </Clef_1>
+		<Nationalite> <DEBUT>54</DEBUT> <FIN>56</FIN> </Nationalite>
+		<Date_Naissance> <DEBUT>57</DEBUT> <FIN>62</FIN> </Date_Naissance>
+		<Clef_2> <DEBUT>63</DEBUT> <FIN>63</FIN> </Clef_2>
+		<Sexe> <DEBUT>64</DEBUT> <FIN>64</FIN> </Sexe>
+		<Date_Validite> <DEBUT>65</DEBUT> <FIN>70</FIN> </Date_Validite>
+		<Clef_3> <DEBUT>71</DEBUT> <FIN>71</FIN> </Clef_3>
+		<Zone_Option> <DEBUT>72</DEBUT> <FIN>85</FIN> </Zone_Option>
+		<Clef_4> <DEBUT>86</DEBUT> <FIN>86</FIN> </Clef_4>
+		<Clef_5> <DEBUT>87</DEBUT> <FIN>87</FIN> </Clef_5>
+	</Piece>
+
+	<Piece id ="3">
+		<Description>CIE</Description>
+		<Type_Piece> <DEBUT>0</DEBUT> <FIN>1</FIN> </Type_Piece>
+		<Code_Pays>  <DEBUT>2</DEBUT> <FIN>4</FIN> </Code_Pays>
+		<ID_Document> <DEBUT>5</DEBUT> <FIN>13</FIN> </ID_Document>
+		<Clef_1> <DEBUT>14</DEBUT> <FIN>14</FIN> </Clef_1>
+		<Zone_Option> <DEBUT>15</DEBUT> <FIN>29</FIN> </Zone_Option>
+		<Date_Naissance> <DEBUT>30</DEBUT> <FIN>35</FIN> </Date_Naissance>
+		<Clef_2> <DEBUT>36</DEBUT> <FIN>36</FIN> </Clef_2>
+		<Sexe> <DEBUT>37</DEBUT> <FIN>37</FIN> </Sexe>
+		<Date_Validite> <DEBUT>38</DEBUT> <FIN>43</FIN> </Date_Validite>
+		<Clef_3> <DEBUT>44</DEBUT> <FIN>44</FIN> </Clef_3>
+		<Nationalite> <DEBUT>45</DEBUT> <FIN>47</FIN> </Nationalite>
+		<Zone_Option2> <DEBUT>48</DEBUT> <FIN>58</FIN> </Zone_Option2>
+		<Clef_4> <DEBUT>59</DEBUT> <FIN>59</FIN> </Clef_4>
+		<NomPrenom> <DEBUT>60</DEBUT> <FIN>89</FIN> </NomPrenom>
+	</Piece>
+
+	<Piece id ="4">
+		<Description>Titre de Sejour FR</Description>
+		<Type_Piece> <DEBUT>0</DEBUT> <FIN>1</FIN> </Type_Piece>
+		<Code_Pays>  <DEBUT>2</DEBUT> <FIN>4</FIN> </Code_Pays>
+		<NomPrenom> <DEBUT>5</DEBUT> <FIN>35</FIN> </NomPrenom>
+		<ID_Document> <DEBUT>36</DEBUT> <FIN>44</FIN> </ID_Document>
+		<Clef_1> <DEBUT>45</DEBUT> <FIN>45</FIN> </Clef_1>
+		<Nationalite> <DEBUT>46</DEBUT> <FIN>48</FIN> </Nationalite>
+		<Date_Naissance> <DEBUT>49</DEBUT> <FIN>54</FIN> </Date_Naissance>
+		<Inconnu> <DEBUT>55</DEBUT> <FIN>55</FIN> </Inconnu>
+		<Sexe> <DEBUT>56</DEBUT> <FIN>56</FIN> </Sexe>
+		<Date_Validite> <DEBUT>57</DEBUT> <FIN>62</FIN> </Date_Validite>
+		<Clef_2> <DEBUT>63</DEBUT> <FIN>63</FIN> </Clef_2>
+		<Zone_Option> <DEBUT>64</DEBUT> <FIN>70</FIN> </Zone_Option>
+		<Clef_3> <DEBUT>71</DEBUT> <FIN>71</FIN> </Clef_3>
+	</Piece>
+
+	<Piece id ="5">
+		<Description>GC</Description>
+		<Type_Piece> <DEBUT>0</DEBUT> <FIN>1</FIN> </Type_Piece>
+		<Code_Pays>  <DEBUT>2</DEBUT> <FIN>4</FIN> </Code_Pays>
+		<NomPrenom> <DEBUT>5</DEBUT> <FIN>35</FIN> </NomPrenom>
+		<ID_Document> <DEBUT>36</DEBUT> <FIN>44</FIN> </ID_Document>
+		<Clef_1> <DEBUT>45</DEBUT> <FIN>45</FIN> </Clef_1>
+		<Nationalite> <DEBUT>46</DEBUT> <FIN>48</FIN> </Nationalite>
+		<Date_Naissance> <DEBUT>49</DEBUT> <FIN>54</FIN> </Date_Naissance>
+		<Inconnu> <DEBUT>55</DEBUT> <FIN>55</FIN> </Inconnu>
+		<Sexe> <DEBUT>56</DEBUT> <FIN>56</FIN> </Sexe>
+		<Date_Validite> <DEBUT>57</DEBUT> <FIN>62</FIN> </Date_Validite>
+		<Clef_2> <DEBUT>63</DEBUT> <FIN>63</FIN> </Clef_2>
+		<Zone_Option> <DEBUT>64</DEBUT> <FIN>70</FIN> </Zone_Option>
+		<Clef_3> <DEBUT>71</DEBUT> <FIN>71</FIN> </Clef_3>
+	</Piece>
+
+	<Piece id ="6">
+		<Description>C1 ou C2</Description>
+		<Type_Piece> <DEBUT>0</DEBUT> <FIN>1</FIN> </Type_Piece>
+		<Code_Pays>  <DEBUT>2</DEBUT> <FIN>4</FIN> </Code_Pays>
+		<ID_Document> <DEBUT>5</DEBUT> <FIN>13</FIN> </ID_Document>
+		<Clef_1> <DEBUT>14</DEBUT> <FIN>14</FIN> </Clef_1>
+		<Zone_Option> <DEBUT>15</DEBUT> <FIN>29</FIN> </Zone_Option>
+		<Date_Naissance> <DEBUT>30</DEBUT> <FIN>35</FIN> </Date_Naissance>
+		<Clef_2> <DEBUT>36</DEBUT> <FIN>36</FIN> </Clef_2>
+		<Sexe> <DEBUT>37</DEBUT> <FIN>37</FIN> </Sexe>
+		<Date_Validite> <DEBUT>38</DEBUT> <FIN>43</FIN> </Date_Validite>
+		<Clef_3> <DEBUT>44</DEBUT> <FIN>44</FIN> </Clef_3>
+		<Nationalite> <DEBUT>45</DEBUT> <FIN>47</FIN> </Nationalite>
+		<Zone_Option2> <DEBUT>48</DEBUT> <FIN>58</FIN> </Zone_Option2>
+		<Clef_4> <DEBUT>59</DEBUT> <FIN>59</FIN> </Clef_4>
+		<NomPrenom> <DEBUT>60</DEBUT> <FIN>89</FIN> </NomPrenom>
+	</Piece>
+
+  <Piece id ="7">
+    <Description>VISA Type A</Description>
+    <Type_Piece><DEBUT>0</DEBUT><FIN>1</FIN></Type_Piece>
+    <Code_Pays><DEBUT>2</DEBUT><FIN>4</FIN></Code_Pays>
+    <NomPrenom><DEBUT>5</DEBUT><FIN>43</FIN></NomPrenom>
+    <ID_Document><DEBUT>44</DEBUT><FIN>52</FIN></ID_Document>
+    <Clef_1><DEBUT>53</DEBUT><FIN>53</FIN></Clef_1>
+    <Nationalite><DEBUT>54</DEBUT><FIN>56</FIN></Nationalite>
+    <Date_Naissance><DEBUT>57</DEBUT><FIN>62</FIN></Date_Naissance>
+    <Clef_2><DEBUT>63</DEBUT><FIN>63</FIN></Clef_2>
+    <Sexe><DEBUT>64</DEBUT><FIN>64</FIN></Sexe>
+    <Date_Validite><DEBUT>65</DEBUT><FIN>70</FIN></Date_Validite>
+    <Clef_3><DEBUT>71</DEBUT><FIN>71</FIN></Clef_3>
+    <Zone_Option><DEBUT>72</DEBUT><FIN>87</FIN></Zone_Option>
+  </Piece>
+
+  <Piece id ="8">
+    <Description>VISA Type B</Description>
+    <Type_Piece><DEBUT>0</DEBUT><FIN>1</FIN></Type_Piece>
+    <Code_Pays><DEBUT>2</DEBUT><FIN>4</FIN></Code_Pays>
+    <NomPrenom><DEBUT>5</DEBUT><FIN>35</FIN></NomPrenom>
+    <ID_Document><DEBUT>36</DEBUT><FIN>44</FIN></ID_Document>
+    <Clef_1><DEBUT>45</DEBUT><FIN>45</FIN></Clef_1>
+    <Nationalite><DEBUT>46</DEBUT><FIN>48</FIN></Nationalite>
+    <Date_Naissance><DEBUT>49</DEBUT><FIN>54</FIN></Date_Naissance>
+    <Clef_2><DEBUT>55</DEBUT><FIN>55</FIN></Clef_2>
+    <Sexe><DEBUT>56</DEBUT><FIN>56</FIN></Sexe>
+    <Date_Validite><DEBUT>57</DEBUT><FIN>62</FIN></Date_Validite>
+    <Clef_3><DEBUT>63</DEBUT><FIN>63</FIN></Clef_3>
+    <Zone_Option><DEBUT>64</DEBUT><FIN>71</FIN></Zone_Option>
+  </Piece>  
+
+</Pieces>

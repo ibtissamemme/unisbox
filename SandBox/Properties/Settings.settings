@@ -1,0 +1,78 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SandBox.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="LibelleMessageDeister" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Demandez le transfert et posez le rondier...</Value>
+    </Setting>
+    <Setting Name="LibelleMessageMagneta" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Demandez le transfert et posez le rondier...</Value>
+    </Setting>
+    <Setting Name="LibelleTitreFenetreSRI" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">*************** ALERTE ***************</Value>
+    </Setting>
+    <Setting Name="PortSocket" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">8000</Value>
+    </Setting>
+    <Setting Name="LibelleMessageLecteurPortSerie" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Veuillez passer un badge...</Value>
+    </Setting>
+    <Setting Name="LibelleMessageQuitter" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Pour fermer l'application, veuillez cliquer sur le bouton Quitter.</Value>
+    </Setting>
+    <Setting Name="LibelleMessagePieceID" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Veuillez passer une pièce d'identité...</Value>
+    </Setting>
+    <Setting Name="LibelleTitreFenetreErreurReseau" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Problème concernant le réseau.</Value>
+    </Setting>
+    <Setting Name="LibelleTitreFenetreErreurPeripherique" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Problème concernant le périphérique</Value>
+    </Setting>
+    <Setting Name="LibelleTitreFenetreErreurRequete" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Problème concernant les requêtes.</Value>
+    </Setting>
+    <Setting Name="debug" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="LibelleMessageDataLogicPortSerie" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">En attente de lecture</Value>
+    </Setting>
+    <Setting Name="CodeSiteWIEGAND" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">0043</Value>
+    </Setting>
+    <Setting Name="isMachineName" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="forceMachineName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="CharNewLine" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">##</Value>
+    </Setting>
+    <Setting Name="UrlImageScreenSign" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="indexScreen" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="nomApplication" Type="System.String" Scope="User">
+      <Value Profile="(Default)">TELEMAQUE</Value>
+    </Setting>
+    <Setting Name="urlApplication" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://localhost/safeware/telemaque_new/</Value>
+    </Setting>
+    <Setting Name="indexScreenSign" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="showLoading" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="cookieHttpOnly" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="labelRedDevice" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Veuillez cliquer sur cette barre pour connecter les lecteurs de badge et d'identité</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

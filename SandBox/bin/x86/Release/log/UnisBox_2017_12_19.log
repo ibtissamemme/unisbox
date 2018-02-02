@@ -1,0 +1,124 @@
+2017-12-19 09:35:33,113 [1] INFO  SandBox.Program Main - =============================================================================================
+2017-12-19 09:35:33,163 [1] INFO  SandBox.Program Main - Program.Main() Execution
+2017-12-19 09:35:33,212 [1] INFO  SandBox.Program Main - urlApplication=http://localhost/safeware/telemaque_new/
+2017-12-19 09:35:33,213 [1] INFO  SandBox.Program Main - nomApplication=TELEMAQUE
+2017-12-19 09:35:33,400 [1] INFO  SandBox.Program .ctor - [MAIN] init config log4net
+2017-12-19 09:35:33,422 [1] INFO  SandBox.Program .ctor - [MAIN] recup url application ico
+2017-12-19 09:35:33,432 [1] INFO  SandBox.Program RecupererUrl - [MAIN] RecupererUrl() [DEBUT]
+2017-12-19 09:35:33,433 [1] INFO  SandBox.Program RecupererUrl - [MAIN] RecupererUrl() [FIN] - URL:http://localhost/safeware/telemaque_new/
+2017-12-19 09:35:33,438 [1] INFO  SandBox.Program RecupererNomApplication - [MAIN] RecupererNomApplication() [DEBUT]
+2017-12-19 09:35:33,439 [1] INFO  SandBox.Program RecupererNomApplication - [MAIN] RecupererNomApplication() [FIN] - Nom Application : TELEMAQUE
+2017-12-19 09:35:33,544 [1] INFO  SandBox.Program MiseEnPlaceRaccourcis - [MAIN] MiseEnPlaceRaccourcis() - user.config = C:\Users\Gide\AppData\Local\Safeware\TELEMAQUE_-_UnisBox.exe_Url_whdkfzl5hqa5cn4u5k4ridulpe2ppkjs\1.0.8.98\user.config
+2017-12-19 09:35:33,806 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=about:blank
+2017-12-19 09:35:33,970 [1] INFO  SandBox.Program RecupererIcone - [MAIN] RecupererIcone() [DEBUT]
+2017-12-19 09:35:33,975 [1] INFO  SandBox.Program RecupererIcone - [MAIN] RecupererIcone() [FIN]
+2017-12-19 09:35:33,978 [1] INFO  SandBox.Program RecupererVersion - [MAIN] RecupererVersion() [DEBUT]
+2017-12-19 09:35:34,030 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new//ChangeLog.txt
+2017-12-19 09:35:34,156 [1] INFO  SandBox.Program RecupererVersion - [MAIN] RecupererVersion() [FIN] - Version 1.9.3
+2017-12-19 09:35:34,164 [1] INFO  SandBox.Program RecupererPeripheriques - [Main] RecupererPeripheriques() - [DEBUT]
+2017-12-19 09:35:34,169 [1] INFO  SandBox.Program TraiterXML - [PeripheriqueManager] TraiterXML() - [DEBUT] Traitement de la liste des periphériques
+2017-12-19 09:35:34,174 [1] INFO  SandBox.Program DownloadXML - [PeripheriqueManager] DownloadXML() - [DEBUT] Telechargement xml [GIDE-PC]
+2017-12-19 09:35:35,626 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/devices/devices.asp?machine=GIDE-PC
+2017-12-19 09:35:35,902 [1] INFO  SandBox.Program DownloadXML - [PeripheriqueManager] DownloadXML() - [FIN] Telechargement xml termine
+2017-12-19 09:35:35,903 [1] INFO  SandBox.Program TraiterXML - [PeripheriqueManager] TraiterXML() - [FIN] Traitement de la liste des periphériques terminé
+2017-12-19 09:35:35,904 [1] INFO  SandBox.Program RecupererPeripheriques - [Main] RecupererPeripheriques() - Liste des peripherique:
+2017-12-19 09:35:35,906 [1] INFO  SandBox.Program afficher - [PeripheriqueInfos]  Nom:Lecteur Ecran Clavier | type_port:PS2 | bit_seconde:0 | bit_donnees:0 | parite: | bit_arret: | controle_flux: | port: | webservice:http://localhost/safeware/ws_unis/WSDEVICE.asmx/ | ws_username:safeware | ws_password:B5Pxqukr9unnSk6/i6423Q== | traitement:BADGE | avant: | apres: | debut:0 | longueur:0 | longueur_max:0 | decoupe:0 | conversion:0
+2017-12-19 09:35:35,911 [1] INFO  SandBox.Program afficher - [PeripheriqueInfos]  Nom:signature surface | type_port: | bit_seconde:0 | bit_donnees:0 | parite: | bit_arret: | controle_flux: | port: | webservice:http://localhost/safeware/ws_unis/WSDEVICE.asmx/ | ws_username:safeware | ws_password:B5Pxqukr9unnSk6/i6423Q== | traitement:SIGN_SCREEN_TABLET | avant: | apres: | debut:0 | longueur:0 | longueur_max:0 | decoupe:0 | conversion:0
+2017-12-19 09:35:35,916 [1] INFO  SandBox.Program afficher - [PeripheriqueInfos]  Nom:SWISS READER | type_port:PS2 | bit_seconde:0 | bit_donnees:0 | parite: | bit_arret: | controle_flux: | port: | webservice:http://localhost/safeware/ws_unis/WSDEVICE.asmx/ | ws_username:safeware | ws_password:B5Pxqukr9unnSk6/i6423Q== | traitement:SWISS_READER | avant: | apres: | debut:0 | longueur:0 | longueur_max:0 | decoupe:0 | conversion:0
+2017-12-19 09:35:35,919 [1] INFO  SandBox.Program RecupererPeripheriques - [Main] RecupererPeripheriques() - [FIN] Récuperation périphériques terminée
+2017-12-19 09:35:36,894 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/gestion/login.asp?machine=Gide-PC
+2017-12-19 09:35:36,898 [1] INFO  SandBox.Main webBrowser_Navigated - MachineName = GIDE-PC
+2017-12-19 09:35:37,091 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/gestion/login.asp?machine=GIDE-PC&sandbox=true
+2017-12-19 09:36:56,382 [1] INFO  SandBox.Program Main - =============================================================================================
+2017-12-19 09:36:56,413 [1] INFO  SandBox.Program Main - Program.Main() Execution
+2017-12-19 09:36:56,468 [1] INFO  SandBox.Program Main - urlApplication=http://localhost/safeware/telemaque_new/
+2017-12-19 09:36:56,468 [1] INFO  SandBox.Program Main - nomApplication=TELEMAQUE
+2017-12-19 09:36:56,578 [1] INFO  SandBox.Program .ctor - [MAIN] init config log4net
+2017-12-19 09:36:56,591 [1] INFO  SandBox.Program .ctor - [MAIN] recup url application ico
+2017-12-19 09:36:56,600 [1] INFO  SandBox.Program RecupererUrl - [MAIN] RecupererUrl() [DEBUT]
+2017-12-19 09:36:56,601 [1] INFO  SandBox.Program RecupererUrl - [MAIN] RecupererUrl() [FIN] - URL:http://localhost/safeware/telemaque_new/
+2017-12-19 09:36:56,604 [1] INFO  SandBox.Program RecupererNomApplication - [MAIN] RecupererNomApplication() [DEBUT]
+2017-12-19 09:36:56,605 [1] INFO  SandBox.Program RecupererNomApplication - [MAIN] RecupererNomApplication() [FIN] - Nom Application : TELEMAQUE
+2017-12-19 09:36:56,650 [1] INFO  SandBox.Program MiseEnPlaceRaccourcis - [MAIN] MiseEnPlaceRaccourcis() - user.config = C:\Users\Gide\AppData\Local\Safeware\TELEMAQUE_-_UnisBox.exe_Url_whdkfzl5hqa5cn4u5k4ridulpe2ppkjs\1.0.8.98\user.config
+2017-12-19 09:36:56,767 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=about:blank
+2017-12-19 09:36:56,939 [1] INFO  SandBox.Program RecupererIcone - [MAIN] RecupererIcone() [DEBUT]
+2017-12-19 09:36:56,945 [1] INFO  SandBox.Program RecupererIcone - [MAIN] RecupererIcone() [FIN]
+2017-12-19 09:36:56,948 [1] INFO  SandBox.Program RecupererVersion - [MAIN] RecupererVersion() [DEBUT]
+2017-12-19 09:36:57,037 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new//ChangeLog.txt
+2017-12-19 09:36:57,153 [1] INFO  SandBox.Program RecupererVersion - [MAIN] RecupererVersion() [FIN] - Version 1.9.3
+2017-12-19 09:36:57,160 [1] INFO  SandBox.Program RecupererPeripheriques - [Main] RecupererPeripheriques() - [DEBUT]
+2017-12-19 09:36:57,165 [1] INFO  SandBox.Program TraiterXML - [PeripheriqueManager] TraiterXML() - [DEBUT] Traitement de la liste des periphériques
+2017-12-19 09:36:57,168 [1] INFO  SandBox.Program DownloadXML - [PeripheriqueManager] DownloadXML() - [DEBUT] Telechargement xml [GIDE-PC]
+2017-12-19 09:36:57,405 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/devices/devices.asp?machine=GIDE-PC
+2017-12-19 09:36:57,596 [1] INFO  SandBox.Program DownloadXML - [PeripheriqueManager] DownloadXML() - [FIN] Telechargement xml termine
+2017-12-19 09:36:57,598 [1] INFO  SandBox.Program TraiterXML - [PeripheriqueManager] TraiterXML() - [FIN] Traitement de la liste des periphériques terminé
+2017-12-19 09:36:57,599 [1] INFO  SandBox.Program RecupererPeripheriques - [Main] RecupererPeripheriques() - Liste des peripherique:
+2017-12-19 09:36:57,602 [1] INFO  SandBox.Program afficher - [PeripheriqueInfos]  Nom:Lecteur Ecran Clavier | type_port:PS2 | bit_seconde:0 | bit_donnees:0 | parite: | bit_arret: | controle_flux: | port: | webservice:http://localhost/safeware/ws_unis/WSDEVICE.asmx/ | ws_username:safeware | ws_password:B5Pxqukr9unnSk6/i6423Q== | traitement:BADGE | avant: | apres: | debut:0 | longueur:0 | longueur_max:0 | decoupe:0 | conversion:0
+2017-12-19 09:36:57,604 [1] INFO  SandBox.Program afficher - [PeripheriqueInfos]  Nom:signature surface | type_port: | bit_seconde:0 | bit_donnees:0 | parite: | bit_arret: | controle_flux: | port: | webservice:http://localhost/safeware/ws_unis/WSDEVICE.asmx/ | ws_username:safeware | ws_password:B5Pxqukr9unnSk6/i6423Q== | traitement:SIGN_SCREEN_TABLET | avant: | apres: | debut:0 | longueur:0 | longueur_max:0 | decoupe:0 | conversion:0
+2017-12-19 09:36:57,619 [1] INFO  SandBox.Program afficher - [PeripheriqueInfos]  Nom:SWISS READER | type_port:PS2 | bit_seconde:0 | bit_donnees:0 | parite: | bit_arret: | controle_flux: | port: | webservice:http://localhost/safeware/ws_unis/WSDEVICE.asmx/ | ws_username:safeware | ws_password:B5Pxqukr9unnSk6/i6423Q== | traitement:SWISS_READER | avant: | apres: | debut:0 | longueur:0 | longueur_max:0 | decoupe:0 | conversion:0
+2017-12-19 09:36:57,621 [1] INFO  SandBox.Program RecupererPeripheriques - [Main] RecupererPeripheriques() - [FIN] Récuperation périphériques terminée
+2017-12-19 09:36:57,773 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/gestion/login.asp?machine=Gide-PC
+2017-12-19 09:36:57,774 [1] INFO  SandBox.Main webBrowser_Navigated - MachineName = GIDE-PC
+2017-12-19 09:36:57,919 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/gestion/login.asp?machine=GIDE-PC&sandbox=true
+2017-12-19 09:37:05,770 [1] INFO  SandBox.Program Main - =============================================================================================
+2017-12-19 09:37:05,802 [1] INFO  SandBox.Program Main - Program.Main() Execution
+2017-12-19 09:37:05,868 [1] INFO  SandBox.Program Main - urlApplication=http://localhost/safeware/telemaque_new/
+2017-12-19 09:37:05,869 [1] INFO  SandBox.Program Main - nomApplication=TELEMAQUE
+2017-12-19 09:37:05,964 [1] INFO  SandBox.Program .ctor - [MAIN] init config log4net
+2017-12-19 09:37:05,978 [1] INFO  SandBox.Program .ctor - [MAIN] recup url application ico
+2017-12-19 09:37:05,986 [1] INFO  SandBox.Program RecupererUrl - [MAIN] RecupererUrl() [DEBUT]
+2017-12-19 09:37:05,986 [1] INFO  SandBox.Program RecupererUrl - [MAIN] RecupererUrl() [FIN] - URL:http://localhost/safeware/telemaque_new/
+2017-12-19 09:37:05,990 [1] INFO  SandBox.Program RecupererNomApplication - [MAIN] RecupererNomApplication() [DEBUT]
+2017-12-19 09:37:05,991 [1] INFO  SandBox.Program RecupererNomApplication - [MAIN] RecupererNomApplication() [FIN] - Nom Application : TELEMAQUE
+2017-12-19 09:37:06,035 [1] INFO  SandBox.Program MiseEnPlaceRaccourcis - [MAIN] MiseEnPlaceRaccourcis() - user.config = C:\Users\Gide\AppData\Local\Safeware\TELEMAQUE_-_UnisBox.exe_Url_whdkfzl5hqa5cn4u5k4ridulpe2ppkjs\1.0.8.98\user.config
+2017-12-19 09:37:06,138 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=about:blank
+2017-12-19 09:37:06,289 [1] INFO  SandBox.Program RecupererIcone - [MAIN] RecupererIcone() [DEBUT]
+2017-12-19 09:37:06,292 [1] INFO  SandBox.Program RecupererIcone - [MAIN] RecupererIcone() [FIN]
+2017-12-19 09:37:06,294 [1] INFO  SandBox.Program RecupererVersion - [MAIN] RecupererVersion() [DEBUT]
+2017-12-19 09:37:06,390 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new//ChangeLog.txt
+2017-12-19 09:37:06,508 [1] INFO  SandBox.Program RecupererVersion - [MAIN] RecupererVersion() [FIN] - Version 1.9.3
+2017-12-19 09:37:06,514 [1] INFO  SandBox.Program RecupererPeripheriques - [Main] RecupererPeripheriques() - [DEBUT]
+2017-12-19 09:37:06,517 [1] INFO  SandBox.Program TraiterXML - [PeripheriqueManager] TraiterXML() - [DEBUT] Traitement de la liste des periphériques
+2017-12-19 09:37:06,521 [1] INFO  SandBox.Program DownloadXML - [PeripheriqueManager] DownloadXML() - [DEBUT] Telechargement xml [GIDE-PC]
+2017-12-19 09:37:06,659 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/devices/devices.asp?machine=GIDE-PC
+2017-12-19 09:37:06,833 [1] INFO  SandBox.Program DownloadXML - [PeripheriqueManager] DownloadXML() - [FIN] Telechargement xml termine
+2017-12-19 09:37:06,834 [1] INFO  SandBox.Program TraiterXML - [PeripheriqueManager] TraiterXML() - [FIN] Traitement de la liste des periphériques terminé
+2017-12-19 09:37:06,835 [1] INFO  SandBox.Program RecupererPeripheriques - [Main] RecupererPeripheriques() - Liste des peripherique:
+2017-12-19 09:37:06,837 [1] INFO  SandBox.Program afficher - [PeripheriqueInfos]  Nom:Lecteur Ecran Clavier | type_port:PS2 | bit_seconde:0 | bit_donnees:0 | parite: | bit_arret: | controle_flux: | port: | webservice:http://localhost/safeware/ws_unis/WSDEVICE.asmx/ | ws_username:safeware | ws_password:B5Pxqukr9unnSk6/i6423Q== | traitement:BADGE | avant: | apres: | debut:0 | longueur:0 | longueur_max:0 | decoupe:0 | conversion:0
+2017-12-19 09:37:06,839 [1] INFO  SandBox.Program afficher - [PeripheriqueInfos]  Nom:signature surface | type_port: | bit_seconde:0 | bit_donnees:0 | parite: | bit_arret: | controle_flux: | port: | webservice:http://localhost/safeware/ws_unis/WSDEVICE.asmx/ | ws_username:safeware | ws_password:B5Pxqukr9unnSk6/i6423Q== | traitement:SIGN_SCREEN_TABLET | avant: | apres: | debut:0 | longueur:0 | longueur_max:0 | decoupe:0 | conversion:0
+2017-12-19 09:37:07,011 [1] INFO  SandBox.Program afficher - [PeripheriqueInfos]  Nom:SWISS READER | type_port:PS2 | bit_seconde:0 | bit_donnees:0 | parite: | bit_arret: | controle_flux: | port: | webservice:http://localhost/safeware/ws_unis/WSDEVICE.asmx/ | ws_username:safeware | ws_password:B5Pxqukr9unnSk6/i6423Q== | traitement:SWISS_READER | avant: | apres: | debut:0 | longueur:0 | longueur_max:0 | decoupe:0 | conversion:0
+2017-12-19 09:37:07,017 [1] INFO  SandBox.Program RecupererPeripheriques - [Main] RecupererPeripheriques() - [FIN] Récuperation périphériques terminée
+2017-12-19 09:37:07,153 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/gestion/login.asp?machine=Gide-PC
+2017-12-19 09:37:07,154 [1] INFO  SandBox.Main webBrowser_Navigated - MachineName = GIDE-PC
+2017-12-19 09:37:07,285 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/gestion/login.asp?machine=GIDE-PC&sandbox=true
+2017-12-19 09:37:20,978 [1] INFO  SandBox.Program Main - =============================================================================================
+2017-12-19 09:37:21,015 [1] INFO  SandBox.Program Main - Program.Main() Execution
+2017-12-19 09:37:21,075 [1] INFO  SandBox.Program Main - urlApplication=http://localhost/safeware/telemaque_new/
+2017-12-19 09:37:21,076 [1] INFO  SandBox.Program Main - nomApplication=TELEMAQUE
+2017-12-19 09:37:21,189 [1] INFO  SandBox.Program .ctor - [MAIN] init config log4net
+2017-12-19 09:37:21,203 [1] INFO  SandBox.Program .ctor - [MAIN] recup url application ico
+2017-12-19 09:37:21,211 [1] INFO  SandBox.Program RecupererUrl - [MAIN] RecupererUrl() [DEBUT]
+2017-12-19 09:37:21,211 [1] INFO  SandBox.Program RecupererUrl - [MAIN] RecupererUrl() [FIN] - URL:http://localhost/safeware/telemaque_new/
+2017-12-19 09:37:21,215 [1] INFO  SandBox.Program RecupererNomApplication - [MAIN] RecupererNomApplication() [DEBUT]
+2017-12-19 09:37:21,216 [1] INFO  SandBox.Program RecupererNomApplication - [MAIN] RecupererNomApplication() [FIN] - Nom Application : TELEMAQUE
+2017-12-19 09:37:21,263 [1] INFO  SandBox.Program MiseEnPlaceRaccourcis - [MAIN] MiseEnPlaceRaccourcis() - user.config = C:\Users\Gide\AppData\Local\Safeware\TELEMAQUE_-_UnisBox.exe_Url_whdkfzl5hqa5cn4u5k4ridulpe2ppkjs\1.0.8.98\user.config
+2017-12-19 09:37:21,377 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=about:blank
+2017-12-19 09:37:21,562 [1] INFO  SandBox.Program RecupererIcone - [MAIN] RecupererIcone() [DEBUT]
+2017-12-19 09:37:21,570 [1] INFO  SandBox.Program RecupererIcone - [MAIN] RecupererIcone() [FIN]
+2017-12-19 09:37:21,572 [1] INFO  SandBox.Program RecupererVersion - [MAIN] RecupererVersion() [DEBUT]
+2017-12-19 09:37:21,662 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new//ChangeLog.txt
+2017-12-19 09:37:21,779 [1] INFO  SandBox.Program RecupererVersion - [MAIN] RecupererVersion() [FIN] - Version 1.9.3
+2017-12-19 09:37:21,787 [1] INFO  SandBox.Program RecupererPeripheriques - [Main] RecupererPeripheriques() - [DEBUT]
+2017-12-19 09:37:21,791 [1] INFO  SandBox.Program TraiterXML - [PeripheriqueManager] TraiterXML() - [DEBUT] Traitement de la liste des periphériques
+2017-12-19 09:37:21,795 [1] INFO  SandBox.Program DownloadXML - [PeripheriqueManager] DownloadXML() - [DEBUT] Telechargement xml [GIDE-PC]
+2017-12-19 09:37:22,043 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/devices/devices.asp?machine=GIDE-PC
+2017-12-19 09:37:22,198 [1] INFO  SandBox.Program DownloadXML - [PeripheriqueManager] DownloadXML() - [FIN] Telechargement xml termine
+2017-12-19 09:37:22,202 [1] INFO  SandBox.Program TraiterXML - [PeripheriqueManager] TraiterXML() - [FIN] Traitement de la liste des periphériques terminé
+2017-12-19 09:37:22,203 [1] INFO  SandBox.Program RecupererPeripheriques - [Main] RecupererPeripheriques() - Liste des peripherique:
+2017-12-19 09:37:22,204 [1] INFO  SandBox.Program afficher - [PeripheriqueInfos]  Nom:Lecteur Ecran Clavier | type_port:PS2 | bit_seconde:0 | bit_donnees:0 | parite: | bit_arret: | controle_flux: | port: | webservice:http://localhost/safeware/ws_unis/WSDEVICE.asmx/ | ws_username:safeware | ws_password:B5Pxqukr9unnSk6/i6423Q== | traitement:BADGE | avant: | apres: | debut:0 | longueur:0 | longueur_max:0 | decoupe:0 | conversion:0
+2017-12-19 09:37:22,206 [1] INFO  SandBox.Program afficher - [PeripheriqueInfos]  Nom:signature surface | type_port: | bit_seconde:0 | bit_donnees:0 | parite: | bit_arret: | controle_flux: | port: | webservice:http://localhost/safeware/ws_unis/WSDEVICE.asmx/ | ws_username:safeware | ws_password:B5Pxqukr9unnSk6/i6423Q== | traitement:SIGN_SCREEN_TABLET | avant: | apres: | debut:0 | longueur:0 | longueur_max:0 | decoupe:0 | conversion:0
+2017-12-19 09:37:22,270 [1] INFO  SandBox.Program afficher - [PeripheriqueInfos]  Nom:SWISS READER | type_port:PS2 | bit_seconde:0 | bit_donnees:0 | parite: | bit_arret: | controle_flux: | port: | webservice:http://localhost/safeware/ws_unis/WSDEVICE.asmx/ | ws_username:safeware | ws_password:B5Pxqukr9unnSk6/i6423Q== | traitement:SWISS_READER | avant: | apres: | debut:0 | longueur:0 | longueur_max:0 | decoupe:0 | conversion:0
+2017-12-19 09:37:22,271 [1] INFO  SandBox.Program RecupererPeripheriques - [Main] RecupererPeripheriques() - [FIN] Récuperation périphériques terminée
+2017-12-19 09:37:22,504 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/gestion/login.asp?machine=Gide-PC
+2017-12-19 09:37:22,505 [1] INFO  SandBox.Main webBrowser_Navigated - MachineName = GIDE-PC
+2017-12-19 09:37:22,693 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://localhost/safeware/telemaque_new/gestion/login.asp?machine=GIDE-PC&sandbox=true
