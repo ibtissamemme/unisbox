@@ -186,14 +186,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TELEMAQUE - UnisBox.exe" size="3709848">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TELEMAQUE - UnisBox.exe" size="3710360">
       <assemblyIdentity name="TELEMAQUE - UnisBox" version="1.0.8.98" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>+ojeDmT2ojHs+3i8dg3k4jLrimw=</dsig:DigestValue>
+        <dsig:DigestValue>2wL1ueT7kG0DbuHbIAkzagSU3kc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -953,13 +953,13 @@
       <dsig:DigestValue>IdG2ZCbCCmPStypIiT+tZWfzDMs=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="TELEMAQUE - UnisBox.exe.config" size="4576">
+  <file name="TELEMAQUE - UnisBox.exe.config" size="4563">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>8BpY+LKL2LbpzrK5YqznSi3KBsQ=</dsig:DigestValue>
+      <dsig:DigestValue>KLshDgYuvRat6IJUU6pAfmhZGH8=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Telemaque.ico" size="9062">

@@ -12,7 +12,7 @@ namespace SandBox.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.5.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.6.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -169,18 +169,6 @@ namespace SandBox.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string UrlImageScreenSign {
-            get {
-                return ((string)(this["UrlImageScreenSign"]));
-            }
-            set {
-                this["UrlImageScreenSign"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
         public int indexScreen {
             get {
@@ -203,30 +191,6 @@ namespace SandBox.Properties {
             }
         }
         
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost/safeware/telemaque_new/")]
-        public string urlApplication {
-            get {
-                return ((string)(this["urlApplication"]));
-            }
-            set {
-                this["urlApplication"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("2")]
-        public int indexScreenSign {
-            get {
-                return ((int)(this["indexScreenSign"]));
-            }
-            set {
-                this["indexScreenSign"] = value;
-            }
-        }
-        
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("True")]
@@ -238,20 +202,56 @@ namespace SandBox.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Veuillez cliquer sur cette barre pour connecter les lecteurs de badge et d\'identi" +
+            "té")]
+        public string labelRedDevice {
+            get {
+                return ((string)(this["labelRedDevice"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
         public bool cookieHttpOnly {
             get {
                 return ((bool)(this["cookieHttpOnly"]));
             }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Veuillez cliquer sur cette barre pour connecter les lecteurs de badge et d\'identi" +
-            "té")]
-        public string labelRedDevice {
+        [global::System.Configuration.DefaultSettingValueAttribute("https://apod.nasa.gov/apod/image/1804/NGC3324_SHO.jpg")]
+        public string UrlImageScreenSign {
             get {
-                return ((string)(this["labelRedDevice"]));
+                return ((string)(this["UrlImageScreenSign"]));
+            }
+            set {
+                this["UrlImageScreenSign"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public int indexScreenSign {
+            get {
+                return ((int)(this["indexScreenSign"]));
+            }
+            set {
+                this["indexScreenSign"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://172.16.1.62/pollen/")]
+        public string urlApplication {
+            get {
+                return ((string)(this["urlApplication"]));
+            }
+            set {
+                this["urlApplication"] = value;
             }
         }
     }

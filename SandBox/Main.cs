@@ -262,7 +262,10 @@ namespace SandBox
                         RecupererIcone();
                         RecupererVersion();
 
-                        //RecupererPeripheriques();
+                        if (!SandBox.Properties.Settings.Default.cookieHttpOnly)
+                        {
+                            RecupererPeripheriques();
+                        }
 
                         isFirstTime = false;
 
@@ -277,6 +280,13 @@ namespace SandBox
                         };*/
                         webBrowser.Show();
 
+                    }
+                    else
+                    {
+                        if (urlFrame != "")
+                            webBrowser.Document.Window.Frames[0].Navigate(url);
+                        else
+                            webBrowser.Url = url;
                     }
 
                 }
@@ -1993,15 +2003,27 @@ namespace SandBox
                 //SignScreenManager.Lecture_signature(@"O:\Partage\_doc_interxion\SUIVI_IX_SFW_P3P5_2013_04_18_fr.pdf");
                 string pdf = "", message = "";
 
-                if (webBrowser.Document.GetElementById("ipopup") != null && webBrowser.Document.Window.Frames["ipopup"].Document.GetElementById("sign_pdf") != null)
+                if (webBrowser.Document.GetElementById("ipopup") != null)
                 {
-                    pdf = webBrowser.Document.Window.Frames["ipopup"].Document.GetElementById("sign_pdf").GetAttribute("value");
+                    if (webBrowser.Document.Window.Frames["ipopup"].Document.GetElementById("sign_pdf") != null)
+                    {
+                        pdf = webBrowser.Document.Window.Frames["ipopup"].Document.GetElementById("sign_pdf").GetAttribute("value");
+                    }
+                    if (webBrowser.Document.Window.Frames["ipopup"].Document.GetElementById("sign_pdf_id") != null)
+                    {
+                        pdf = urlApplication + "gestion/show_file.asp?id=" + webBrowser.Document.Window.Frames["ipopup"].Document.GetElementById("sign_pdf_id").GetAttribute("value");
+                    }
                 }
                 else
                 {
                     if (webBrowser.Document.GetElementById("sign_pdf") != null)
                         pdf = webBrowser.Document.GetElementById("sign_pdf").GetAttribute("value");
+
+                    if (webBrowser.Document.GetElementById("sign_pdf_id") != null)
+                        pdf = urlApplication + "gestion/show_file.asp?id=" + webBrowser.Document.GetElementById("sign_pdf_id").GetAttribute("value");
                 }
+
+
                 if (webBrowser.Document.GetElementById("ipopup") != null && webBrowser.Document.Window.Frames["ipopup"].Document.GetElementById("sign_pdf_message") != null)
                 {
                     message = webBrowser.Document.Window.Frames["ipopup"].Document.GetElementById("sign_pdf_message").GetAttribute("value");
@@ -2025,15 +2047,27 @@ namespace SandBox
             //SignScreenManager.Lecture_signature(@"O:\Partage\_doc_interxion\SUIVI_IX_SFW_P3P5_2013_04_18_fr.pdf");
             string pdf = "", message = "";
 
-            if (webBrowser.Document.GetElementById("ipopup") != null && webBrowser.Document.Window.Frames["ipopup"].Document.GetElementById("sign_pdf") != null)
+            if (webBrowser.Document.GetElementById("ipopup") != null)
             {
-                pdf = webBrowser.Document.Window.Frames["ipopup"].Document.GetElementById("sign_pdf").GetAttribute("value");
+                if (webBrowser.Document.Window.Frames["ipopup"].Document.GetElementById("sign_pdf") != null)
+                {
+                    pdf = webBrowser.Document.Window.Frames["ipopup"].Document.GetElementById("sign_pdf").GetAttribute("value");
+                }
+                if (webBrowser.Document.Window.Frames["ipopup"].Document.GetElementById("sign_pdf_id") != null)
+                {
+                    pdf = urlApplication + "/gestion/show_file.asp?id=" + webBrowser.Document.Window.Frames["ipopup"].Document.GetElementById("sign_pdf_id").GetAttribute("value");
+                }
             }
             else
             {
                 if (webBrowser.Document.GetElementById("sign_pdf") != null)
                     pdf = webBrowser.Document.GetElementById("sign_pdf").GetAttribute("value");
+
+                if (webBrowser.Document.GetElementById("sign_pdf_id") != null)
+                    pdf = urlApplication + "/gestion/show_file.asp?id=" + webBrowser.Document.GetElementById("sign_pdf_id").GetAttribute("value");
             }
+
+
             if (webBrowser.Document.GetElementById("ipopup") != null && webBrowser.Document.Window.Frames["ipopup"].Document.GetElementById("sign_pdf_message") != null)
             {
                 message = webBrowser.Document.Window.Frames["ipopup"].Document.GetElementById("sign_pdf_message").GetAttribute("value");
@@ -2579,17 +2613,20 @@ namespace SandBox
 
             webBrowser.Navigate(urlApplication);
 
-            ToolStripStatusLabel periphStatus = new System.Windows.Forms.ToolStripStatusLabel();
-            periphStatus.Name = "device_no_device";
-            periphStatus.Spring = true;
-            periphStatus.Text = SandBox.Properties.Settings.Default.labelRedDevice;
-            periphStatus.BackColor = Color.Red;
-            periphStatus.ForeColor = Color.White;
-            periphStatus.Alignment = ToolStripItemAlignment.Left;
-            periphStatus.Padding = new Padding(0);
-            periphStatus.Click += new EventHandler(statusMachine_Click);
-            //statusStrip.Items.RemoveAt(5);                
-            statusStrip.Items.Insert(5, periphStatus);
+            if (SandBox.Properties.Settings.Default.cookieHttpOnly)
+            {
+                ToolStripStatusLabel periphStatus = new System.Windows.Forms.ToolStripStatusLabel();
+                periphStatus.Name = "device_no_device";
+                periphStatus.Spring = true;
+                periphStatus.Text = SandBox.Properties.Settings.Default.labelRedDevice;
+                periphStatus.BackColor = Color.Red;
+                periphStatus.ForeColor = Color.White;
+                periphStatus.Alignment = ToolStripItemAlignment.Left;
+                periphStatus.Padding = new Padding(0);
+                periphStatus.Click += new EventHandler(statusMachine_Click);
+                //statusStrip.Items.RemoveAt(5);                
+                statusStrip.Items.Insert(5, periphStatus);
+            }
         }
 
         //Cette fonction prend en paramètre le form en cour puis retourne l'écran ou le form se trouve

@@ -64,6 +64,7 @@ namespace SandBox.Periph_Sign_Screen
             }
             else
             {
+                Program.LogFich.Debug("URL PDF="+ pdf);
                 webBrowser1.Url = new Uri(pdf);
             }
 
@@ -255,7 +256,18 @@ namespace SandBox.Periph_Sign_Screen
             {
                 try
                 {
-                    this.picImage.Image = Image.FromFile(SandBox.Properties.Settings.Default.UrlImageScreenSign);
+                    if (SandBox.Properties.Settings.Default.UrlImageScreenSign.Contains("http://") || SandBox.Properties.Settings.Default.UrlImageScreenSign.Contains("https://"))
+                    {
+                        System.Net.WebClient wc = new System.Net.WebClient();
+                        byte[] bytes = wc.DownloadData(SandBox.Properties.Settings.Default.UrlImageScreenSign);
+                        MemoryStream ms = new MemoryStream(bytes);
+                        this.picImage.Image = System.Drawing.Image.FromStream(ms);
+                    }
+                    else
+                    {
+                        this.picImage.Image = Image.FromFile(SandBox.Properties.Settings.Default.UrlImageScreenSign);
+                    }
+                    
 
                     picImage.Size = this.picImage.Image.Size;
                     picImage.Anchor = AnchorStyles.None;

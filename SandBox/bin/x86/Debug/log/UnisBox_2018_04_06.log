@@ -1,0 +1,324 @@
+2018-04-06 16:53:59,735 [1] INFO  SandBox.Program Main - =============================================================================================
+2018-04-06 16:53:59,788 [1] INFO  SandBox.Program Main - Program.Main() Execution
+2018-04-06 16:53:59,888 [1] INFO  SandBox.Program Main - urlApplication=http://172.16.1.62/pollen/
+2018-04-06 16:53:59,888 [1] INFO  SandBox.Program Main - nomApplication=TELEMAQUE
+2018-04-06 16:54:00,061 [1] INFO  SandBox.Program .ctor - [MAIN] init config log4net
+2018-04-06 16:54:00,073 [1] INFO  SandBox.Program .ctor - [MAIN] recup url application ico
+2018-04-06 16:54:00,084 [1] INFO  SandBox.Program RecupererUrl - [MAIN] RecupererUrl() [DEBUT]
+2018-04-06 16:54:00,085 [1] INFO  SandBox.Program RecupererUrl - [MAIN] RecupererUrl() [FIN] - URL:http://172.16.1.62/pollen/
+2018-04-06 16:54:00,088 [1] INFO  SandBox.Program RecupererNomApplication - [MAIN] RecupererNomApplication() [DEBUT]
+2018-04-06 16:54:00,089 [1] INFO  SandBox.Program RecupererNomApplication - [MAIN] RecupererNomApplication() [FIN] - Nom Application : TELEMAQUE
+2018-04-06 16:54:00,170 [1] INFO  SandBox.Program MiseEnPlaceRaccourcis - [MAIN] MiseEnPlaceRaccourcis() - user.config = C:\Users\Mathias\AppData\Local\Safeware\TELEMAQUE_-_UnisBox.exe_Url_aiaikfhtrmhp0r5azgee1b213yqbr53x\1.0.9.98\user.config
+2018-04-06 16:54:00,425 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=about:blank
+2018-04-06 16:54:00,551 [1] INFO  SandBox.Program webBrowser_DocumentCompleted - document completed=about:blank
+2018-04-06 16:54:00,952 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://172.16.1.62/pollen/gestion/accueil.asp
+2018-04-06 16:54:01,687 [1] INFO  SandBox.Program webBrowser_DocumentCompleted - document completed=http://172.16.1.62/pollen/gestion/accueil.asp
+2018-04-06 16:54:08,528 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://172.16.1.62/pollen/gestion/choix_app.asp?site=Le+Hive+|+art&fact&siteid=VPARDEFAUT&site_reel=Le+Hive
+2018-04-06 16:54:08,529 [1] INFO  SandBox.Main webBrowser_Navigated - MachineName = DIDEROT
+2018-04-06 16:54:08,538 [1] INFO  SandBox.Program RecupererIcone - [MAIN] RecupererIcone() [DEBUT]
+2018-04-06 16:54:08,564 [1] DEBUG SandBox.Program RecupererIcone - Proxy host = http://172.16.1.62/pollen/
+2018-04-06 16:54:08,564 [1] DEBUG SandBox.Program RecupererIcone - Proxy login = 
+2018-04-06 16:54:08,564 [1] DEBUG SandBox.Main RecupererIcone - webbrowser cookie = langue=fr; choix%5Fsiteid=VPARDEFAUT; choix%5Fsite%5Freel=Le+Hive; choix%5Fsite=Le+Hive+%7C+art%26fact; ASPSESSIONIDACCATATA=KLDJFOLDBKAFAOEMMPLLENGA
+2018-04-06 16:54:08,564 [1] DEBUG SandBox.Main RecupererIcone - header cookie = langue=fr; choix%5Fsiteid=VPARDEFAUT; choix%5Fsite%5Freel=Le+Hive; choix%5Fsite=Le+Hive+%7C+art%26fact; ASPSESSIONIDACCATATA=KLDJFOLDBKAFAOEMMPLLENGA
+2018-04-06 16:54:08,596 [1] INFO  SandBox.Program RecupererIcone - [MAIN] RecupererIcone() [FIN]
+2018-04-06 16:54:08,596 [1] INFO  SandBox.Program RecupererVersion - [MAIN] RecupererVersion() [DEBUT]
+2018-04-06 16:54:08,611 [1] DEBUG SandBox.Program RecupererVersion - Proxy host = http://172.16.1.62/pollen/
+2018-04-06 16:54:08,611 [1] DEBUG SandBox.Program RecupererVersion - Proxy login = 
+2018-04-06 16:54:08,611 [1] DEBUG SandBox.Main RecupererVersion - webbrowser cookie = langue=fr; choix%5Fsiteid=VPARDEFAUT; choix%5Fsite%5Freel=Le+Hive; choix%5Fsite=Le+Hive+%7C+art%26fact; ASPSESSIONIDACCATATA=KLDJFOLDBKAFAOEMMPLLENGA
+2018-04-06 16:54:08,611 [1] DEBUG SandBox.Main RecupererVersion - header cookie = langue=fr; choix%5Fsiteid=VPARDEFAUT; choix%5Fsite%5Freel=Le+Hive; choix%5Fsite=Le+Hive+%7C+art%26fact; ASPSESSIONIDACCATATA=KLDJFOLDBKAFAOEMMPLLENGA
+2018-04-06 16:54:08,611 [1] INFO  SandBox.Program RecupererVersion - [MAIN] RecupererVersion() [FIN] - Version 1.9.3
+2018-04-06 16:54:08,627 [1] INFO  SandBox.Program RecupererPeripheriques - [Main] RecupererPeripheriques() - [DEBUT]
+2018-04-06 16:54:08,643 [1] INFO  SandBox.Program TraiterXML - [PeripheriqueManager] TraiterXML() - [DEBUT] Traitement de la liste des periphériques
+2018-04-06 16:54:08,643 [1] INFO  SandBox.Program DownloadXML - [PeripheriqueManager] DownloadXML() - [DEBUT] Telechargement xml [DIDEROT]
+2018-04-06 16:54:08,811 [1] INFO  SandBox.Program DownloadXML - [PeripheriqueManager] DownloadXML() - [FIN] Telechargement xml termine
+2018-04-06 16:54:08,811 [1] INFO  SandBox.Program TraiterXML - [PeripheriqueManager] TraiterXML() - [FIN] Traitement de la liste des periphériques terminé
+2018-04-06 16:54:08,811 [1] INFO  SandBox.Program RecupererPeripheriques - [Main] RecupererPeripheriques() - Liste des peripherique:
+2018-04-06 16:54:08,811 [1] INFO  SandBox.Program afficher - [PeripheriqueInfos]  Nom:SWISS READER | type_port:PS2 | bit_seconde:0 | bit_donnees:0 | parite: | bit_arret: | controle_flux: | port: | webservice:http://localhost/ws_unis_schneider/WSDEVICE.asmx/ | ws_username:Safeware | ws_password:0tNUaNfnEk2axel4ka0zDA== | traitement:SWISS_READER | avant: | apres: | debut:0 | longueur:0 | longueur_max:0 | decoupe:0 | conversion:0
+2018-04-06 16:54:08,827 [1] INFO  SandBox.Program afficher - [PeripheriqueInfos]  Nom:Tablette de signature WACOM | type_port: | bit_seconde:0 | bit_donnees:0 | parite: | bit_arret: | controle_flux: | port: | webservice:http://localhost/ws_unis_schneider/WSDEVICE.asmx/ | ws_username:Safeware | ws_password:0tNUaNfnEk2axel4ka0zDA== | traitement:SIGN_SCREEN | avant: | apres: | debut:0 | longueur:0 | longueur_max:0 | decoupe:0 | conversion:0
+2018-04-06 16:54:08,827 [1] DEBUG SandBox.Program Show - [Sign_Screen_Manager] Debut => Show()
+2018-04-06 16:54:08,863 [1] DEBUG SandBox.Program Show - [Sign_Screen_Manager] toClose=False
+2018-04-06 16:54:08,880 [1] ERROR SandBox.Program Form_Sign_Screen_Load - [Sign_Screen_Manager] Index screen not found = System.IndexOutOfRangeException: L'index se trouve en dehors des limites du tableau.
+   à SandBox.Periph_Sign_Screen.Form_Sign_Screen.Form_Sign_Screen_Load(Object sender, EventArgs e) dans D:\ZwDev\SandBox\SandBox\Periph_Sign_Screen\Form_Sign_Screen.cs:ligne 242
+2018-04-06 16:54:08,896 [1] DEBUG SandBox.Program Show - [Sign_Screen_Manager] toClose enter
+2018-04-06 16:54:08,896 [1] DEBUG SandBox.Program Show - [Sign_Screen_Manager] Fin => Show()
+2018-04-06 16:54:08,896 [1] DEBUG SandBox.Main RecupererPeripheriques - SignScreenManager=null
+2018-04-06 16:54:08,896 [1] INFO  SandBox.Program RecupererPeripheriques - [Main] RecupererPeripheriques() - [FIN] Récuperation périphériques terminée
+2018-04-06 16:54:10,313 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://172.16.1.62/pollen/gestion/choix_app.asp?machine=DIDEROT&sandbox=true
+2018-04-06 16:54:10,414 [1] INFO  SandBox.Program webBrowser_DocumentCompleted - document completed=http://172.16.1.62/pollen/gestion/choix_app.asp?machine=DIDEROT&sandbox=true
+2018-04-06 16:54:26,428 [1] INFO  SandBox.Program Main - =============================================================================================
+2018-04-06 16:54:26,456 [1] INFO  SandBox.Program Main - Program.Main() Execution
+2018-04-06 16:54:26,481 [1] INFO  SandBox.Program Main - urlApplication=http://172.16.1.62/pollen/
+2018-04-06 16:54:26,481 [1] INFO  SandBox.Program Main - nomApplication=TELEMAQUE
+2018-04-06 16:54:26,597 [1] INFO  SandBox.Program .ctor - [MAIN] init config log4net
+2018-04-06 16:54:26,611 [1] INFO  SandBox.Program .ctor - [MAIN] recup url application ico
+2018-04-06 16:54:26,622 [1] INFO  SandBox.Program RecupererUrl - [MAIN] RecupererUrl() [DEBUT]
+2018-04-06 16:54:26,623 [1] INFO  SandBox.Program RecupererUrl - [MAIN] RecupererUrl() [FIN] - URL:http://172.16.1.62/pollen/
+2018-04-06 16:54:26,625 [1] INFO  SandBox.Program RecupererNomApplication - [MAIN] RecupererNomApplication() [DEBUT]
+2018-04-06 16:54:26,625 [1] INFO  SandBox.Program RecupererNomApplication - [MAIN] RecupererNomApplication() [FIN] - Nom Application : TELEMAQUE
+2018-04-06 16:54:26,697 [1] INFO  SandBox.Program MiseEnPlaceRaccourcis - [MAIN] MiseEnPlaceRaccourcis() - user.config = C:\Users\Mathias\AppData\Local\Safeware\TELEMAQUE_-_UnisBox.exe_Url_aiaikfhtrmhp0r5azgee1b213yqbr53x\1.0.9.98\user.config
+2018-04-06 16:54:26,843 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=about:blank
+2018-04-06 16:54:26,959 [1] INFO  SandBox.Program webBrowser_DocumentCompleted - document completed=about:blank
+2018-04-06 16:54:27,166 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://172.16.1.62/pollen/gestion/accueil.asp
+2018-04-06 16:54:27,227 [1] INFO  SandBox.Program webBrowser_DocumentCompleted - document completed=http://172.16.1.62/pollen/gestion/accueil.asp
+2018-04-06 16:54:30,050 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://172.16.1.62/pollen/gestion/choix_app.asp?site=Le+Hive+|+art&fact&siteid=VPARDEFAUT&site_reel=Le+Hive
+2018-04-06 16:54:30,051 [1] INFO  SandBox.Main webBrowser_Navigated - MachineName = DIDEROT
+2018-04-06 16:54:30,055 [1] INFO  SandBox.Program RecupererIcone - [MAIN] RecupererIcone() [DEBUT]
+2018-04-06 16:54:30,071 [1] DEBUG SandBox.Program RecupererIcone - Proxy host = http://172.16.1.62/pollen/
+2018-04-06 16:54:30,072 [1] DEBUG SandBox.Program RecupererIcone - Proxy login = 
+2018-04-06 16:54:30,072 [1] DEBUG SandBox.Main RecupererIcone - webbrowser cookie = langue=fr; choix%5Fsiteid=VPARDEFAUT; choix%5Fsite%5Freel=Le+Hive; choix%5Fsite=Le+Hive+%7C+art%26fact; ASPSESSIONIDACCATATA=LLDJFOLDAKHPCCKFGKMIHHNN
+2018-04-06 16:54:30,073 [1] DEBUG SandBox.Main RecupererIcone - header cookie = langue=fr; choix%5Fsiteid=VPARDEFAUT; choix%5Fsite%5Freel=Le+Hive; choix%5Fsite=Le+Hive+%7C+art%26fact; ASPSESSIONIDACCATATA=LLDJFOLDAKHPCCKFGKMIHHNN
+2018-04-06 16:54:30,103 [1] INFO  SandBox.Program RecupererIcone - [MAIN] RecupererIcone() [FIN]
+2018-04-06 16:54:30,105 [1] INFO  SandBox.Program RecupererVersion - [MAIN] RecupererVersion() [DEBUT]
+2018-04-06 16:54:30,112 [1] DEBUG SandBox.Program RecupererVersion - Proxy host = http://172.16.1.62/pollen/
+2018-04-06 16:54:30,113 [1] DEBUG SandBox.Program RecupererVersion - Proxy login = 
+2018-04-06 16:54:30,113 [1] DEBUG SandBox.Main RecupererVersion - webbrowser cookie = langue=fr; choix%5Fsiteid=VPARDEFAUT; choix%5Fsite%5Freel=Le+Hive; choix%5Fsite=Le+Hive+%7C+art%26fact; ASPSESSIONIDACCATATA=LLDJFOLDAKHPCCKFGKMIHHNN
+2018-04-06 16:54:30,113 [1] DEBUG SandBox.Main RecupererVersion - header cookie = langue=fr; choix%5Fsiteid=VPARDEFAUT; choix%5Fsite%5Freel=Le+Hive; choix%5Fsite=Le+Hive+%7C+art%26fact; ASPSESSIONIDACCATATA=LLDJFOLDAKHPCCKFGKMIHHNN
+2018-04-06 16:54:30,128 [1] INFO  SandBox.Program RecupererVersion - [MAIN] RecupererVersion() [FIN] - Version 1.9.3
+2018-04-06 16:54:30,132 [1] INFO  SandBox.Program RecupererPeripheriques - [Main] RecupererPeripheriques() - [DEBUT]
+2018-04-06 16:54:30,135 [1] INFO  SandBox.Program TraiterXML - [PeripheriqueManager] TraiterXML() - [DEBUT] Traitement de la liste des periphériques
+2018-04-06 16:54:30,137 [1] INFO  SandBox.Program DownloadXML - [PeripheriqueManager] DownloadXML() - [DEBUT] Telechargement xml [DIDEROT]
+2018-04-06 16:54:30,173 [1] INFO  SandBox.Program DownloadXML - [PeripheriqueManager] DownloadXML() - [FIN] Telechargement xml termine
+2018-04-06 16:54:30,175 [1] INFO  SandBox.Program TraiterXML - [PeripheriqueManager] TraiterXML() - [FIN] Traitement de la liste des periphériques terminé
+2018-04-06 16:54:30,176 [1] INFO  SandBox.Program RecupererPeripheriques - [Main] RecupererPeripheriques() - Liste des peripherique:
+2018-04-06 16:54:30,178 [1] INFO  SandBox.Program afficher - [PeripheriqueInfos]  Nom:SWISS READER | type_port:PS2 | bit_seconde:0 | bit_donnees:0 | parite: | bit_arret: | controle_flux: | port: | webservice:http://localhost/ws_unis_schneider/WSDEVICE.asmx/ | ws_username:Safeware | ws_password:0tNUaNfnEk2axel4ka0zDA== | traitement:SWISS_READER | avant: | apres: | debut:0 | longueur:0 | longueur_max:0 | decoupe:0 | conversion:0
+2018-04-06 16:54:30,186 [1] INFO  SandBox.Program afficher - [PeripheriqueInfos]  Nom:Tablette de signature WACOM | type_port: | bit_seconde:0 | bit_donnees:0 | parite: | bit_arret: | controle_flux: | port: | webservice:http://localhost/ws_unis_schneider/WSDEVICE.asmx/ | ws_username:Safeware | ws_password:0tNUaNfnEk2axel4ka0zDA== | traitement:SIGN_SCREEN | avant: | apres: | debut:0 | longueur:0 | longueur_max:0 | decoupe:0 | conversion:0
+2018-04-06 16:54:30,188 [1] DEBUG SandBox.Program Show - [Sign_Screen_Manager] Debut => Show()
+2018-04-06 16:54:30,215 [1] DEBUG SandBox.Program Show - [Sign_Screen_Manager] toClose=False
+2018-04-06 16:54:30,229 [1] ERROR SandBox.Program Form_Sign_Screen_Load - [Sign_Screen_Manager] Index screen not found = System.IndexOutOfRangeException: L'index se trouve en dehors des limites du tableau.
+   à SandBox.Periph_Sign_Screen.Form_Sign_Screen.Form_Sign_Screen_Load(Object sender, EventArgs e) dans D:\ZwDev\SandBox\SandBox\Periph_Sign_Screen\Form_Sign_Screen.cs:ligne 242
+2018-04-06 16:54:30,239 [1] DEBUG SandBox.Program Show - [Sign_Screen_Manager] toClose enter
+2018-04-06 16:54:30,246 [1] DEBUG SandBox.Program Show - [Sign_Screen_Manager] Fin => Show()
+2018-04-06 16:54:30,247 [1] DEBUG SandBox.Main RecupererPeripheriques - SignScreenManager=null
+2018-04-06 16:54:30,254 [1] INFO  SandBox.Program RecupererPeripheriques - [Main] RecupererPeripheriques() - [FIN] Récuperation périphériques terminée
+2018-04-06 16:54:30,610 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://172.16.1.62/pollen/gestion/choix_app.asp?machine=DIDEROT&sandbox=true
+2018-04-06 16:54:30,719 [1] INFO  SandBox.Program webBrowser_DocumentCompleted - document completed=http://172.16.1.62/pollen/gestion/choix_app.asp?machine=DIDEROT&sandbox=true
+2018-04-06 16:54:53,217 [1] INFO  SandBox.Program Main - =============================================================================================
+2018-04-06 16:54:53,248 [1] INFO  SandBox.Program Main - Program.Main() Execution
+2018-04-06 16:54:53,273 [1] INFO  SandBox.Program Main - urlApplication=http://172.16.1.62/pollen/
+2018-04-06 16:54:53,273 [1] INFO  SandBox.Program Main - nomApplication=TELEMAQUE
+2018-04-06 16:54:53,383 [1] INFO  SandBox.Program .ctor - [MAIN] init config log4net
+2018-04-06 16:54:53,396 [1] INFO  SandBox.Program .ctor - [MAIN] recup url application ico
+2018-04-06 16:54:53,405 [1] INFO  SandBox.Program RecupererUrl - [MAIN] RecupererUrl() [DEBUT]
+2018-04-06 16:54:53,406 [1] INFO  SandBox.Program RecupererUrl - [MAIN] RecupererUrl() [FIN] - URL:http://172.16.1.62/pollen/
+2018-04-06 16:54:53,409 [1] INFO  SandBox.Program RecupererNomApplication - [MAIN] RecupererNomApplication() [DEBUT]
+2018-04-06 16:54:53,409 [1] INFO  SandBox.Program RecupererNomApplication - [MAIN] RecupererNomApplication() [FIN] - Nom Application : TELEMAQUE
+2018-04-06 16:54:53,464 [1] INFO  SandBox.Program MiseEnPlaceRaccourcis - [MAIN] MiseEnPlaceRaccourcis() - user.config = C:\Users\Mathias\AppData\Local\Safeware\TELEMAQUE_-_UnisBox.exe_Url_aiaikfhtrmhp0r5azgee1b213yqbr53x\1.0.9.98\user.config
+2018-04-06 16:54:53,618 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=about:blank
+2018-04-06 16:54:53,743 [1] INFO  SandBox.Program webBrowser_DocumentCompleted - document completed=about:blank
+2018-04-06 16:54:53,943 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://172.16.1.62/pollen/gestion/accueil.asp
+2018-04-06 16:54:54,022 [1] INFO  SandBox.Program webBrowser_DocumentCompleted - document completed=http://172.16.1.62/pollen/gestion/accueil.asp
+2018-04-06 16:54:56,344 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://172.16.1.62/pollen/gestion/choix_app.asp?site=Le+Hive+|+art&fact&siteid=VPARDEFAUT&site_reel=Le+Hive
+2018-04-06 16:54:56,344 [1] INFO  SandBox.Main webBrowser_Navigated - MachineName = DIDEROT
+2018-04-06 16:54:56,344 [1] INFO  SandBox.Program RecupererIcone - [MAIN] RecupererIcone() [DEBUT]
+2018-04-06 16:54:56,360 [1] DEBUG SandBox.Program RecupererIcone - Proxy host = http://172.16.1.62/pollen/
+2018-04-06 16:54:56,360 [1] DEBUG SandBox.Program RecupererIcone - Proxy login = 
+2018-04-06 16:54:56,360 [1] DEBUG SandBox.Main RecupererIcone - webbrowser cookie = langue=fr; choix%5Fsiteid=VPARDEFAUT; choix%5Fsite%5Freel=Le+Hive; choix%5Fsite=Le+Hive+%7C+art%26fact; ASPSESSIONIDACCATATA=MLDJFOLDFDGGBPDFODEFLECL
+2018-04-06 16:54:56,360 [1] DEBUG SandBox.Main RecupererIcone - header cookie = langue=fr; choix%5Fsiteid=VPARDEFAUT; choix%5Fsite%5Freel=Le+Hive; choix%5Fsite=Le+Hive+%7C+art%26fact; ASPSESSIONIDACCATATA=MLDJFOLDFDGGBPDFODEFLECL
+2018-04-06 16:54:56,375 [1] INFO  SandBox.Program RecupererIcone - [MAIN] RecupererIcone() [FIN]
+2018-04-06 16:54:56,375 [1] INFO  SandBox.Program RecupererVersion - [MAIN] RecupererVersion() [DEBUT]
+2018-04-06 16:54:56,392 [1] DEBUG SandBox.Program RecupererVersion - Proxy host = http://172.16.1.62/pollen/
+2018-04-06 16:54:56,393 [1] DEBUG SandBox.Program RecupererVersion - Proxy login = 
+2018-04-06 16:54:56,393 [1] DEBUG SandBox.Main RecupererVersion - webbrowser cookie = langue=fr; choix%5Fsiteid=VPARDEFAUT; choix%5Fsite%5Freel=Le+Hive; choix%5Fsite=Le+Hive+%7C+art%26fact; ASPSESSIONIDACCATATA=MLDJFOLDFDGGBPDFODEFLECL
+2018-04-06 16:54:56,394 [1] DEBUG SandBox.Main RecupererVersion - header cookie = langue=fr; choix%5Fsiteid=VPARDEFAUT; choix%5Fsite%5Freel=Le+Hive; choix%5Fsite=Le+Hive+%7C+art%26fact; ASPSESSIONIDACCATATA=MLDJFOLDFDGGBPDFODEFLECL
+2018-04-06 16:54:56,397 [1] INFO  SandBox.Program RecupererVersion - [MAIN] RecupererVersion() [FIN] - Version 1.9.3
+2018-04-06 16:54:56,397 [1] INFO  SandBox.Program RecupererPeripheriques - [Main] RecupererPeripheriques() - [DEBUT]
+2018-04-06 16:54:56,397 [1] INFO  SandBox.Program TraiterXML - [PeripheriqueManager] TraiterXML() - [DEBUT] Traitement de la liste des periphériques
+2018-04-06 16:54:56,397 [1] INFO  SandBox.Program DownloadXML - [PeripheriqueManager] DownloadXML() - [DEBUT] Telechargement xml [DIDEROT]
+2018-04-06 16:54:56,428 [1] INFO  SandBox.Program DownloadXML - [PeripheriqueManager] DownloadXML() - [FIN] Telechargement xml termine
+2018-04-06 16:54:56,428 [1] INFO  SandBox.Program TraiterXML - [PeripheriqueManager] TraiterXML() - [FIN] Traitement de la liste des periphériques terminé
+2018-04-06 16:54:56,428 [1] INFO  SandBox.Program RecupererPeripheriques - [Main] RecupererPeripheriques() - Liste des peripherique:
+2018-04-06 16:54:56,428 [1] INFO  SandBox.Program afficher - [PeripheriqueInfos]  Nom:SWISS READER | type_port:PS2 | bit_seconde:0 | bit_donnees:0 | parite: | bit_arret: | controle_flux: | port: | webservice:http://localhost/ws_unis_schneider/WSDEVICE.asmx/ | ws_username:Safeware | ws_password:0tNUaNfnEk2axel4ka0zDA== | traitement:SWISS_READER | avant: | apres: | debut:0 | longueur:0 | longueur_max:0 | decoupe:0 | conversion:0
+2018-04-06 16:54:56,444 [1] INFO  SandBox.Program afficher - [PeripheriqueInfos]  Nom:Tablette de signature WACOM | type_port: | bit_seconde:0 | bit_donnees:0 | parite: | bit_arret: | controle_flux: | port: | webservice:http://localhost/ws_unis_schneider/WSDEVICE.asmx/ | ws_username:Safeware | ws_password:0tNUaNfnEk2axel4ka0zDA== | traitement:SIGN_SCREEN | avant: | apres: | debut:0 | longueur:0 | longueur_max:0 | decoupe:0 | conversion:0
+2018-04-06 16:54:56,444 [1] DEBUG SandBox.Program Show - [Sign_Screen_Manager] Debut => Show()
+2018-04-06 16:54:56,460 [1] DEBUG SandBox.Program Show - [Sign_Screen_Manager] toClose=False
+2018-04-06 16:54:56,475 [1] ERROR SandBox.Program Form_Sign_Screen_Load - [Sign_Screen_Manager] Index screen not found = System.IndexOutOfRangeException: L'index se trouve en dehors des limites du tableau.
+   à SandBox.Periph_Sign_Screen.Form_Sign_Screen.Form_Sign_Screen_Load(Object sender, EventArgs e) dans D:\ZwDev\SandBox\SandBox\Periph_Sign_Screen\Form_Sign_Screen.cs:ligne 242
+2018-04-06 16:54:56,475 [1] DEBUG SandBox.Program Show - [Sign_Screen_Manager] toClose enter
+2018-04-06 16:54:56,493 [1] DEBUG SandBox.Program Show - [Sign_Screen_Manager] Fin => Show()
+2018-04-06 16:54:56,493 [1] DEBUG SandBox.Main RecupererPeripheriques - SignScreenManager=null
+2018-04-06 16:54:56,497 [1] INFO  SandBox.Program RecupererPeripheriques - [Main] RecupererPeripheriques() - [FIN] Récuperation périphériques terminée
+2018-04-06 16:54:56,855 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://172.16.1.62/pollen/gestion/choix_app.asp?machine=DIDEROT&sandbox=true
+2018-04-06 16:54:56,979 [1] INFO  SandBox.Program webBrowser_DocumentCompleted - document completed=http://172.16.1.62/pollen/gestion/choix_app.asp?machine=DIDEROT&sandbox=true
+2018-04-06 16:55:50,744 [1] INFO  SandBox.Program Main - =============================================================================================
+2018-04-06 16:55:50,773 [1] INFO  SandBox.Program Main - Program.Main() Execution
+2018-04-06 16:55:50,801 [1] INFO  SandBox.Program Main - urlApplication=http://172.16.1.62/pollen/
+2018-04-06 16:55:50,802 [1] INFO  SandBox.Program Main - nomApplication=TELEMAQUE
+2018-04-06 16:55:50,919 [1] INFO  SandBox.Program .ctor - [MAIN] init config log4net
+2018-04-06 16:55:50,934 [1] INFO  SandBox.Program .ctor - [MAIN] recup url application ico
+2018-04-06 16:55:50,942 [1] INFO  SandBox.Program RecupererUrl - [MAIN] RecupererUrl() [DEBUT]
+2018-04-06 16:55:50,942 [1] INFO  SandBox.Program RecupererUrl - [MAIN] RecupererUrl() [FIN] - URL:http://172.16.1.62/pollen/
+2018-04-06 16:55:50,945 [1] INFO  SandBox.Program RecupererNomApplication - [MAIN] RecupererNomApplication() [DEBUT]
+2018-04-06 16:55:50,945 [1] INFO  SandBox.Program RecupererNomApplication - [MAIN] RecupererNomApplication() [FIN] - Nom Application : TELEMAQUE
+2018-04-06 16:55:51,002 [1] INFO  SandBox.Program MiseEnPlaceRaccourcis - [MAIN] MiseEnPlaceRaccourcis() - user.config = C:\Users\Mathias\AppData\Local\Safeware\TELEMAQUE_-_UnisBox.exe_Url_aiaikfhtrmhp0r5azgee1b213yqbr53x\1.0.9.98\user.config
+2018-04-06 16:55:51,156 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=about:blank
+2018-04-06 16:55:51,376 [1] INFO  SandBox.Program webBrowser_DocumentCompleted - document completed=about:blank
+2018-04-06 16:55:51,612 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://172.16.1.62/pollen/gestion/accueil.asp
+2018-04-06 16:55:51,679 [1] INFO  SandBox.Program webBrowser_DocumentCompleted - document completed=http://172.16.1.62/pollen/gestion/accueil.asp
+2018-04-06 16:55:54,279 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://172.16.1.62/pollen/gestion/choix_app.asp?site=Le+Hive+|+art&fact&siteid=VPARDEFAUT&site_reel=Le+Hive
+2018-04-06 16:55:54,280 [1] INFO  SandBox.Main webBrowser_Navigated - MachineName = DIDEROT
+2018-04-06 16:55:54,284 [1] INFO  SandBox.Program RecupererIcone - [MAIN] RecupererIcone() [DEBUT]
+2018-04-06 16:55:54,296 [1] DEBUG SandBox.Program RecupererIcone - Proxy host = http://172.16.1.62/pollen/
+2018-04-06 16:55:54,296 [1] DEBUG SandBox.Program RecupererIcone - Proxy login = 
+2018-04-06 16:55:54,297 [1] DEBUG SandBox.Main RecupererIcone - webbrowser cookie = langue=fr; choix%5Fsiteid=VPARDEFAUT; choix%5Fsite%5Freel=Le+Hive; choix%5Fsite=Le+Hive+%7C+art%26fact; ASPSESSIONIDACCATATA=NLDJFOLDGAEBNAOOCODNDNDJ
+2018-04-06 16:55:54,297 [1] DEBUG SandBox.Main RecupererIcone - header cookie = langue=fr; choix%5Fsiteid=VPARDEFAUT; choix%5Fsite%5Freel=Le+Hive; choix%5Fsite=Le+Hive+%7C+art%26fact; ASPSESSIONIDACCATATA=NLDJFOLDGAEBNAOOCODNDNDJ
+2018-04-06 16:55:54,318 [1] INFO  SandBox.Program RecupererIcone - [MAIN] RecupererIcone() [FIN]
+2018-04-06 16:55:54,320 [1] INFO  SandBox.Program RecupererVersion - [MAIN] RecupererVersion() [DEBUT]
+2018-04-06 16:55:54,327 [1] DEBUG SandBox.Program RecupererVersion - Proxy host = http://172.16.1.62/pollen/
+2018-04-06 16:55:54,328 [1] DEBUG SandBox.Program RecupererVersion - Proxy login = 
+2018-04-06 16:55:54,328 [1] DEBUG SandBox.Main RecupererVersion - webbrowser cookie = langue=fr; choix%5Fsiteid=VPARDEFAUT; choix%5Fsite%5Freel=Le+Hive; choix%5Fsite=Le+Hive+%7C+art%26fact; ASPSESSIONIDACCATATA=NLDJFOLDGAEBNAOOCODNDNDJ
+2018-04-06 16:55:54,329 [1] DEBUG SandBox.Main RecupererVersion - header cookie = langue=fr; choix%5Fsiteid=VPARDEFAUT; choix%5Fsite%5Freel=Le+Hive; choix%5Fsite=Le+Hive+%7C+art%26fact; ASPSESSIONIDACCATATA=NLDJFOLDGAEBNAOOCODNDNDJ
+2018-04-06 16:55:54,332 [1] INFO  SandBox.Program RecupererVersion - [MAIN] RecupererVersion() [FIN] - Version 1.9.3
+2018-04-06 16:55:54,336 [1] INFO  SandBox.Program RecupererPeripheriques - [Main] RecupererPeripheriques() - [DEBUT]
+2018-04-06 16:55:54,339 [1] INFO  SandBox.Program TraiterXML - [PeripheriqueManager] TraiterXML() - [DEBUT] Traitement de la liste des periphériques
+2018-04-06 16:55:54,341 [1] INFO  SandBox.Program DownloadXML - [PeripheriqueManager] DownloadXML() - [DEBUT] Telechargement xml [DIDEROT]
+2018-04-06 16:55:54,376 [1] INFO  SandBox.Program DownloadXML - [PeripheriqueManager] DownloadXML() - [FIN] Telechargement xml termine
+2018-04-06 16:55:54,378 [1] INFO  SandBox.Program TraiterXML - [PeripheriqueManager] TraiterXML() - [FIN] Traitement de la liste des periphériques terminé
+2018-04-06 16:55:54,379 [1] INFO  SandBox.Program RecupererPeripheriques - [Main] RecupererPeripheriques() - Liste des peripherique:
+2018-04-06 16:55:54,381 [1] INFO  SandBox.Program afficher - [PeripheriqueInfos]  Nom:SWISS READER | type_port:PS2 | bit_seconde:0 | bit_donnees:0 | parite: | bit_arret: | controle_flux: | port: | webservice:http://localhost/ws_unis_schneider/WSDEVICE.asmx/ | ws_username:Safeware | ws_password:0tNUaNfnEk2axel4ka0zDA== | traitement:SWISS_READER | avant: | apres: | debut:0 | longueur:0 | longueur_max:0 | decoupe:0 | conversion:0
+2018-04-06 16:55:54,386 [1] INFO  SandBox.Program afficher - [PeripheriqueInfos]  Nom:Tablette de signature WACOM | type_port: | bit_seconde:0 | bit_donnees:0 | parite: | bit_arret: | controle_flux: | port: | webservice:http://localhost/ws_unis_schneider/WSDEVICE.asmx/ | ws_username:Safeware | ws_password:0tNUaNfnEk2axel4ka0zDA== | traitement:SIGN_SCREEN | avant: | apres: | debut:0 | longueur:0 | longueur_max:0 | decoupe:0 | conversion:0
+2018-04-06 16:55:54,389 [1] DEBUG SandBox.Program Show - [Sign_Screen_Manager] Debut => Show()
+2018-04-06 16:55:54,417 [1] DEBUG SandBox.Program Show - [Sign_Screen_Manager] toClose=False
+2018-04-06 16:56:22,779 [1] INFO  SandBox.Program Main - =============================================================================================
+2018-04-06 16:56:22,810 [1] INFO  SandBox.Program Main - Program.Main() Execution
+2018-04-06 16:56:22,837 [1] INFO  SandBox.Program Main - urlApplication=http://172.16.1.62/pollen/
+2018-04-06 16:56:22,838 [1] INFO  SandBox.Program Main - nomApplication=TELEMAQUE
+2018-04-06 16:56:22,951 [1] INFO  SandBox.Program .ctor - [MAIN] init config log4net
+2018-04-06 16:56:22,966 [1] INFO  SandBox.Program .ctor - [MAIN] recup url application ico
+2018-04-06 16:56:22,976 [1] INFO  SandBox.Program RecupererUrl - [MAIN] RecupererUrl() [DEBUT]
+2018-04-06 16:56:22,977 [1] INFO  SandBox.Program RecupererUrl - [MAIN] RecupererUrl() [FIN] - URL:http://172.16.1.62/pollen/
+2018-04-06 16:56:22,980 [1] INFO  SandBox.Program RecupererNomApplication - [MAIN] RecupererNomApplication() [DEBUT]
+2018-04-06 16:56:22,980 [1] INFO  SandBox.Program RecupererNomApplication - [MAIN] RecupererNomApplication() [FIN] - Nom Application : TELEMAQUE
+2018-04-06 16:56:23,035 [1] INFO  SandBox.Program MiseEnPlaceRaccourcis - [MAIN] MiseEnPlaceRaccourcis() - user.config = C:\Users\Mathias\AppData\Local\Safeware\TELEMAQUE_-_UnisBox.exe_Url_aiaikfhtrmhp0r5azgee1b213yqbr53x\1.0.9.98\user.config
+2018-04-06 16:56:23,191 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=about:blank
+2018-04-06 16:56:23,312 [1] INFO  SandBox.Program webBrowser_DocumentCompleted - document completed=about:blank
+2018-04-06 16:56:23,531 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://172.16.1.62/pollen/gestion/accueil.asp
+2018-04-06 16:56:23,597 [1] INFO  SandBox.Program webBrowser_DocumentCompleted - document completed=http://172.16.1.62/pollen/gestion/accueil.asp
+2018-04-06 16:56:25,894 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://172.16.1.62/pollen/gestion/choix_app.asp?site=Le+Hive+|+art&fact&siteid=VPARDEFAUT&site_reel=Le+Hive
+2018-04-06 16:56:25,896 [1] INFO  SandBox.Main webBrowser_Navigated - MachineName = DIDEROT
+2018-04-06 16:56:25,900 [1] INFO  SandBox.Program RecupererIcone - [MAIN] RecupererIcone() [DEBUT]
+2018-04-06 16:56:25,914 [1] DEBUG SandBox.Program RecupererIcone - Proxy host = http://172.16.1.62/pollen/
+2018-04-06 16:56:25,914 [1] DEBUG SandBox.Program RecupererIcone - Proxy login = 
+2018-04-06 16:56:25,915 [1] DEBUG SandBox.Main RecupererIcone - webbrowser cookie = langue=fr; choix%5Fsiteid=VPARDEFAUT; choix%5Fsite%5Freel=Le+Hive; choix%5Fsite=Le+Hive+%7C+art%26fact; ASPSESSIONIDACCATATA=OLDJFOLDFMOIIGJAEDFJLHOJ
+2018-04-06 16:56:25,915 [1] DEBUG SandBox.Main RecupererIcone - header cookie = langue=fr; choix%5Fsiteid=VPARDEFAUT; choix%5Fsite%5Freel=Le+Hive; choix%5Fsite=Le+Hive+%7C+art%26fact; ASPSESSIONIDACCATATA=OLDJFOLDFMOIIGJAEDFJLHOJ
+2018-04-06 16:56:25,959 [1] INFO  SandBox.Program RecupererIcone - [MAIN] RecupererIcone() [FIN]
+2018-04-06 16:56:25,963 [1] INFO  SandBox.Program RecupererVersion - [MAIN] RecupererVersion() [DEBUT]
+2018-04-06 16:56:25,980 [1] DEBUG SandBox.Program RecupererVersion - Proxy host = http://172.16.1.62/pollen/
+2018-04-06 16:56:25,982 [1] DEBUG SandBox.Program RecupererVersion - Proxy login = 
+2018-04-06 16:56:25,983 [1] DEBUG SandBox.Main RecupererVersion - webbrowser cookie = langue=fr; choix%5Fsiteid=VPARDEFAUT; choix%5Fsite%5Freel=Le+Hive; choix%5Fsite=Le+Hive+%7C+art%26fact; ASPSESSIONIDACCATATA=OLDJFOLDFMOIIGJAEDFJLHOJ
+2018-04-06 16:56:25,983 [1] DEBUG SandBox.Main RecupererVersion - header cookie = langue=fr; choix%5Fsiteid=VPARDEFAUT; choix%5Fsite%5Freel=Le+Hive; choix%5Fsite=Le+Hive+%7C+art%26fact; ASPSESSIONIDACCATATA=OLDJFOLDFMOIIGJAEDFJLHOJ
+2018-04-06 16:56:25,998 [1] INFO  SandBox.Program RecupererVersion - [MAIN] RecupererVersion() [FIN] - Version 1.9.3
+2018-04-06 16:56:26,007 [1] INFO  SandBox.Program RecupererPeripheriques - [Main] RecupererPeripheriques() - [DEBUT]
+2018-04-06 16:56:26,013 [1] INFO  SandBox.Program TraiterXML - [PeripheriqueManager] TraiterXML() - [DEBUT] Traitement de la liste des periphériques
+2018-04-06 16:56:26,018 [1] INFO  SandBox.Program DownloadXML - [PeripheriqueManager] DownloadXML() - [DEBUT] Telechargement xml [DIDEROT]
+2018-04-06 16:56:26,042 [1] INFO  SandBox.Program DownloadXML - [PeripheriqueManager] DownloadXML() - [FIN] Telechargement xml termine
+2018-04-06 16:56:26,043 [1] INFO  SandBox.Program TraiterXML - [PeripheriqueManager] TraiterXML() - [FIN] Traitement de la liste des periphériques terminé
+2018-04-06 16:56:26,044 [1] INFO  SandBox.Program RecupererPeripheriques - [Main] RecupererPeripheriques() - Liste des peripherique:
+2018-04-06 16:56:26,045 [1] INFO  SandBox.Program afficher - [PeripheriqueInfos]  Nom:SWISS READER | type_port:PS2 | bit_seconde:0 | bit_donnees:0 | parite: | bit_arret: | controle_flux: | port: | webservice:http://localhost/ws_unis_schneider/WSDEVICE.asmx/ | ws_username:Safeware | ws_password:0tNUaNfnEk2axel4ka0zDA== | traitement:SWISS_READER | avant: | apres: | debut:0 | longueur:0 | longueur_max:0 | decoupe:0 | conversion:0
+2018-04-06 16:56:26,048 [1] INFO  SandBox.Program afficher - [PeripheriqueInfos]  Nom:Tablette de signature WACOM | type_port: | bit_seconde:0 | bit_donnees:0 | parite: | bit_arret: | controle_flux: | port: | webservice:http://localhost/ws_unis_schneider/WSDEVICE.asmx/ | ws_username:Safeware | ws_password:0tNUaNfnEk2axel4ka0zDA== | traitement:SIGN_SCREEN | avant: | apres: | debut:0 | longueur:0 | longueur_max:0 | decoupe:0 | conversion:0
+2018-04-06 16:56:26,049 [1] DEBUG SandBox.Program Show - [Sign_Screen_Manager] Debut => Show()
+2018-04-06 16:56:26,080 [1] DEBUG SandBox.Program Show - [Sign_Screen_Manager] toClose=False
+2018-04-06 16:56:32,799 [1] ERROR SandBox.Program Form_Sign_Screen_Load - [Sign_Screen_Manager] Index screen not found = System.IndexOutOfRangeException: L'index se trouve en dehors des limites du tableau.
+   à SandBox.Periph_Sign_Screen.Form_Sign_Screen.Form_Sign_Screen_Load(Object sender, EventArgs e) dans D:\ZwDev\SandBox\SandBox\Periph_Sign_Screen\Form_Sign_Screen.cs:ligne 242
+2018-04-06 16:56:32,808 [1] DEBUG SandBox.Program Show - [Sign_Screen_Manager] toClose enter
+2018-04-06 16:56:32,814 [1] DEBUG SandBox.Program Show - [Sign_Screen_Manager] Fin => Show()
+2018-04-06 16:56:32,816 [1] DEBUG SandBox.Main RecupererPeripheriques - SignScreenManager=null
+2018-04-06 16:56:32,824 [1] INFO  SandBox.Program RecupererPeripheriques - [Main] RecupererPeripheriques() - [FIN] Récuperation périphériques terminée
+2018-04-06 16:56:33,213 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://172.16.1.62/pollen/gestion/choix_app.asp?machine=DIDEROT&sandbox=true
+2018-04-06 16:56:33,338 [1] INFO  SandBox.Program webBrowser_DocumentCompleted - document completed=http://172.16.1.62/pollen/gestion/choix_app.asp?machine=DIDEROT&sandbox=true
+2018-04-06 16:56:56,821 [1] INFO  SandBox.Program Main - =============================================================================================
+2018-04-06 16:56:56,852 [1] INFO  SandBox.Program Main - Program.Main() Execution
+2018-04-06 16:56:56,877 [1] INFO  SandBox.Program Main - urlApplication=http://172.16.1.62/pollen/
+2018-04-06 16:56:56,877 [1] INFO  SandBox.Program Main - nomApplication=TELEMAQUE
+2018-04-06 16:56:57,013 [1] INFO  SandBox.Program .ctor - [MAIN] init config log4net
+2018-04-06 16:56:57,028 [1] INFO  SandBox.Program .ctor - [MAIN] recup url application ico
+2018-04-06 16:56:57,037 [1] INFO  SandBox.Program RecupererUrl - [MAIN] RecupererUrl() [DEBUT]
+2018-04-06 16:56:57,038 [1] INFO  SandBox.Program RecupererUrl - [MAIN] RecupererUrl() [FIN] - URL:http://172.16.1.62/pollen/
+2018-04-06 16:56:57,041 [1] INFO  SandBox.Program RecupererNomApplication - [MAIN] RecupererNomApplication() [DEBUT]
+2018-04-06 16:56:57,041 [1] INFO  SandBox.Program RecupererNomApplication - [MAIN] RecupererNomApplication() [FIN] - Nom Application : TELEMAQUE
+2018-04-06 16:56:57,105 [1] INFO  SandBox.Program MiseEnPlaceRaccourcis - [MAIN] MiseEnPlaceRaccourcis() - user.config = C:\Users\Mathias\AppData\Local\Safeware\TELEMAQUE_-_UnisBox.exe_Url_aiaikfhtrmhp0r5azgee1b213yqbr53x\1.0.9.98\user.config
+2018-04-06 16:56:57,266 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=about:blank
+2018-04-06 16:56:57,388 [1] INFO  SandBox.Program webBrowser_DocumentCompleted - document completed=about:blank
+2018-04-06 16:56:57,577 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://172.16.1.62/pollen/gestion/accueil.asp
+2018-04-06 16:56:57,646 [1] INFO  SandBox.Program webBrowser_DocumentCompleted - document completed=http://172.16.1.62/pollen/gestion/accueil.asp
+2018-04-06 16:56:59,464 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://172.16.1.62/pollen/gestion/choix_app.asp?site=Le+Hive+|+art&fact&siteid=VPARDEFAUT&site_reel=Le+Hive
+2018-04-06 16:56:59,464 [1] INFO  SandBox.Main webBrowser_Navigated - MachineName = DIDEROT
+2018-04-06 16:56:59,464 [1] INFO  SandBox.Program RecupererIcone - [MAIN] RecupererIcone() [DEBUT]
+2018-04-06 16:56:59,480 [1] DEBUG SandBox.Program RecupererIcone - Proxy host = http://172.16.1.62/pollen/
+2018-04-06 16:56:59,480 [1] DEBUG SandBox.Program RecupererIcone - Proxy login = 
+2018-04-06 16:56:59,480 [1] DEBUG SandBox.Main RecupererIcone - webbrowser cookie = langue=fr; choix%5Fsiteid=VPARDEFAUT; choix%5Fsite%5Freel=Le+Hive; choix%5Fsite=Le+Hive+%7C+art%26fact; ASPSESSIONIDACCATATA=PLDJFOLDJAHDFAHNHCDPJDHF
+2018-04-06 16:56:59,480 [1] DEBUG SandBox.Main RecupererIcone - header cookie = langue=fr; choix%5Fsiteid=VPARDEFAUT; choix%5Fsite%5Freel=Le+Hive; choix%5Fsite=Le+Hive+%7C+art%26fact; ASPSESSIONIDACCATATA=PLDJFOLDJAHDFAHNHCDPJDHF
+2018-04-06 16:56:59,527 [1] INFO  SandBox.Program RecupererIcone - [MAIN] RecupererIcone() [FIN]
+2018-04-06 16:56:59,527 [1] INFO  SandBox.Program RecupererVersion - [MAIN] RecupererVersion() [DEBUT]
+2018-04-06 16:56:59,527 [1] DEBUG SandBox.Program RecupererVersion - Proxy host = http://172.16.1.62/pollen/
+2018-04-06 16:56:59,542 [1] DEBUG SandBox.Program RecupererVersion - Proxy login = 
+2018-04-06 16:56:59,543 [1] DEBUG SandBox.Main RecupererVersion - webbrowser cookie = langue=fr; choix%5Fsiteid=VPARDEFAUT; choix%5Fsite%5Freel=Le+Hive; choix%5Fsite=Le+Hive+%7C+art%26fact; ASPSESSIONIDACCATATA=PLDJFOLDJAHDFAHNHCDPJDHF
+2018-04-06 16:56:59,543 [1] DEBUG SandBox.Main RecupererVersion - header cookie = langue=fr; choix%5Fsiteid=VPARDEFAUT; choix%5Fsite%5Freel=Le+Hive; choix%5Fsite=Le+Hive+%7C+art%26fact; ASPSESSIONIDACCATATA=PLDJFOLDJAHDFAHNHCDPJDHF
+2018-04-06 16:56:59,548 [1] INFO  SandBox.Program RecupererVersion - [MAIN] RecupererVersion() [FIN] - Version 1.9.3
+2018-04-06 16:56:59,548 [1] INFO  SandBox.Program RecupererPeripheriques - [Main] RecupererPeripheriques() - [DEBUT]
+2018-04-06 16:56:59,548 [1] INFO  SandBox.Program TraiterXML - [PeripheriqueManager] TraiterXML() - [DEBUT] Traitement de la liste des periphériques
+2018-04-06 16:56:59,564 [1] INFO  SandBox.Program DownloadXML - [PeripheriqueManager] DownloadXML() - [DEBUT] Telechargement xml [DIDEROT]
+2018-04-06 16:56:59,595 [1] INFO  SandBox.Program DownloadXML - [PeripheriqueManager] DownloadXML() - [FIN] Telechargement xml termine
+2018-04-06 16:56:59,595 [1] INFO  SandBox.Program TraiterXML - [PeripheriqueManager] TraiterXML() - [FIN] Traitement de la liste des periphériques terminé
+2018-04-06 16:56:59,595 [1] INFO  SandBox.Program RecupererPeripheriques - [Main] RecupererPeripheriques() - Liste des peripherique:
+2018-04-06 16:56:59,595 [1] INFO  SandBox.Program afficher - [PeripheriqueInfos]  Nom:SWISS READER | type_port:PS2 | bit_seconde:0 | bit_donnees:0 | parite: | bit_arret: | controle_flux: | port: | webservice:http://localhost/ws_unis_schneider/WSDEVICE.asmx/ | ws_username:Safeware | ws_password:0tNUaNfnEk2axel4ka0zDA== | traitement:SWISS_READER | avant: | apres: | debut:0 | longueur:0 | longueur_max:0 | decoupe:0 | conversion:0
+2018-04-06 16:56:59,595 [1] INFO  SandBox.Program afficher - [PeripheriqueInfos]  Nom:Tablette de signature WACOM | type_port: | bit_seconde:0 | bit_donnees:0 | parite: | bit_arret: | controle_flux: | port: | webservice:http://localhost/ws_unis_schneider/WSDEVICE.asmx/ | ws_username:Safeware | ws_password:0tNUaNfnEk2axel4ka0zDA== | traitement:SIGN_SCREEN | avant: | apres: | debut:0 | longueur:0 | longueur_max:0 | decoupe:0 | conversion:0
+2018-04-06 16:56:59,595 [1] DEBUG SandBox.Program Show - [Sign_Screen_Manager] Debut => Show()
+2018-04-06 16:56:59,626 [1] DEBUG SandBox.Program Show - [Sign_Screen_Manager] toClose=False
+2018-04-06 16:56:59,664 [1] ERROR SandBox.Program Form_Sign_Screen_Load - System.NotSupportedException: Le format du chemin d'accès donné n'est pas pris en charge.
+   à System.Security.Util.StringExpressionSet.CanonicalizePath(String path, Boolean needFullPath)
+   à System.Security.Util.StringExpressionSet.CreateListFromExpressions(String[] str, Boolean needFullPath)
+   à System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   à System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, String[] pathList, Boolean checkForDuplicates, Boolean needFullPath)
+   à System.IO.Path.GetFullPath(String path)
+   à System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   à System.Drawing.IntSecurity.DemandReadFileIO(String fileName)
+   à System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   à System.Drawing.Image.FromFile(String filename)
+   à SandBox.Periph_Sign_Screen.Form_Sign_Screen.Form_Sign_Screen_Load(Object sender, EventArgs e) dans D:\ZwDev\SandBox\SandBox\Periph_Sign_Screen\Form_Sign_Screen.cs:ligne 259
+2018-04-06 16:56:59,664 [1] DEBUG SandBox.Program Show - [Sign_Screen_Manager] Fin => Show()
+2018-04-06 16:56:59,664 [1] INFO  SandBox.Program RecupererPeripheriques - [Main] RecupererPeripheriques() - [FIN] Récuperation périphériques terminée
+2018-04-06 16:57:00,033 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://172.16.1.62/pollen/gestion/choix_app.asp?machine=DIDEROT&sandbox=true
+2018-04-06 16:57:00,141 [1] INFO  SandBox.Program webBrowser_DocumentCompleted - document completed=http://172.16.1.62/pollen/gestion/choix_app.asp?machine=DIDEROT&sandbox=true
+2018-04-06 17:00:46,891 [1] INFO  SandBox.Program Main - =============================================================================================
+2018-04-06 17:00:46,922 [1] INFO  SandBox.Program Main - Program.Main() Execution
+2018-04-06 17:00:46,946 [1] INFO  SandBox.Program Main - urlApplication=http://172.16.1.62/pollen/
+2018-04-06 17:00:46,947 [1] INFO  SandBox.Program Main - nomApplication=TELEMAQUE
+2018-04-06 17:00:47,062 [1] INFO  SandBox.Program .ctor - [MAIN] init config log4net
+2018-04-06 17:00:47,075 [1] INFO  SandBox.Program .ctor - [MAIN] recup url application ico
+2018-04-06 17:00:47,085 [1] INFO  SandBox.Program RecupererUrl - [MAIN] RecupererUrl() [DEBUT]
+2018-04-06 17:00:47,086 [1] INFO  SandBox.Program RecupererUrl - [MAIN] RecupererUrl() [FIN] - URL:http://172.16.1.62/pollen/
+2018-04-06 17:00:47,088 [1] INFO  SandBox.Program RecupererNomApplication - [MAIN] RecupererNomApplication() [DEBUT]
+2018-04-06 17:00:47,089 [1] INFO  SandBox.Program RecupererNomApplication - [MAIN] RecupererNomApplication() [FIN] - Nom Application : TELEMAQUE
+2018-04-06 17:00:47,166 [1] INFO  SandBox.Program MiseEnPlaceRaccourcis - [MAIN] MiseEnPlaceRaccourcis() - user.config = C:\Users\Mathias\AppData\Local\Safeware\TELEMAQUE_-_UnisBox.exe_Url_aiaikfhtrmhp0r5azgee1b213yqbr53x\1.0.9.98\user.config
+2018-04-06 17:00:47,398 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=about:blank
+2018-04-06 17:00:47,508 [1] INFO  SandBox.Program webBrowser_DocumentCompleted - document completed=about:blank
+2018-04-06 17:00:47,716 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://172.16.1.62/pollen/gestion/accueil.asp
+2018-04-06 17:00:47,772 [1] INFO  SandBox.Program webBrowser_DocumentCompleted - document completed=http://172.16.1.62/pollen/gestion/accueil.asp
+2018-04-06 17:00:50,499 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://172.16.1.62/pollen/gestion/choix_app.asp?site=Le+Hive+|+art&fact&siteid=VPARDEFAUT&site_reel=Le+Hive
+2018-04-06 17:00:50,500 [1] INFO  SandBox.Main webBrowser_Navigated - MachineName = DIDEROT
+2018-04-06 17:00:50,504 [1] INFO  SandBox.Program RecupererIcone - [MAIN] RecupererIcone() [DEBUT]
+2018-04-06 17:00:50,517 [1] DEBUG SandBox.Program RecupererIcone - Proxy host = http://172.16.1.62/pollen/
+2018-04-06 17:00:50,517 [1] DEBUG SandBox.Program RecupererIcone - Proxy login = 
+2018-04-06 17:00:50,518 [1] DEBUG SandBox.Main RecupererIcone - webbrowser cookie = langue=fr; choix%5Fsiteid=VPARDEFAUT; choix%5Fsite%5Freel=Le+Hive; choix%5Fsite=Le+Hive+%7C+art%26fact; ASPSESSIONIDACCATATA=CMDJFOLDKBFAAAKDMCGHFHPP
+2018-04-06 17:00:50,518 [1] DEBUG SandBox.Main RecupererIcone - header cookie = langue=fr; choix%5Fsiteid=VPARDEFAUT; choix%5Fsite%5Freel=Le+Hive; choix%5Fsite=Le+Hive+%7C+art%26fact; ASPSESSIONIDACCATATA=CMDJFOLDKBFAAAKDMCGHFHPP
+2018-04-06 17:00:50,547 [1] INFO  SandBox.Program RecupererIcone - [MAIN] RecupererIcone() [FIN]
+2018-04-06 17:00:50,549 [1] INFO  SandBox.Program RecupererVersion - [MAIN] RecupererVersion() [DEBUT]
+2018-04-06 17:00:50,556 [1] DEBUG SandBox.Program RecupererVersion - Proxy host = http://172.16.1.62/pollen/
+2018-04-06 17:00:50,556 [1] DEBUG SandBox.Program RecupererVersion - Proxy login = 
+2018-04-06 17:00:50,557 [1] DEBUG SandBox.Main RecupererVersion - webbrowser cookie = langue=fr; choix%5Fsiteid=VPARDEFAUT; choix%5Fsite%5Freel=Le+Hive; choix%5Fsite=Le+Hive+%7C+art%26fact; ASPSESSIONIDACCATATA=CMDJFOLDKBFAAAKDMCGHFHPP
+2018-04-06 17:00:50,557 [1] DEBUG SandBox.Main RecupererVersion - header cookie = langue=fr; choix%5Fsiteid=VPARDEFAUT; choix%5Fsite%5Freel=Le+Hive; choix%5Fsite=Le+Hive+%7C+art%26fact; ASPSESSIONIDACCATATA=CMDJFOLDKBFAAAKDMCGHFHPP
+2018-04-06 17:00:50,564 [1] INFO  SandBox.Program RecupererVersion - [MAIN] RecupererVersion() [FIN] - Version 1.9.3
+2018-04-06 17:00:50,573 [1] INFO  SandBox.Program RecupererPeripheriques - [Main] RecupererPeripheriques() - [DEBUT]
+2018-04-06 17:00:50,579 [1] INFO  SandBox.Program TraiterXML - [PeripheriqueManager] TraiterXML() - [DEBUT] Traitement de la liste des periphériques
+2018-04-06 17:00:50,584 [1] INFO  SandBox.Program DownloadXML - [PeripheriqueManager] DownloadXML() - [DEBUT] Telechargement xml [DIDEROT]
+2018-04-06 17:00:50,622 [1] INFO  SandBox.Program DownloadXML - [PeripheriqueManager] DownloadXML() - [FIN] Telechargement xml termine
+2018-04-06 17:00:50,623 [1] INFO  SandBox.Program TraiterXML - [PeripheriqueManager] TraiterXML() - [FIN] Traitement de la liste des periphériques terminé
+2018-04-06 17:00:50,623 [1] INFO  SandBox.Program RecupererPeripheriques - [Main] RecupererPeripheriques() - Liste des peripherique:
+2018-04-06 17:00:50,624 [1] INFO  SandBox.Program afficher - [PeripheriqueInfos]  Nom:SWISS READER | type_port:PS2 | bit_seconde:0 | bit_donnees:0 | parite: | bit_arret: | controle_flux: | port: | webservice:http://localhost/ws_unis_schneider/WSDEVICE.asmx/ | ws_username:Safeware | ws_password:0tNUaNfnEk2axel4ka0zDA== | traitement:SWISS_READER | avant: | apres: | debut:0 | longueur:0 | longueur_max:0 | decoupe:0 | conversion:0
+2018-04-06 17:00:50,627 [1] INFO  SandBox.Program afficher - [PeripheriqueInfos]  Nom:Tablette de signature WACOM | type_port: | bit_seconde:0 | bit_donnees:0 | parite: | bit_arret: | controle_flux: | port: | webservice:http://localhost/ws_unis_schneider/WSDEVICE.asmx/ | ws_username:Safeware | ws_password:0tNUaNfnEk2axel4ka0zDA== | traitement:SIGN_SCREEN | avant: | apres: | debut:0 | longueur:0 | longueur_max:0 | decoupe:0 | conversion:0
+2018-04-06 17:00:50,628 [1] DEBUG SandBox.Program Show - [Sign_Screen_Manager] Debut => Show()
+2018-04-06 17:00:50,645 [1] DEBUG SandBox.Program Show - [Sign_Screen_Manager] toClose=False
+2018-04-06 17:00:51,993 [1] DEBUG SandBox.Program Show - [Sign_Screen_Manager] Fin => Show()
+2018-04-06 17:00:51,997 [1] INFO  SandBox.Program RecupererPeripheriques - [Main] RecupererPeripheriques() - [FIN] Récuperation périphériques terminée
+2018-04-06 17:00:52,464 [1] DEBUG SandBox.Main webBrowser_Navigated - URL=http://172.16.1.62/pollen/gestion/choix_app.asp?machine=DIDEROT&sandbox=true
+2018-04-06 17:00:52,567 [1] INFO  SandBox.Program webBrowser_DocumentCompleted - document completed=http://172.16.1.62/pollen/gestion/choix_app.asp?machine=DIDEROT&sandbox=true

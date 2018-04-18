@@ -169,3 +169,4 @@ D:\ZwDev\SandBox\SandBox\obj\x86\Release\TELEMAQUE - UnisBox.pdb
 D:\ZwDev\SandBox\SandBox\bin\x86\Release\Interop.wgssSTU.dll
 D:\ZwDev\SandBox\SandBox\obj\x86\Release\SandBox.csproj.CoreCompileInputs.cache
 D:\ZwDev\SandBox\SandBox\obj\x86\Release\SandBox.csprojResolveAssemblyReference.cache
+D:\ZwDev\SandBox\SandBox\obj\x86\Release\SandBox.csproj.CopyComplete
