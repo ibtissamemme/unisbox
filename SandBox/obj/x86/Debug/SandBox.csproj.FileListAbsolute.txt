@@ -167,6 +167,6 @@ D:\ZwDev\SandBox\SandBox\obj\x86\Debug\TELEMAQUE - UnisBox.application
 D:\ZwDev\SandBox\SandBox\obj\x86\Debug\TELEMAQUE - UnisBox.exe
 D:\ZwDev\SandBox\SandBox\obj\x86\Debug\TELEMAQUE - UnisBox.pdb
 D:\ZwDev\SandBox\SandBox\obj\x86\Debug\SandBox.csproj.CoreCompileInputs.cache
-D:\ZwDev\SandBox\SandBox\obj\x86\Debug\SandBox.csprojResolveAssemblyReference.cache
 D:\ZwDev\SandBox\SandBox\bin\x86\Debug\Interop.wgssSTU.dll
 D:\ZwDev\SandBox\SandBox\obj\x86\Debug\SandBox.csproj.CopyComplete
+D:\ZwDev\SandBox\SandBox\obj\x86\Debug\SandBox.csprojAssemblyReference.cache

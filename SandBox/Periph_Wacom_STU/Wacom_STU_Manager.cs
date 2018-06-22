@@ -30,31 +30,38 @@ namespace SandBox.Periph_Wacom_STU
             {
                 STU = null;
             }
-
-            wgssSTU.UsbDevices usbDevices = new wgssSTU.UsbDevices();
-            if (usbDevices.Count != 0)
+            try
             {
-                try
+                wgssSTU.UsbDevices usbDevices = new wgssSTU.UsbDevices();
+                if (usbDevices.Count != 0)
                 {
-                    wgssSTU.IUsbDevice usbDevice = usbDevices[0]; // select a device
+                    try
+                    {
+                        wgssSTU.IUsbDevice usbDevice = usbDevices[0]; // select a device
 
-                    STU = new Form_Wacom_STU("Saisie de la signature", url, WebBrowser, this, usbDevice);
+                        STU = new Form_Wacom_STU("Saisie de la signature", url, WebBrowser, this, usbDevice);
 
-                    STU.ShowDialog();
-                    Program.LogFich.Info("[Wacom_STU] Fin => Lecture_signature()");
-                    this.ChangeLabelStatus("Status : None");
+                        STU.ShowDialog();
+                        Program.LogFich.Info("[Wacom_STU] Fin => Lecture_signature()");
+                        this.ChangeLabelStatus("Status : None");
 
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                        Program.LogFich.Error("[Wacom_STU] Lecture_signature() = " + ex.ToString());
+                    }
                 }
-                catch (Exception ex)
+                else
                 {
-                    MessageBox.Show(ex.Message);
-                    Program.LogFich.Error("[Wacom_STU] Lecture_signature() = " + ex.ToString());
+                    MessageBox.Show("No STU devices attached");
+                    this.ChangeLabelStatus("Status : None");
                 }
             }
-            else
+            catch (Exception ex)
             {
                 MessageBox.Show("No STU devices attached");
-                this.ChangeLabelStatus("Status : None");
+                Program.LogFich.Error("[Wacom_STU] Lecture_signature() (usbDevices.Count) = " + ex.ToString());
             }
 
         }

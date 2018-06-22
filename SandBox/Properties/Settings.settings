@@ -65,14 +65,14 @@
     <Setting Name="cookieHttpOnly" Type="System.Boolean" Scope="Application">
       <Value Profile="(Default)">False</Value>
     </Setting>
-    <Setting Name="UrlImageScreenSign" Type="System.String" Scope="User">
-      <Value Profile="(Default)">https://apod.nasa.gov/apod/image/1804/NGC3324_SHO.jpg</Value>
-    </Setting>
-    <Setting Name="indexScreenSign" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">1</Value>
-    </Setting>
     <Setting Name="urlApplication" Type="System.String" Scope="User">
       <Value Profile="(Default)">http://172.16.1.62/pollen/</Value>
+    </Setting>
+    <Setting Name="UrlImageScreenSign" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Users\Mathias\Desktop\splash-screen-schneider.png</Value>
+    </Setting>
+    <Setting Name="indexScreenSign" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">2</Value>
     </Setting>
   </Settings>
 </SettingsFile>
