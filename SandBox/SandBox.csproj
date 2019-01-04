@@ -1,0 +1,846 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8848C4DA-C197-42CB-8180-9E7EA853275E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SandBox</RootNamespace>
+    <AssemblyName>TELEMAQUE - UnisBox</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>A1314871D215F2E1C2DA85A164AA07AA1AEC8519</ManifestCertificateThumbprint>
+    <ManifestKeyFile>SandBox_3_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <StartupObject>SandBox.Program</StartupObject>
+    <TargetZone>LocalIntranet</TargetZone>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <ApplicationIcon>Telemaque.ico</ApplicationIcon>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <PublishUrl>publish/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <TargetCulture>fr-FR</TargetCulture>
+    <ProductName>TELEMAQUE - UnisBox</ProductName>
+    <PublisherName>Safeware</PublisherName>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <TrustUrlParameters>true</TrustUrlParameters>
+    <ApplicationRevision>5</ApplicationRevision>
+    <ApplicationVersion>1.0.9.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>false</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <PlatformTarget>x86</PlatformTarget>
+    <DocumentationFile>
+    </DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Communication, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1271926d87aa68e6, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DirectX.Capture, Version=1.0.1313.24984, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Resources\DirectX.Capture.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DShowNET, Version=1.0.0.1, Culture=neutral">
+      <HintPath>Resources\DShowNET.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="gxdotnet7, Version=7.2.10.0, Culture=neutral, PublicKeyToken=5785895c728cac85">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Interop.Cardiris, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Interop.IWshRuntimeLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Interop.SHDocVw, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Interop.wgssSTU, Version=2.2.0.0, Culture=neutral, PublicKeyToken=20000022810869de, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>Resources\Wacom\Interop.wgssSTU.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Resources\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="prdotnet7, Version=2.1.5.2, Culture=neutral, PublicKeyToken=4020ef1cb3f1980b">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SigPlusNET, Version=1.1.3358.14336, Culture=neutral, PublicKeyToken=6aef07010bb0624f, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Resources\SigPlusNET.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="STUTablet, Version=1.0.32.0, Culture=neutral, PublicKeyToken=47f71e2b3a1e20f6, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Resources\Wacom\STUTablet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Chiffrement.cs" />
+    <Compile Include="Periph_Sign_Screen_Tablet\Form_Sign_Screen_Tablet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Periph_Sign_Screen_Tablet\Form_Sign_Screen_Tablet.Designer.cs">
+      <DependentUpon>Form_Sign_Screen_Tablet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Periph_Sign_Screen_Tablet\Sign_Screen_Tablet_Manager.cs" />
+    <Compile Include="Periph_MIL100\Form_MIL100.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Periph_MIL100\Form_MIL100.Designer.cs">
+      <DependentUpon>Form_MIL100.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Periph_MIL100\MIL100.cs" />
+    <Compile Include="Periph_Sign_Screen\Form_Sign_Screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Periph_Sign_Screen\Form_Sign_Screen.Designer.cs">
+      <DependentUpon>Form_Sign_Screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Periph_Sign_Screen\Form_Sign_Screen_clone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Periph_Sign_Screen\Form_Sign_Screen_clone.Designer.cs">
+      <DependentUpon>Form_Sign_Screen_clone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Periph_Sign_Screen\Sign_Screen_Manager.cs" />
+    <Compile Include="Functions.cs" />
+    <Compile Include="FormPeripherique.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPeripherique.Designer.cs">
+      <DependentUpon>FormPeripherique.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionPeripheriques\EcranClavierPeriph.cs" />
+    <Compile Include="GestionPeripheriques\IData.cs" />
+    <Compile Include="GestionOptionsAdmin\KBHookProvider.cs" />
+    <Compile Include="GestionOptionsAdmin\KeyHookEventArgs.cs" />
+    <Compile Include="Periph_Biovein\BioveinEdenManager.cs" />
+    <Compile Include="Periph_IrisCard\Form_Iriscan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Periph_IrisCard\Form_Iriscan.Designer.cs">
+      <DependentUpon>Form_Iriscan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Periph_IrisCard\IrisCard_Manager.cs" />
+    <Compile Include="Periph_PowerScan\DataLogicManager.cs" />
+    <Compile Include="Periph_PowerScan\DataLogicPortSerie.cs" />
+    <Compile Include="Periph_SwissReader\ScannerPiece.cs" />
+    <Compile Include="Periph_Wacom_STU\Form_Wacom_STU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Periph_Wacom_STU\Form_Wacom_STU.Designer.cs">
+      <DependentUpon>Form_Wacom_STU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Periph_Wacom_STU\Wacom_STU_Manager.cs" />
+    <Compile Include="Periph_Webcam\Form_webcam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Periph_Webcam\Form_webcam.Designer.cs">
+      <DependentUpon>Form_webcam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Periph_Webcam\Periph_Webcam_Manager.cs" />
+    <Compile Include="GestionOptionsAdmin\OptionsAdminManager.cs" />
+    <Compile Include="GestionPeripheriques\Peripherique.cs" />
+    <Compile Include="GestionPeripheriques\PeripheriqueDataReceivedEventArgs.cs" />
+    <Compile Include="GestionPeripheriques\PeripheriqueDataReceivingEventArgs.cs" />
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionPeripheriques\PeripheriqueInfos.cs" />
+    <Compile Include="GestionPeripheriques\PeripheriqueManager.cs" />
+    <Compile Include="Periph_Biovein\BioveinManager.cs" />
+    <Compile Include="Periph_Escort2\MagnetaManager.cs" />
+    <Compile Include="Periph_Escort2\MagnetaPortSerie.cs" />
+    <Compile Include="Periph_Escort2\MagnetaRonde.cs" />
+    <Compile Include="Periph_GuardiX\DeisterManager.cs" />
+    <Compile Include="Periph_GuardiX\DeisterPortSerie.cs" />
+    <Compile Include="Periph_GuardiX\DeisterRonde.cs" />
+    <Compile Include="Periph_GuardiX\Trame.cs" />
+    <Compile Include="Periph_Lecteur\LecteurManager.cs" />
+    <Compile Include="Periph_Lecteur\LecteurPortSerie.cs" />
+    <Compile Include="Periph_SwissReader\EcranClavier.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Periph_SwissReader\PieceManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Periph_Topaz\Form_Topaz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Periph_Topaz\Form_Topaz.Designer.cs">
+      <DependentUpon>Form_Topaz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Periph_Topaz\Topaz_Manager.cs" />
+    <Compile Include="Piece_ID\Champ.cs" />
+    <Compile Include="Piece_ID\PieceC.cs" />
+    <Compile Include="Piece_ID\PieceCarteID.cs" />
+    <Compile Include="Piece_ID\PieceCIE.cs" />
+    <Compile Include="Piece_ID\PieceGC.cs" />
+    <Compile Include="Piece_ID\PieceGenerique.cs" />
+    <Compile Include="Piece_ID\PiecePassport.cs" />
+    <Compile Include="Piece_ID\PieceTS.cs" />
+    <Compile Include="GestionPeripheriques\PortSerie.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Piece_ID\PieceVisaA.cs" />
+    <Compile Include="Piece_ID\PieceVisaB.cs" />
+    <Compile Include="FormProgressBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProgressBar.Designer.cs">
+      <DependentUpon>FormProgressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="Telemaque.ico" />
+    <EmbeddedResource Include="Periph_Sign_Screen_Tablet\Form_Sign_Screen_Tablet.resx">
+      <DependentUpon>Form_Sign_Screen_Tablet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPeripherique.resx">
+      <DependentUpon>FormPeripherique.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Periph_MIL100\Form_MIL100.resx">
+      <DependentUpon>Form_MIL100.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Periph_Sign_Screen\Form_Sign_Screen.resx">
+      <DependentUpon>Form_Sign_Screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Periph_Sign_Screen\Form_Sign_Screen_clone.resx">
+      <DependentUpon>Form_Sign_Screen_clone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Periph_Topaz\Form_Topaz.resx">
+      <DependentUpon>Form_Topaz.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Periph_Wacom_STU\Form_Wacom_STU.resx">
+      <DependentUpon>Form_Wacom_STU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\app.manifest" />
+    <Compile Include="Periph_Sri\SriSocketServeur.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="SplashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <None Include="Resources\btn_stop.Image.png" />
+    <Content Include="Resources\Wacom\Interop.wgssSTU.dll" />
+    <Content Include="Resources\Wacom\libeay32.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Wacom\msvcr71.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Wacom\STUTablet.dll" />
+    <Content Include="Resources\Wacom\STUTabletCore.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Wacom\winusb.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Wacom\zlib1.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ZalixVeinSecure\BioAccess.ldb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ZalixVeinSecure\F3BC4BSP.DAT">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ZalixVeinSecure\veinsecure.exe.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ZalixVeinSecure\BioAccess.dsn">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="SandBox_2_TemporaryKey.pfx" />
+    <None Include="SandBox_3_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Biovein\libhitachifingerveinh1.ilf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ZalixVeinSecure\AxPalmSecureXLib.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ZalixVeinSecure\BioAccess.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ZalixVeinSecure\DataAccessCtrl.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ZalixVeinSecure\F3BC4BIO.DLL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ZalixVeinSecure\F3BC4BSP.DLL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ZalixVeinSecure\F3BC4CAP.DLL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ZalixVeinSecure\F3BC4COM.DLL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ZalixVeinSecure\F3BC4FRM.DLL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ZalixVeinSecure\F3BC4MAT.DLL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ZalixVeinSecure\F3BC4TIC.DLL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ZalixVeinSecure\PalmSecureX.ocx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ZalixVeinSecure\PalmSecureXLib.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ZalixVeinSecure\PvsAPIIf.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ZalixVeinSecure\Records.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ZalixVeinSecure\Tools.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ZalixVeinSecure\veinsecure.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Biovein\brwlibhitachifingerveinh1.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Biovein\brwliblogicalaccess.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Biovein\HiBioAPI.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Biovein\libbiorfidwrapper.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Biovein\libbiorfidwrapper.h">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Biovein\libeay32.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Biovein\libhitachifingerveinh1.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Biovein\libiconv.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Biovein\liblogicalaccess.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Biovein\libxml2.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Biovein\scardsyn.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Biovein\ssleay32.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Biovein\zlib1.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Periph_IrisCard\Form_Iriscan.resx">
+      <DependentUpon>Form_Iriscan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Periph_Webcam\Form_webcam.resx">
+      <DependentUpon>Form_webcam.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="log4net.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\DirectX.Capture.dll" />
+    <None Include="Resources\Interop.IWshRuntimeLibrary.dll">
+    </None>
+    <None Include="Resources\Communication.dll">
+    </None>
+    <None Include="Resources\DShowNET.dll">
+    </None>
+    <None Include="Resources\Interop.Cardiris.dll">
+    </None>
+    <None Include="Resources\gxdotnet7.dll" />
+    <Content Include="Resources\EasyRonde\DllTermCommPrj.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\EasyRonde\EasyRonde.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\EasyRonde\Pcomm.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\IrisCard\bcprint.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\IrisCard\borlndmm.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\IrisCard\cardiris.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\IrisCard\cp3240mt.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\IrisCard\ctreestd.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\IrisCard\drs832.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\IrisCard\irissync.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\IrisCard\irissyncres.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\IrisCard\irscncol.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\IrisCard\lfbmp12n.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\IrisCard\lfcmp12n.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\IrisCard\lfdxf12n.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\IrisCard\lffax12n.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\IrisCard\lfgif12n.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\IrisCard\lfjbg12n.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\IrisCard\lflmb12n.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\IrisCard\lfpcx12n.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\IrisCard\lfpng12n.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\IrisCard\lftif12n.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\IrisCard\ltdis12n.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\IrisCard\ltfil12n.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\IrisCard\ltimg12n.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\IrisCard\ltkrn12n.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\IrisCard\ltwvc12n.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\IrisCard\lvdx12n.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\IrisCard\lvgl12n.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\IrisCard\lvkrn12n.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\IrisCard\pcdlib32.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\IrisCard\regstr.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\IrisCard\regwiz.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\IrisCard\reslng.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\IrisCard\SchemaICPro4-us72.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\log4net.dll">
+    </None>
+    <Content Include="Resources\MIL100\LecteurOperateur.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\MIL100\log4cxx.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ModelPiece.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="FormProgressBar.resx">
+      <DependentUpon>FormProgressBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\please.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Include="Resources\SigPlusNET.dll">
+    </None>
+    <EmbeddedResource Include="SplashForm.resx">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\IrisCard\afr.ytr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\IrisCard\alb.ytr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\IrisCard\brt.ytr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\IrisCard\brz.ytr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\IrisCard\bul.ytr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\IrisCard\cro.ytr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\IrisCard\cze.ytr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\IrisCard\dan.ytr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\IrisCard\dico.bcr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\IrisCard\dut.ytr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\IrisCard\eng.ytr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\IrisCard\enreg.bat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\IrisCard\est.ytr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\IrisCard\fin.ytr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\IrisCard\frn.ytr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\IrisCard\grk.ytr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\IrisCard\grm.ytr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\IrisCard\hpscl.d32">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\IrisCard\hun.ytr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\IrisCard\ice.ytr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\IrisCard\iri.ytr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\IrisCard\itl.ytr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\IrisCard\lav.ytr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\IrisCard\lit.ytr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\IrisCard\ltn.ytr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\IrisCard\lux.ytr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\IrisCard\mac.ytr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\IrisCard\nrw.ytr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\IrisCard\pol.ytr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\IrisCard\prt.ytr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\IrisCard\regstr.cfg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\IrisCard\rom.ytr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\IrisCard\rus.ytr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\IrisCard\ser.ytr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\IrisCard\slk.ytr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\IrisCard\sln.ytr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\IrisCard\spn.ytr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\IrisCard\swd.ytr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\IrisCard\trk.ytr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\IrisCard\twaino59.d32">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\IrisCard\twaino66.d32">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\IrisCard\ukr.ytr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\IrisCard\uni_r0.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\IrisCard\uni_r1.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\IrisCard\uni_r2.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\IrisCard\uni_r3.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\IrisCard\uni_r4.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\IrisCard\uni_r5.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\IrisCard\uni_r6.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\Interop.SHDocVw.dll">
+    </None>
+    <None Include="Resources\stdole.dll">
+    </None>
+    <None Include="Resources\prdotnet7.dll" />
+    <EmbeddedResource Include="Resources\safeware_sandbox.png" />
+    <Content Include="Resources\Telemaque.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Omnigarde.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Tracing\SurvacomTracing.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Tracing\WM.DLL">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Resources\ModelPiece.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Resources\ZalixVeinSecure\BioAccess.mdb">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
