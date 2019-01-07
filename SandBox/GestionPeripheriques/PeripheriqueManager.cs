@@ -136,6 +136,7 @@ namespace SandBox
             Program.LogFich.Info("[PeripheriqueManager] TraiterXML() - [DEBUT] Traitement de la liste des periphériques");
 
             PeripheriqueInfos perifInfo = new PeripheriqueInfos();
+            perifInfo.IdtechnoStid = "";
             string nomElement = "";
 
             //protection de la ressource
@@ -154,6 +155,7 @@ namespace SandBox
                                 if (nomElement.Equals("peripherique"))
                                 {
                                     perifInfo = new PeripheriqueInfos();
+                                    perifInfo.IdtechnoStid = "";
                                 }
                                 break;
 
@@ -250,6 +252,11 @@ namespace SandBox
                                     if (!reader.Value.ToString().Equals(""))
                                         perifInfo.Conversion = int.Parse(reader.Value.ToString());
                                 }
+                                else if (nomElement.Equals("idtechnostid"))
+                                {
+                                  perifInfo.IdtechnoStid= reader.Value.ToString();
+                                }
+                               
                                 break;
                         }
                     }

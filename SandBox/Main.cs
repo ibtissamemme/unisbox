@@ -1812,6 +1812,21 @@ namespace SandBox
                     return;
                 }
 
+                if (nomperiph.ToUpper().Equals("STID"))
+                {                     
+                    
+                    Form_STID fstid = new Form_STID(webBrowser, peripheriqueManager.ListePeripherique[cpt].Port.ToString(), peripheriqueManager.ListePeripherique[cpt].IdtechnoStid.ToString());
+                   
+                    fstid.StartPosition = FormStartPosition.Manual;
+                    fstid.Location = new Point(this.Location.X + (this.Width - fstid.Width) / 2, this.Location.Y + (this.Height - fstid.Height) / 2);
+                    fstid.Show();
+                    Application.DoEvents();
+                   
+                    fstid.lecture(LogFich);
+                  
+                    return;
+                }
+                
                 LecteurManager lmanager = new LecteurManager(webBrowser,
                                                             peripheriqueManager.ListePeripherique[cpt].Avant,
                                                             peripheriqueManager.ListePeripherique[cpt].Apres,

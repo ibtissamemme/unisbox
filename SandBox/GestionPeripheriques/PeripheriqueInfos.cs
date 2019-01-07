@@ -23,6 +23,7 @@ namespace SandBox
         private int longueur_max;
         private int decoupe;
         private int conversion;
+        private string idtechnostid;
 
         #region Constructeur
         public PeripheriqueInfos()
@@ -32,7 +33,7 @@ namespace SandBox
         public PeripheriqueInfos(string _nom, string _type_port, int _bit_seconde, int _bit_donnee,
             string _parite, string _bit_arret, string _controle_flux, string _port, string _webservice, string _username, string _password, string _traitement,
             string _avant, string _apres, int _debut, int _longueur, int _longueur_max,
-            int _decoupe, int _conversion)
+            int _decoupe, int _conversion,string _idtechnostid)
         {
             this.nom = _nom;
             this.type_port = _type_port;
@@ -53,6 +54,7 @@ namespace SandBox
             this.longueur_max = _longueur_max;
             this.decoupe = _decoupe;
             this.conversion = _conversion;
+            this.idtechnostid = _idtechnostid;
         }
         #endregion
 
@@ -153,7 +155,11 @@ namespace SandBox
             get { return conversion; }
             set { conversion = value; }
         }
-
+        public string IdtechnoStid
+        {
+            get { return idtechnostid; }
+            set { idtechnostid = value; }
+        }
         #endregion
 
         //Fonction: creer un string pour les logs 
@@ -199,6 +205,9 @@ namespace SandBox
             sb.Append(decoupe);
             sb.Append(" | conversion:");
             sb.Append(conversion);
+            sb.Append(" | idtechnostid:");
+            sb.Append(idtechnostid);
+            
             Program.LogFich.Info("[PeripheriqueInfos] " + sb.ToString());
         }
 
@@ -233,6 +242,8 @@ namespace SandBox
                     sb.Append("Lentgh max\t: " + longueur_max + "\n");
                     sb.Append("Split\t\t: " + decoupe + "\n");
                     sb.Append("Conversion\t: " + conversion + "\n");
+                    sb.Append("idtechnostid\t: " + idtechnostid + "\n");
+                
                 }
             }
             catch
