@@ -21,8 +21,8 @@
     <SccProvider>
     </SccProvider>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <ManifestCertificateThumbprint>0DEC40603EAEFEB7C2CF05DAB078BD8A7430D870</ManifestCertificateThumbprint>
-    <ManifestKeyFile>SandBox_4_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestCertificateThumbprint>34C402CCAD555B10160581990576AB2A646FA434</ManifestCertificateThumbprint>
+    <ManifestKeyFile>SandBox_TemporaryKey.pfx</ManifestKeyFile>
     <GenerateManifests>true</GenerateManifests>
     <SignManifests>true</SignManifests>
     <StartupObject>SandBox.Program</StartupObject>
@@ -53,7 +53,7 @@
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
     <TrustUrlParameters>true</TrustUrlParameters>
     <ApplicationRevision>27</ApplicationRevision>
-    <ApplicationVersion>1.0.9.%2a</ApplicationVersion>
+    <ApplicationVersion>1.0.9.27</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>false</BootstrapperEnabled>
@@ -288,6 +288,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="Resources\STID\SSCPlibMifareGlobal.dll" />
     <Content Include="Telemaque.ico" />
     <EmbeddedResource Include="Periph_Sign_Screen_Tablet\Form_Sign_Screen_Tablet.resx">
       <DependentUpon>Form_Sign_Screen_Tablet.cs</DependentUpon>
@@ -374,6 +375,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="SandBox_4_TemporaryKey.pfx" />
+    <None Include="SandBox_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
