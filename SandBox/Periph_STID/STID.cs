@@ -210,6 +210,12 @@ namespace SandBox
                     msg += "ATS    =" + System.BitConverter.ToString(ATS, 0, ATS[0]).Replace("-", "");
                     Program.LogFich.Info("STID : badge lu : " + msg);
                     resultat = System.BitConverter.ToString(UID, 0, UIDLen).Replace("-", "");
+                    Program.LogFich.Info("STID : Brut : [" + resultat + "]");
+                    if (resultat.StartsWith("0"))
+                    {
+                        resultat = resultat.Substring(1);
+                        Program.LogFich.Info("STID : sans zéro : [" + resultat + "]");
+                    }
                     if (!nbCard.ToString().Equals("0"))
                     {
                         switch (CardType.ToString())
