@@ -212,18 +212,6 @@ namespace SandBox.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://172.16.1.62/pollen/")]
-        public string urlApplication {
-            get {
-                return ((string)(this["urlApplication"]));
-            }
-            set {
-                this["urlApplication"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\Mathias\\Desktop\\splash-screen-schneider.png")]
         public string UrlImageScreenSign {
             get {
@@ -248,10 +236,22 @@ namespace SandBox.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
         public bool showLoading {
             get {
                 return ((bool)(this["showLoading"]));
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost/safeware/telemaque/")]
+        public string urlApplication {
+            get {
+                return ((string)(this["urlApplication"]));
+            }
+            set {
+                this["urlApplication"] = value;
             }
         }
     }

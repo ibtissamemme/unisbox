@@ -1,4 +1,14 @@
 ﻿#region Using
+using IWshRuntimeLibrary;
+using log4net;
+using log4net.Config;
+using SandBox.Periph_Biovein.Periph_Biovein_Eden;
+using SandBox.Periph_IrisCard;
+using SandBox.Periph_Sign_Screen;
+using SandBox.Periph_Sign_Screen_Tablet;
+using SandBox.Periph_Topaz;
+using SandBox.Periph_Webcam;
+using STUTablet;
 using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
@@ -14,16 +24,6 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Web;
 using System.Windows.Forms;
-using IWshRuntimeLibrary;
-using log4net;
-using log4net.Config;
-using SandBox.Periph_Biovein.Periph_Biovein_Eden;
-using SandBox.Periph_IrisCard;
-using SandBox.Periph_Sign_Screen;
-using SandBox.Periph_Sign_Screen_Tablet;
-using SandBox.Periph_Topaz;
-using SandBox.Periph_Webcam;
-using STUTablet;
 #endregion
 
 namespace SandBox
@@ -347,6 +347,10 @@ namespace SandBox
         private void Web_V1_NewWindow(string URL, int Flags, string TargetFrameName, ref object PostData, string Headers, ref bool Processed)
         {
             Processed = true; //Stop event from being processed
+
+            //recreate a new window else comment
+            WebBrowser webFille = null;
+            Form Popup = null;
 
             if (webFille == null)
             {
@@ -1038,16 +1042,16 @@ namespace SandBox
                         Bitmap square = new Bitmap(128, 128);
                         Graphics g = Graphics.FromImage(square);
                         int x, y, w, h;
-                        float r = (float)img.Width / (float)img.Height;
+                        float r = img.Width / (float)img.Height;
                         if (r > 1)
                         {
                             w = 128;
-                            h = (int)((float)128 / r);
+                            h = (int)(128 / r);
                             x = 0; y = (128 - h) / 2;
                         }
                         else
                         {
-                            w = (int)((float)128 * r);
+                            w = (int)(128 * r);
                             h = 128;
                             y = 0; x = (128 - w) / 2;
                         }
@@ -1338,7 +1342,7 @@ namespace SandBox
                 periphStatus.Name = "device_no_device";
                 periphStatus.Spring = true;
                 periphStatus.Text = SandBox.Properties.Settings.Default.labelRedDevice;
-                periphStatus.BackColor = Color.Red;
+                periphStatus.BackColor = Color.Orange;
                 periphStatus.ForeColor = Color.White;
                 periphStatus.Alignment = ToolStripItemAlignment.Left;
                 periphStatus.Padding = new Padding(0);
@@ -1813,20 +1817,20 @@ namespace SandBox
                 }
 
                 if (nomperiph.ToUpper().Equals("STID"))
-                {                     
-                    
+                {
+
                     Form_STID fstid = new Form_STID(webBrowser, peripheriqueManager.ListePeripherique[cpt].Port.ToString(), peripheriqueManager.ListePeripherique[cpt].IdtechnoStid.ToString());
-                   
+
                     fstid.StartPosition = FormStartPosition.Manual;
                     fstid.Location = new Point(this.Location.X + (this.Width - fstid.Width) / 2, this.Location.Y + (this.Height - fstid.Height) / 2);
                     fstid.Show();
                     Application.DoEvents();
-                   
+
                     fstid.lecture(LogFich);
-                  
+
                     return;
                 }
-                
+
                 LecteurManager lmanager = new LecteurManager(webBrowser,
                                                             peripheriqueManager.ListePeripherique[cpt].Avant,
                                                             peripheriqueManager.ListePeripherique[cpt].Apres,
@@ -2634,7 +2638,7 @@ namespace SandBox
                 periphStatus.Name = "device_no_device";
                 periphStatus.Spring = true;
                 periphStatus.Text = SandBox.Properties.Settings.Default.labelRedDevice;
-                periphStatus.BackColor = Color.Red;
+                periphStatus.BackColor = Color.Orange;
                 periphStatus.ForeColor = Color.White;
                 periphStatus.Alignment = ToolStripItemAlignment.Left;
                 periphStatus.Padding = new Padding(0);

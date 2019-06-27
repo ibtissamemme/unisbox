@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Net;
+using System.Text;
 using System.Windows.Forms;
 using System.Xml;
-using System.IO;
-using System.Text;
 
 namespace SandBox
 {
@@ -41,6 +41,8 @@ namespace SandBox
             Program.LogFich.Info("[PeripheriqueManager] DownloadXML() - [DEBUT] Telechargement xml [" + Functions.getHost() + "]");
             string getVars = "?machine=" + Functions.getHost();
             string adresse = url.ToString() + getVars;
+
+            Program.LogFich.Info("URL=" + adresse);
 
             string nomfichier;
             string[] tmp;
@@ -254,9 +256,9 @@ namespace SandBox
                                 }
                                 else if (nomElement.Equals("idtechnostid"))
                                 {
-                                  perifInfo.IdtechnoStid= reader.Value.ToString();
+                                    perifInfo.IdtechnoStid = reader.Value.ToString();
                                 }
-                               
+
                                 break;
                         }
                     }
