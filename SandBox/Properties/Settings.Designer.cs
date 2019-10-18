@@ -151,7 +151,7 @@ namespace SandBox.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("W8FRU0006L")]
         public string forceMachineName {
             get {
                 return ((string)(this["forceMachineName"]));
@@ -201,15 +201,6 @@ namespace SandBox.Properties {
             }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool cookieHttpOnly {
-            get {
-                return ((bool)(this["cookieHttpOnly"]));
-            }
-        }
-        
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\Mathias\\Desktop\\splash-screen-schneider.png")]
@@ -245,13 +236,35 @@ namespace SandBox.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost/safeware/telemaque/")]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://accueil.et.services.schneider-electric.com/portail_pingid/telemaque_pingid" +
+            "")]
         public string urlApplication {
             get {
                 return ((string)(this["urlApplication"]));
             }
             set {
                 this["urlApplication"] = value;
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool cookieHttpOnly {
+            get {
+                return ((bool)(this["cookieHttpOnly"]));
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://accueil.et.services.schneider-electric.com/portail_pingid/")]
+        public string urlPortal {
+            get {
+                return ((string)(this["urlPortal"]));
+            }
+            set {
+                this["urlPortal"] = value;
             }
         }
     }

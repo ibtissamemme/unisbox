@@ -18,7 +18,7 @@ DisableDirPage=yes
 DefaultGroupName=OMNIGARDE - UnisBox
 DisableProgramGroupPage=yes
 OutputBaseFilename=setupOMNIGARDEUnisBox
-SetupIconFile=D:\ZwDev\SandBox\SandBox\bin\Release\Resources\omnigarde.ico
+SetupIconFile=D:\ZwDev\SandBox\SandBox\bin\x86\Release\Resources\Omnigarde.ico
 Compression=lzma
 SolidCompression=yes
 AppCopyright=Copyright © 2015 Safeware.
@@ -32,15 +32,15 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 ;Name: "DotNetFramework"; Description: ".NET Framework 2.0"; GroupDescription: "If .NET is NOT installed:";
 
 [Files]
-Source: "D:\ZwDev\SandBox\SandBox\bin\Release\OMNIGARDE - UnisBox.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "D:\ZwDev\SandBox\SandBox\bin\Release\*"; DestDir: "{app}"; Excludes: "\log\*, OMNIGARDE - UnisBox.application, OMNIGARDE - UnisBox.exe.manifest, user.config.lnk"; Flags: ignoreversion
-Source: "D:\ZwDev\SandBox\SandBox\bin\Release\Resources\Biovein\*"; DestDir: "{app}\Resources\Biovein"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "D:\ZwDev\SandBox\SandBox\bin\Release\Resources\EasyRonde\*"; DestDir: "{app}\Resources\EasyRonde"; Flags: ignoreversion recursesubdirs createallsubdirs
-;Source: "D:\ZwDev\SandBox\SandBox\bin\Release\Resources\IrisCard\*"; DestDir: "{app}\Resources\IrisCard"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "D:\ZwDev\SandBox\SandBox\bin\Release\Resources\MIL100\*"; DestDir: "{app}\Resources\MIL100"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "D:\ZwDev\SandBox\SandBox\bin\Release\Resources\Tracing\*"; DestDir: "{app}\Resources\Tracing"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "D:\ZwDev\SandBox\SandBox\bin\Release\Resources\ZalixVeinSecure\*"; DestDir: "{app}\Resources\ZalixVeinSecure"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "D:\ZwDev\SandBox\SandBox\bin\Release\Resources\*"; DestDir: "{app}\Resources\"; Flags: ignoreversion
+Source: "D:\ZwDev\SandBox\SandBox\bin\x86\Release\OMNIGARDE - UnisBox.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "D:\ZwDev\SandBox\SandBox\bin\x86\Release\*"; DestDir: "{app}"; Excludes: "\log\*, OMNIGARDE - UnisBox.application, OMNIGARDE - UnisBox.exe.manifest, user.config.lnk"; Flags: ignoreversion
+Source: "D:\ZwDev\SandBox\SandBox\bin\x86\Release\Resources\Biovein\*"; DestDir: "{app}\Resources\Biovein"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "D:\ZwDev\SandBox\SandBox\bin\x86\Release\Resources\EasyRonde\*"; DestDir: "{app}\Resources\EasyRonde"; Flags: ignoreversion recursesubdirs createallsubdirs
+;Source: "D:\ZwDev\SandBox\SandBox\bin\x86\Release\Resources\IrisCard\*"; DestDir: "{app}\Resources\IrisCard"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "D:\ZwDev\SandBox\SandBox\bin\x86\Release\Resources\MIL100\*"; DestDir: "{app}\Resources\MIL100"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "D:\ZwDev\SandBox\SandBox\bin\x86\Release\Resources\Tracing\*"; DestDir: "{app}\Resources\Tracing"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "D:\ZwDev\SandBox\SandBox\bin\x86\Release\Resources\ZalixVeinSecure\*"; DestDir: "{app}\Resources\ZalixVeinSecure"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "D:\ZwDev\SandBox\SandBox\bin\x86\Release\Resources\*"; DestDir: "{app}\Resources\"; Flags: ignoreversion
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]

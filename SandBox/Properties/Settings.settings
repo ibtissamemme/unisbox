@@ -45,7 +45,7 @@
       <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="forceMachineName" Type="System.String" Scope="Application">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">W8FRU0006L</Value>
     </Setting>
     <Setting Name="CharNewLine" Type="System.String" Scope="Application">
       <Value Profile="(Default)">##</Value>
@@ -59,9 +59,6 @@
     <Setting Name="labelRedDevice" Type="System.String" Scope="Application">
       <Value Profile="(Default)">Veuillez cliquer sur cette barre pour connecter les lecteurs de badge et d'identité</Value>
     </Setting>
-    <Setting Name="cookieHttpOnly" Type="System.Boolean" Scope="Application">
-      <Value Profile="(Default)">False</Value>
-    </Setting>
     <Setting Name="UrlImageScreenSign" Type="System.String" Scope="User">
       <Value Profile="(Default)">C:\Users\Mathias\Desktop\splash-screen-schneider.png</Value>
     </Setting>
@@ -72,7 +69,13 @@
       <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="urlApplication" Type="System.String" Scope="User">
-      <Value Profile="(Default)">http://localhost/safeware/telemaque/</Value>
+      <Value Profile="(Default)">http://accueil.et.services.schneider-electric.com/portail_pingid/telemaque_pingid</Value>
+    </Setting>
+    <Setting Name="cookieHttpOnly" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="urlPortal" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://accueil.et.services.schneider-electric.com/portail_pingid/</Value>
     </Setting>
   </Settings>
 </SettingsFile>

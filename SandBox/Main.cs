@@ -44,6 +44,7 @@ namespace SandBox
         private SriSocketServeur sriSocketServeur;              //Gestion de la création serveur socket
         private string titreApplication;                        //Titre de l'application
         private Uri urlApplication;								//URL de l'application pas static...
+        private Uri urlPortal;								    //URL du portail
         private Icon iconeApplication;                          //Icone de l'application
         private WebBrowser webFille;                            //Page web fille
         private Form Popup;                                     //Form fille
@@ -217,7 +218,7 @@ namespace SandBox
             {
                 urlFrame = webBrowser.Document.Window.Frames[0].Url.AbsoluteUri;
             }
-            if (webBrowser.Url.AbsoluteUri.Contains("/login.asp") || webBrowser.Url.AbsoluteUri.Contains("/before_verif_login.asp") || urlFrame.Contains("/quitter.asp") || webBrowser.Url.AbsoluteUri.Contains("/choix_app.asp"))
+            if (webBrowser.Url.AbsoluteUri.Contains("/login.asp") || webBrowser.Url.AbsoluteUri.Contains("/before_verif_login.asp") || urlFrame.Contains("/quitter.asp") || webBrowser.Url.AbsoluteUri.Contains("/choix_app.asp") || webBrowser.Url.AbsoluteUri.Contains("/liste_accueil.asp") || webBrowser.Url.AbsoluteUri.Contains("/liste_colis.asp"))
             {
 
                 Uri tempURI;
@@ -1078,10 +1079,11 @@ namespace SandBox
             Program.LogFich.Info("[MAIN] RecupererUrl() [DEBUT]");
 
             urlApplication = new Uri(SandBox.Properties.Settings.Default.urlApplication);
+            urlPortal = new Uri(SandBox.Properties.Settings.Default.urlPortal);
 
             //webBrowser.Url = urlApplication;
             //webBrowser.Navigate(urlApplication);
-            Program.LogFich.Info("[MAIN] RecupererUrl() [FIN] - URL:" + urlApplication);
+            Program.LogFich.Info("[MAIN] RecupererUrl() [FIN] - URL:" + urlApplication + "- URLPORTAL:" + urlPortal);
         }
 
         private void RecupererNomApplication()
@@ -2630,7 +2632,14 @@ namespace SandBox
             this.WindowState = FormWindowState.Maximized;
             //this.Activate();          
 
-            webBrowser.Navigate(urlApplication);
+            if (urlPortal.AbsoluteUri == "")
+            {
+                webBrowser.Navigate(urlApplication);
+            }
+            else
+            {
+                webBrowser.Navigate(urlPortal);
+            }
 
             if (SandBox.Properties.Settings.Default.cookieHttpOnly)
             {

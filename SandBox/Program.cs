@@ -1,12 +1,12 @@
-﻿using System;
+﻿using log4net;
+using log4net.Config;
+using System;
 using System.Deployment.Application;
 using System.IO;
 using System.Net;
-using System.Windows.Forms;
-using log4net;
-using log4net.Config;
-using System.Threading;
 using System.Reflection;
+using System.Threading;
+using System.Windows.Forms;
 
 namespace SandBox
 {
@@ -86,12 +86,20 @@ namespace SandBox
             // String[] urls = new String[5];         
 
             //string getVars = "?machine=" + Functions.getHost();
-            String tmpurl, nomApplication;
+            String tmpurl, nomApplication, tmpurlPortal;
 
             // By URL
             if (Functions.GetQueryStringParameters().Count > 0 && Functions.GetQueryStringParameters().Get("url").Trim().Length > 0)
             {
                 SandBox.Properties.Settings.Default.urlApplication = Functions.GetQueryStringParameters().Get("url");
+                SandBox.Properties.Settings.Default.Save();
+                SandBox.Properties.Settings.Default.Reload();
+            }
+
+            // By URL
+            if (Functions.GetQueryStringParameters().Count > 0 && Functions.GetQueryStringParameters().Get("urlPortal").Trim().Length > 0)
+            {
+                SandBox.Properties.Settings.Default.urlPortal = Functions.GetQueryStringParameters().Get("urlPortal");
                 SandBox.Properties.Settings.Default.Save();
                 SandBox.Properties.Settings.Default.Reload();
             }
@@ -118,6 +126,12 @@ namespace SandBox
                     SandBox.Properties.Settings.Default.Save();
                     SandBox.Properties.Settings.Default.Reload();
                 }
+                if (args.Length >= 3 && args[0] != null)
+                {
+                    SandBox.Properties.Settings.Default.urlPortal = args[2];
+                    SandBox.Properties.Settings.Default.Save();
+                    SandBox.Properties.Settings.Default.Reload();
+                }
             }
 
             if (SandBox.Properties.Settings.Default.urlApplication.Substring(SandBox.Properties.Settings.Default.urlApplication.Length - 1, 1) != "/")
@@ -127,8 +141,18 @@ namespace SandBox
                 SandBox.Properties.Settings.Default.Reload();
             }
 
+            if (SandBox.Properties.Settings.Default.urlApplication.Substring(SandBox.Properties.Settings.Default.urlPortal.Length - 1, 1) != "/")
+            {
+                SandBox.Properties.Settings.Default.urlPortal = SandBox.Properties.Settings.Default.urlPortal + "/";
+                SandBox.Properties.Settings.Default.Save();
+                SandBox.Properties.Settings.Default.Reload();
+            }
+
             tmpurl = SandBox.Properties.Settings.Default.urlApplication;
             LogFich.Info("urlApplication=" + tmpurl);
+
+            tmpurlPortal = SandBox.Properties.Settings.Default.urlApplication;
+            LogFich.Info("urlPortal=" + tmpurlPortal);
 
             nomApplication = SandBox.Properties.Settings.Default.nomApplication;
             LogFich.Info("nomApplication=" + nomApplication);
@@ -273,9 +297,13 @@ namespace SandBox
             bool createdNew;
             m_Mutex = new Mutex(true, nomApplication, out createdNew);
             if (createdNew)
+            {
                 Application.Run(new Main());
+            }
             else
+            {
                 MessageBox.Show("The application is already running.", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
 
 
             /*for (int i = 0; i < SandBox.Properties.Settings.Default.NbApp; i++)
