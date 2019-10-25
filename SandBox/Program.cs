@@ -28,6 +28,7 @@ namespace SandBox
             //System.Net.ServicePointManager.ServerCertificateValidationCallback = ((sender, certificate, chain, sslPolicyErrors) => true);
             ServicePointManager.ServerCertificateValidationCallback = delegate { return true; };
 
+
             //SplashForm sf;
 
             XmlConfigurator.Configure(new FileInfo(Directory.GetCurrentDirectory() + ".\\log4net.config"));
@@ -91,22 +92,23 @@ namespace SandBox
             // By URL
             if (Functions.GetQueryStringParameters().Count > 0 && Functions.GetQueryStringParameters().Get("url").Trim().Length > 0)
             {
-                SandBox.Properties.Settings.Default.urlApplication = Functions.GetQueryStringParameters().Get("url");
+                SandBox.Properties.Settings.Default.urlApplication = Functions.GetQueryStringParameters().Get("url").Trim();
                 SandBox.Properties.Settings.Default.Save();
                 SandBox.Properties.Settings.Default.Reload();
             }
 
-            // By URL
+            // By URLPORTAL
             if (Functions.GetQueryStringParameters().Count > 0 && Functions.GetQueryStringParameters().Get("urlPortal").Trim().Length > 0)
             {
-                SandBox.Properties.Settings.Default.urlPortal = Functions.GetQueryStringParameters().Get("urlPortal");
+                LogFich.Debug("QueryStringParameter urlPortal =" + Functions.GetQueryStringParameters().Get("urlPortal").Trim());
+                SandBox.Properties.Settings.Default.urlPortal = Functions.GetQueryStringParameters().Get("urlPortal").Trim();
                 SandBox.Properties.Settings.Default.Save();
                 SandBox.Properties.Settings.Default.Reload();
             }
 
             if (Functions.GetQueryStringParameters().Count > 0 && Functions.GetQueryStringParameters().Get("nomApplication").Trim().Length > 0)
             {
-                SandBox.Properties.Settings.Default.nomApplication = Functions.GetQueryStringParameters().Get("nomApplication");
+                SandBox.Properties.Settings.Default.nomApplication = Functions.GetQueryStringParameters().Get("nomApplication").Trim();
                 SandBox.Properties.Settings.Default.Save();
                 SandBox.Properties.Settings.Default.Reload();
             }
@@ -116,19 +118,20 @@ namespace SandBox
             {
                 if (args.Length >= 1 && args[0] != null)
                 {
-                    SandBox.Properties.Settings.Default.urlApplication = args[0];
+                    SandBox.Properties.Settings.Default.urlApplication = args[0].Trim();
                     SandBox.Properties.Settings.Default.Save();
                     SandBox.Properties.Settings.Default.Reload();
                 }
                 if (args.Length >= 2 && args[1] != null)
                 {
-                    SandBox.Properties.Settings.Default.nomApplication = args[1];
+                    SandBox.Properties.Settings.Default.nomApplication = args[1].Trim();
                     SandBox.Properties.Settings.Default.Save();
                     SandBox.Properties.Settings.Default.Reload();
                 }
-                if (args.Length >= 3 && args[0] != null)
+                if (args.Length >= 3 && args[2] != null)
                 {
-                    SandBox.Properties.Settings.Default.urlPortal = args[2];
+                    LogFich.Debug("Arg Parameter urlPortal =" + args[2].Trim());
+                    SandBox.Properties.Settings.Default.urlPortal = args[2].Trim();
                     SandBox.Properties.Settings.Default.Save();
                     SandBox.Properties.Settings.Default.Reload();
                 }
@@ -136,27 +139,29 @@ namespace SandBox
 
             if (SandBox.Properties.Settings.Default.urlApplication.Substring(SandBox.Properties.Settings.Default.urlApplication.Length - 1, 1) != "/")
             {
-                SandBox.Properties.Settings.Default.urlApplication = SandBox.Properties.Settings.Default.urlApplication + "/";
+                SandBox.Properties.Settings.Default.urlApplication = SandBox.Properties.Settings.Default.urlApplication.Trim() + "/";
                 SandBox.Properties.Settings.Default.Save();
                 SandBox.Properties.Settings.Default.Reload();
             }
 
-            if (SandBox.Properties.Settings.Default.urlApplication.Substring(SandBox.Properties.Settings.Default.urlPortal.Length - 1, 1) != "/")
+            LogFich.Debug("urlPortal=[" + SandBox.Properties.Settings.Default.urlPortal + "]");
+
+            if (!string.IsNullOrEmpty(SandBox.Properties.Settings.Default.urlPortal.Trim()) && SandBox.Properties.Settings.Default.urlPortal.Substring(SandBox.Properties.Settings.Default.urlPortal.Length - 1, 1) != "/")
             {
-                SandBox.Properties.Settings.Default.urlPortal = SandBox.Properties.Settings.Default.urlPortal + "/";
+                LogFich.Debug("add / =" + SandBox.Properties.Settings.Default.urlPortal.Trim() + "/");
+                SandBox.Properties.Settings.Default.urlPortal = SandBox.Properties.Settings.Default.urlPortal.Trim() + "/";
                 SandBox.Properties.Settings.Default.Save();
                 SandBox.Properties.Settings.Default.Reload();
             }
 
             tmpurl = SandBox.Properties.Settings.Default.urlApplication;
-            LogFich.Info("urlApplication=" + tmpurl);
+            LogFich.Info("urlApplication=[" + tmpurl + "]");
 
-            tmpurlPortal = SandBox.Properties.Settings.Default.urlApplication;
-            LogFich.Info("urlPortal=" + tmpurlPortal);
+            tmpurlPortal = SandBox.Properties.Settings.Default.urlPortal;
+            LogFich.Info("urlPortal=[" + tmpurlPortal + "]");
 
             nomApplication = SandBox.Properties.Settings.Default.nomApplication;
             LogFich.Info("nomApplication=" + nomApplication);
-
 
             SandBox.Properties.Settings.Default.indexScreenSign = SandBox.Properties.Settings.Default.indexScreenSign;
             SandBox.Properties.Settings.Default.UrlImageScreenSign = SandBox.Properties.Settings.Default.UrlImageScreenSign;

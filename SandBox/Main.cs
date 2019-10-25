@@ -271,9 +271,13 @@ namespace SandBox
                         isFirstTime = false;
 
                         if (urlFrame != "")
+                        {
                             webBrowser.Document.Window.Frames[0].Navigate(url);
+                        }
                         else
+                        {
                             webBrowser.Url = url;
+                        }
                         /*while (webBrowser.ReadyState != WebBrowserReadyState.Complete)
                         {
                             Application.DoEvents();
@@ -285,9 +289,13 @@ namespace SandBox
                     else
                     {
                         if (urlFrame != "")
+                        {
                             webBrowser.Document.Window.Frames[0].Navigate(url);
+                        }
                         else
+                        {
                             webBrowser.Url = url;
+                        }
                     }
 
                 }
@@ -409,7 +417,6 @@ namespace SandBox
 
         private void webBrowser_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
-
             var browser = (WebBrowser)sender;
 
             if (browser.ReadyState == WebBrowserReadyState.Complete)
@@ -1079,11 +1086,16 @@ namespace SandBox
             Program.LogFich.Info("[MAIN] RecupererUrl() [DEBUT]");
 
             urlApplication = new Uri(SandBox.Properties.Settings.Default.urlApplication);
-            urlPortal = new Uri(SandBox.Properties.Settings.Default.urlPortal);
+
+            if (!string.IsNullOrEmpty(SandBox.Properties.Settings.Default.urlPortal))
+            {
+                urlPortal = new Uri(SandBox.Properties.Settings.Default.urlPortal);
+                Program.LogFich.Info("[MAIN] RecupererUrl() URLPORTAL:" + urlPortal);
+            }
 
             //webBrowser.Url = urlApplication;
             //webBrowser.Navigate(urlApplication);
-            Program.LogFich.Info("[MAIN] RecupererUrl() [FIN] - URL:" + urlApplication + "- URLPORTAL:" + urlPortal);
+            Program.LogFich.Info("[MAIN] RecupererUrl() [FIN] - URL:" + urlApplication);
         }
 
         private void RecupererNomApplication()
@@ -2632,13 +2644,13 @@ namespace SandBox
             this.WindowState = FormWindowState.Maximized;
             //this.Activate();          
 
-            if (urlPortal.AbsoluteUri == "")
+            if (urlPortal != null && urlPortal.AbsoluteUri != "")
             {
-                webBrowser.Navigate(urlApplication);
+                webBrowser.Navigate(urlPortal);
             }
             else
             {
-                webBrowser.Navigate(urlPortal);
+                webBrowser.Navigate(urlApplication);
             }
 
             if (SandBox.Properties.Settings.Default.cookieHttpOnly)

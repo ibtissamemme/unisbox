@@ -151,15 +151,6 @@ namespace SandBox.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("W8FRU0006L")]
-        public string forceMachineName {
-            get {
-                return ((string)(this["forceMachineName"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("##")]
         public string CharNewLine {
             get {
@@ -213,9 +204,18 @@ namespace SandBox.Properties {
             }
         }
         
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool cookieHttpOnly {
+            get {
+                return ((bool)(this["cookieHttpOnly"]));
+            }
+        }
+        
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("2")]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
         public int indexScreenSign {
             get {
                 return ((int)(this["indexScreenSign"]));
@@ -236,8 +236,19 @@ namespace SandBox.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://accueil.et.services.schneider-electric.com/portail_pingid/telemaque_pingid" +
-            "")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string urlPortal {
+            get {
+                return ((string)(this["urlPortal"]));
+            }
+            set {
+                this["urlPortal"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://172.16.1.6/telemaque_axa_sso/")]
         public string urlApplication {
             get {
                 return ((string)(this["urlApplication"]));
@@ -249,22 +260,10 @@ namespace SandBox.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool cookieHttpOnly {
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string forceMachineName {
             get {
-                return ((bool)(this["cookieHttpOnly"]));
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://accueil.et.services.schneider-electric.com/portail_pingid/")]
-        public string urlPortal {
-            get {
-                return ((string)(this["urlPortal"]));
-            }
-            set {
-                this["urlPortal"] = value;
+                return ((string)(this["forceMachineName"]));
             }
         }
     }

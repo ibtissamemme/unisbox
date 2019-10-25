@@ -1,1 +1,1 @@
-"setupTelemaqueUnisBox.exe" /url=http://localhost/safeware/telemaque_new/ /SILENT
+"setupTelemaqueUnisBox.exe" /url=http://localhost/safeware/telemaque_new/ /urlPortal=http://localhost/safeware/telemaque_new/ /SILENT

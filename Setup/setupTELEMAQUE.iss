@@ -7,7 +7,7 @@
 ; (To generate a new GUID, click Tools | Generate GUID inside the IDE.)
 AppId={{30814DF2-591F-4FDF-8706-580E476DE8A2}
 AppName=TELEMAQUE - UnisBox
-AppVersion=1.1.0.5
+AppVersion=1.0.10.1
 ;AppVerName=TELEMAQUE - UnisBox 1.1.0.0
 AppPublisher=Safeware
 AppPublisherURL=http://www.safeware.fr/
@@ -58,7 +58,9 @@ Name: "{commondesktop}\TELEMAQUE - UnisBox"; Filename: "{app}\TELEMAQUE - UnisBo
 [Code]
 var
 lblURL: TLabel;
+lblURLPortal: TLabel;
 txtURL: TEdit; 
+txtURLPortal: TEdit; 
 
 // Run TELEMAQUE after install
 function NextButtonClick(CurPageID: Integer): Boolean;
@@ -69,7 +71,11 @@ begin
   if CurPageID = wpFinished then
   begin
     //MsgBox(ExpandConstant('{param:url}'), mbInformation, MB_OK);
-    ExecAsOriginalUser(ExpandConstant('{app}\TELEMAQUE - UnisBox.exe'), txtURL.Text+ ' TELEMAQUE', '', SW_SHOWNORMAL, ewNoWait, ResultCode);
+    if txtURLPortal.Text <> '' then begin
+      ExecAsOriginalUser(ExpandConstant('{app}\TELEMAQUE - UnisBox.exe'), txtURL.Text+ ' TELEMAQUE '+ txtURLPortal.Text, '', SW_SHOWNORMAL, ewNoWait, ResultCode);
+    end else begin
+      ExecAsOriginalUser(ExpandConstant('{app}\TELEMAQUE - UnisBox.exe'), txtURL.Text+ ' TELEMAQUE', '', SW_SHOWNORMAL, ewNoWait, ResultCode);
+    end;
   end;
 end;
 
@@ -186,12 +192,24 @@ Height := ScaleY(13);
 Caption := 'URL';
 end;
 
+{ lblURLPortal }
+lblURLPortal := TLabel.Create(Page);
+with lblURLPortal do
+begin
+Parent := Page.Surface;
+Left := ScaleX(0);
+Top := ScaleY(95);
+Width := ScaleX(35);
+Height := ScaleY(13);
+Caption := 'URL Portal';
+end;
+
 { txtURL }
 txtURL := TEdit.Create(Page);
 with txtURL do
 begin
 Parent := Page.Surface;
-Left := ScaleX(50);
+Left := ScaleX(60);
 Top := ScaleY(23);
 Width := ScaleX(350);
 Height := ScaleY(21);
@@ -201,6 +219,19 @@ end;
 
 if txtURl.text='' then begin
   txtURl.text:='http://'
+end;
+
+{ txtURLPortal }
+txtURLPortal := TEdit.Create(Page);
+with txtURLPortal do
+begin
+Parent := Page.Surface;
+Left := ScaleX(60);
+Top := ScaleY(93);
+Width := ScaleX(350);
+Height := ScaleY(21);
+TabOrder := 0;
+Text := ExpandConstant('{param:urlPortal}');
 end;
 
 with Page do
